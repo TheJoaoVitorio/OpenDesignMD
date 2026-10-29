@@ -1,0 +1,12 @@
+node_modules/
+.npm
+dist/
+*.log
+
+# Debug screenshots in root
+/*-screenshot.png
+/particle-*.png
+/screenshot-*.png
+/login-*.png
+/test-screenshot.png
+
