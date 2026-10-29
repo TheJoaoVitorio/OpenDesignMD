@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #121317;
+  --color-secondary: #5F6368;
+  --color-tertiary: #1A73E8;
+  --color-neutral: #FAF9F6;
+  --color-surface: #FFFFFF;
+  --color-surface-variant: #F1F3F4;
+  --color-border: #E8EAED;
+  --color-border-subtle: rgba(0, 0, 0, 0.06);
+  --color-accent-glow: rgba(26, 115, 232, 0.12);
+
+  --color-canvas-dark: #0D0E12;
+  --color-surface-dark: #16181D;
+  --color-surface-dark-card: #1E2128;
+  --color-text-dark-primary: #FFFFFF;
+  --color-text-dark-secondary: #9AA0A6;
+
+  --font-sans: 'Google Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Google Sans Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Custom scrollbar and subtle glowing utilities */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.gravity-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(66, 133, 244, 0.12) 0%, rgba(234, 67, 53, 0.05) 35%, rgba(251, 188, 5, 0.03) 70%, transparent 100%);
+}
+.dark .gravity-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(66, 133, 244, 0.18) 0%, rgba(234, 67, 53, 0.08) 35%, rgba(251, 188, 5, 0.05) 70%, transparent 100%);
+}
+
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+/* Text and language swap transitions */
+@keyframes textSwap {
+  0% {
+    opacity: 0.35;
+    transform: translateY(3px);
+    filter: blur(1.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-text-swap {
+  animation: textSwap 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* BottomSheet Entrance & Border Glow Animations */
+@keyframes slideUpSheet {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up-sheet {
+  animation: slideUpSheet 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes borderGlowRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-glow {
+  animation: borderGlowRotate 4s linear infinite;
+}
+
+.conic-border-glow {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 65%,
+    rgba(66, 133, 244, 0.35) 75%,
+    rgba(66, 133, 244, 0.95) 86%,
+    #ffffff 93%,
+    rgba(234, 67, 53, 0.9) 97%,
+    rgba(251, 188, 5, 0.7) 99%,
+    transparent 100%
+  );
+}
+
+/* Google AI Mode Multicolor Border Gradient */
+@keyframes googleGlowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-google-glow-spin {
+  animation: googleGlowSpin 6s linear infinite;
+}
+
+.google-ai-gradient {
+  background: conic-gradient(
+    from 0deg,
+    #4285F4 0deg,
+    #4285F4 65deg,
+    #EA4335 110deg,
+    #FBBC05 160deg,
+    #34A853 230deg,
+    #4285F4 310deg,
+    #FFFFFF 345deg,
+    #4285F4 360deg
+  );
+}
+
+
