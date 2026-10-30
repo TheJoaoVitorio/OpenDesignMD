@@ -563,7 +563,7 @@ export default function ${customClientName.replace(/\s+/g, '')}LandingPage() {
         </button>
       </nav>
 
-      {/* 2. Hero Section (${selectedCompany.dna?.sectionBlueprints?.[0]?.layoutType || 'Monumental Symmetry'}) */}
+      {/* 2. Hero Section (${selectedCompany?.dna?.sectionBlueprints?.[0]?.layoutType || 'Monumental Symmetry'}) */}
       <section className="py-24 text-center max-w-4xl mx-auto px-6 space-y-6">
         <h1 className="text-5xl font-medium tracking-[-0.035em] text-[#121317]">
           ${activeNiche.tagline}
