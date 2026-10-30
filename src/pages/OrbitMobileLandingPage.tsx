@@ -278,11 +278,11 @@ rounded:
               <span>Inspecionar DESIGN.MD</span>
             </button>
             <Link
-              to="/preview/roleta"
-              className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-mono transition-colors hidden sm:inline-flex items-center space-x-1"
+              to="/preview/studio"
+              className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-mono transition-colors hidden sm:inline-flex items-center space-x-1.5"
             >
-              <span>🎲</span>
-              <span>Roleta Studio</span>
+              <Sparkles className="w-3.5 h-3.5 text-[#FF6B00]" />
+              <span>Gemini Studio</span>
             </Link>
             <Link
               to="/"

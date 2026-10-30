@@ -80,16 +80,16 @@ export const Navbar: React.FC<NavbarProps> = ({
           </Link>
 
           <Link
-            to="/preview/roleta"
+            to="/preview/studio"
             className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-colors ${
-              isCurrent('/preview/roleta')
+              isCurrent('/preview/studio') || isCurrent('/studio')
                 ? 'bg-[#121317] text-white dark:bg-white dark:text-[#121317] shadow-xs'
                 : 'text-[#5F6368] dark:text-[#9AA0A6] hover:text-[#121317] dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
             }`}
           >
             <span className="flex items-center space-x-1.5">
-              <span>🎲</span>
-              <span>Roleta Studio</span>
+              <Sparkles className="w-3.5 h-3.5 text-[#1A73E8] dark:text-[#8AB4F8]" />
+              <span>Gemini Studio</span>
             </span>
           </Link>              
         </nav>

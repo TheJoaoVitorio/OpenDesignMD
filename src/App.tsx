@@ -8,7 +8,7 @@ import { DesignSystemDetailPage } from './pages/DesignSystemDetailPage';
 import { ExtractPage } from './pages/ExtractPage';
 import { NutriFluiLandingPage } from './pages/NutriFluiLandingPage';
 import { OrbitMobileLandingPage } from './pages/OrbitMobileLandingPage';
-import { DesignDnaRoulettePage } from './pages/DesignDnaRoulettePage';
+import { GeminiStudioPage } from './pages/GeminiStudioPage';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { mockCompanies } from './data/mockCompanies';
@@ -181,18 +181,22 @@ export function AppContent() {
             element={<Navigate to="/preview/orbit-celulares" replace />}
           />
 
-          {/* Interactive Demonstration Studio: Design DNA Roulette */}
-          <Route
-            path="/preview/roleta"
-            element={<DesignDnaRoulettePage companies={companies} onShowToast={showToast} />}
-          />
+          {/* Google Gemini Design Studio: Analytical Generation Engine */}
           <Route
             path="/preview/studio"
-            element={<Navigate to="/preview/roleta" replace />}
+            element={<GeminiStudioPage companies={companies} onShowToast={showToast} />}
+          />
+          <Route
+            path="/preview/generator"
+            element={<Navigate to="/preview/studio" replace />}
           />
           <Route
             path="/studio"
-            element={<Navigate to="/preview/roleta" replace />}
+            element={<Navigate to="/preview/studio" replace />}
+          />
+          <Route
+            path="/preview/roleta"
+            element={<Navigate to="/preview/studio" replace />}
           />
 
           {/* Protected Catalog Dashboard */}
