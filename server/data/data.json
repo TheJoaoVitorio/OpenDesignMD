@@ -115,75 +115,92 @@
     },
     "designMd": "---\nname: Google Antigravity\nversion: alpha\ncolors:\n  primary: \"#121317\"\n  secondary: \"#5F6368\"\n  tertiary: \"#1A73E8\"\n  neutral: \"#FAF9F6\"\n  surface: \"#FFFFFF\"\n  surface-variant: \"#F1F3F4\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E8EAED\"\n  border-subtle: \"rgba(0, 0, 0, 0.06)\"\n  accent-glow: \"rgba(26, 115, 232, 0.12)\"\ntypography:\n  fontFamily: \"Google Sans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"'Google Sans Mono', 'SFMono-Regular', Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.5rem\n    fontWeight: 500\n    lineHeight: 1.1\n    letterSpacing: \"-0.035em\"\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.25rem\n    fontWeight: 500\n    lineHeight: 1.2\n    letterSpacing: \"-0.025em\"\n  h3:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.5rem\n    fontWeight: 500\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.55\n  label-caps:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.75rem\n    fontWeight: 500\n    letterSpacing: \"0.06em\"\nrounded:\n  sm: 8px\n  md: 14px\n  lg: 20px\n  xl: 28px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.primary}\"\n    textColor: \"{colors.on-primary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  button-secondary:\n    backgroundColor: \"{colors.surface}\"\n    textColor: \"{colors.primary}\"\n    border: \"1px solid {colors.border}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.xl}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n## Overview\n\nO OpenDesignMD adota com rigor a estética de **\"Engineered Calm\"** e hiper-precisão tipográfica do **Google Antigravity** (`antigravity.google`). O design se apoia em uma paleta monocromática disciplinada com vasto respiro negativo, tipografia forte em Google Sans com tracking negativo nos títulos, pílulas suaves (`rounded.full`) e toques cirúrgicos de azul e difusão cromática.\n\n## Colors\n\nA paleta prioriza a sobriedade sobre o ruído visual, reservando saturação apenas para interações e momentos de ênfase:\n- **Primary (`#121317`):** Tinta preta pura para textos principais, títulos e o botão de ação primordial (Hero CTA).\n- **Secondary (`#5F6368`):** Cinza ardósia neutro para legendas, metadados e ícones informativos.\n- **Tertiary (`#1A73E8`):** O clássico Google Blue utilizado de forma estritamente cirúrgica para links ativos e pílulas de destaque.\n- **Neutral (`#FAF9F6`):** Canvas de base suave, oferecendo um fundo quente e menos ofuscante que o branco puro.\n- **Surface (`#FFFFFF`):** Superfície limpa de cards flutuantes e modais.\n\n## Typography\n\nUtiliza **Google Sans / Inter** com dois registros propositalmente opostos:\n- **Display & Títulos:** Letras monumentais em peso 500 com tracking fortemente negativo (`-0.035em`), criando blocos de leitura sólidos e arquitetônicos.\n- **Interface & Textos:** Tamanhos confortáveis (`body-md: 0.9375rem`), entrelinha relaxada (`1.55`) e tracking neutro para máxima legibilidade.\n- **Metadados & Badges (`label-caps`):** Caixa alta sutil com tracking espaçado (`0.06em`).\n\n## Layout\n\n- **Grid:** Estrutura baseada em múltiplos rigorosos de 4px e 8px, com largura máxima contida em 1440px e margem lateral fluida de 32px a 72px.\n- **Vasto Espaço Negativo:** As seções da Landing Page respiram com paddings de 80px (`{spacing.4xl}`) entre blocos de conteúdo.\n\n## Elevation & Depth\n\n- **Elevação 1 (Cards):** Borda suave (`1px solid {colors.border}`) sem sombra pesada, usando superfícies sólidas e transições sutis.\n- **Elevação 2 (Hover & Destaques):** Leve projeção (`box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.05)`).\n- **Elevação 3 (Modais e Detalhes):** Fundo translúcido com `backdrop-filter: blur(16px)` e borda refinada de alta luminosidade.\n\n## Shapes\n\n- Botões, campos de busca e tags adotam formato de **pílula completa** (`{rounded.full}`).\n- Cards e contêineres principais utilizam cantos generosamente arredondados (`{rounded.xl}` = 28px).\n- Modais e janelas flutuantes utilizam cantos suaves de 20px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\n- Formato de pílula preta sólida (`#121317`) com tipografia branca, padding generoso e transição suave no hover.\n\n### Botão Secundário (`button-secondary`)\n- Fundo branco/neutro com contorno sutil (`1px solid {colors.border}`) e texto escuro.\n\n### Cards de Empresas\n- Borda fina e canto suave, apresentando logotipo, paleta em círculos e botões de ação direta.\n\n## Do's and Don'ts\n\n### Do's:\n- **Respeite o respiro:** Deixe o espaço em branco carregar a sofisticação da interface.\n- **Use pílulas consistentes:** Botões e chips de tags devem sempre adotar `{rounded.full}`.\n- **Mantenha o contraste:** O botão preto principal deve se destacar imediatamente como o ponto focal.\n\n### Don'ts:\n- **Não crie novas cores primárias:** Toda nova interface gerada por IA deve reutilizar a paleta declarada.\n- **Não use gradientes pesados:** Evite fundos coloridos saturados atrás de blocos de texto.\n- **Não use bordas pontiagudas:** Não misture cantos de 0px ou 2px em um layout projetado com cantos amplos.",
     "dna": {
-      "archetype": "Contemporary Clean Functionalism",
-      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "archetype": "Engineered Calm, Monastic Purity & Gravitational Symmetry",
+      "visualAtmosphere": "Architectural monumental symmetry resting in vast negative space (#FAF9F6 / #FFFFFF), Google Sans typography with negative letter-spacing (-0.035em), sculptural solitary full-pill actions, dynamic swirling gravitational particle vortex in orbital suspension, and alternating spacious feature rows.",
       "spatialRhythm": {
-        "density": "balanced",
-        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
-        "containerMaxWidth": "1280px"
+        "density": "sprawling",
+        "whitespaceStrategy": "Monastic negative space with 120px section gaps. The hero viewport contains zero lateral cards, zero promotional clutter, and absolute central focus.",
+        "containerMaxWidth": "1440px"
       },
       "sectionBlueprints": [
         {
           "name": "Hero Section",
-          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
-          "density": "balanced",
+          "layoutType": "Centrally Aligned Monumental Symmetry with Gravitational Particle Vortex",
+          "density": "sprawling",
           "keyVisualElements": [
-            "Elevated product screenshot",
-            "Primary action button with icon",
-            "Customer review snippet"
+            "Centered brand mark above headline",
+            "Monumental 2-line H1 display centered with -0.035em tracking",
+            "Solitary centered full-pill button (single primary action, strictly zero dual CTAs)",
+            "Dynamic particle vortex artwork in canvas or SVG radiating in gravitational orbit",
+            "Thin top announcement pill (+ NOVO ... Read post ->)",
+            "Strictly ZERO split-screen layout in hero"
           ],
-          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
-          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+          "typographyHierarchy": "Monumental H1 display (4rem, -0.035em) centered leading directly to a solitary pill action with zero distracting body paragraphs",
+          "designRule": "Preserve absolute central symmetry and serene stillness. Never divide the hero into two lateral columns."
         },
         {
-          "name": "Feature Showcase",
-          "layoutType": "3-Column Grid with Icon Headers",
-          "density": "balanced",
+          "name": "Feature Explorer",
+          "layoutType": "Alternating Spacious Asymmetric Feature Rows",
+          "density": "sprawling",
           "keyVisualElements": [
-            "Rounded icon badges",
-            "Surface cards with 1px border",
-            "Feature bullet points"
+            "Alternating 2-column layout (Text on left/media on right, then media on left/text on right)",
+            "Text column (col-md-4): H3 title, concise 2-sentence description, arrow link",
+            "Product column (col-md-8): Clean isolated hardware render with natural shadow on warm canvas"
           ],
-          "typographyHierarchy": "H3 feature title with descriptive body text",
-          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+          "typographyHierarchy": "H3 feature title with high typographic contrast and arrow link",
+          "designRule": "Let each product breathe in full-width alternating rhythm rather than cramming into equal-height cards."
         },
         {
-          "name": "Social Proof",
-          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "name": "Solutions & Programs",
+          "layoutType": "High-Contrast Side-by-Side Solution Cards",
           "density": "balanced",
           "keyVisualElements": [
-            "Customer avatar",
-            "Company logo",
-            "Star rating"
+            "Two clean white surface cards with 1px border",
+            "Targeted program for consumers vs enterprise"
           ],
-          "typographyHierarchy": "Direct quote with customer name and verified title",
-          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+          "typographyHierarchy": "H3 solution title with concise benefit summary",
+          "designRule": "Separate customer segments into clear, distinct value propositions."
         },
         {
-          "name": "CTA Section",
-          "layoutType": "High-Contrast Closing Banner",
+          "name": "Stay in Sync / Newsletter",
+          "layoutType": "Centered Single-Input Subscription Pill",
           "density": "balanced",
           "keyVisualElements": [
-            "Full-width surface card",
-            "Instant access form or single primary button"
+            "Centered headline: Fique em sincronia",
+            "Full pill input field with embedded or adjacent pill subscribe button"
           ],
-          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
-          "designRule": "Remove friction and provide immediate access to the core value."
+          "typographyHierarchy": "H2 centered invite with muted reassurance subtitle",
+          "designRule": "Zero marketing spam; clean, single-field subscription."
+        },
+        {
+          "name": "Footer",
+          "layoutType": "Multi-Column Clean Navigational Grid",
+          "density": "balanced",
+          "keyVisualElements": [
+            "4 semantic category columns",
+            "Google Sans typography with subtle hover states",
+            "Bottom bar with copyright and design system inspection trigger"
+          ],
+          "typographyHierarchy": "Semantic column titles in bold ink with muted link list",
+          "designRule": "Provide comprehensive structural navigation without decorative clutter."
         }
       ],
       "invariants": {
         "always": [
-          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
-          "Always use consistent border radius across all buttons and input fields.",
-          "Always provide explicit hover and focus states for keyboard accessibility."
+          "Always maintain 100% central alignment and symmetry for the hero section.",
+          "Always use a solitary sculptured full-pill button in the hero.",
+          "Always use letter-spacing -0.035em on H1 display headings.",
+          "Always provide at least 100px-120px of vertical breathing room between major sections.",
+          "Always incorporate dynamic particle vortex or subtle orbital physics in canvas."
         ],
         "never": [
-          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
-          "Never mix discordant border radii on the same visual plane.",
-          "Never hide primary navigation on desktop viewports."
+          "Never use split-screen two-column layout in the hero section.",
+          "Never place product mockup cards or dynamic island widgets beside the hero title.",
+          "Never crowd the hero with secondary buttons, discount banners, or timer countdowns.",
+          "Never use 0px sharp corners on interactive buttons."
         ]
       },
-      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+      "adaptationGuidance": "When adapting Google Antigravity to any client domain (e.g. mobile store, finance, hardware), preserve the monumental central symmetry, solitary pill action, and particle vortex canvas. Adapt the primary action color (e.g. vibrant orange #FF6B00) and replace technical software features with physical hardware rows."
     }
   },
   {

@@ -542,6 +542,100 @@ Return ONLY valid JSON matching:
     const isDark = neutral.startsWith("#0") || neutral.startsWith("#1") || neutral.startsWith("#2");
     const name = company.name.toLowerCase();
 
+    // Specific Archetype: Google Antigravity & Spatial Calm (Monumental Symmetry)
+    if (name.includes("antigravity") || name.includes("google antigravity")) {
+      return {
+        archetype: "Engineered Calm, Monastic Purity & Gravitational Symmetry",
+        visualAtmosphere:
+          "Architectural monumental symmetry resting in vast negative space (#FAF9F6 / #FFFFFF), Google Sans typography with negative letter-spacing (-0.035em), sculptural solitary full-pill actions, dynamic swirling gravitational particle vortex in orbital suspension, and alternating spacious feature rows.",
+        spatialRhythm: {
+          density: "sprawling",
+          whitespaceStrategy: "Monastic negative space with 120px section gaps. The hero viewport contains zero lateral cards, zero promotional clutter, and absolute central focus.",
+          containerMaxWidth: "1440px",
+        },
+        sectionBlueprints: [
+          {
+            name: "Hero Section",
+            layoutType: "Centrally Aligned Monumental Symmetry with Gravitational Particle Vortex",
+            density: "sprawling",
+            keyVisualElements: [
+              "Centered brand mark above headline",
+              "Monumental 2-line H1 display centered with -0.035em tracking",
+              "Solitary centered full-pill button (single primary action, strictly zero dual CTAs)",
+              "Dynamic particle vortex artwork in canvas or SVG radiating in gravitational orbit",
+              "Thin top announcement pill (+ NOVO ... Read post ->)",
+              "Strictly ZERO split-screen layout in hero",
+            ],
+            typographyHierarchy: "Monumental H1 display (4rem, -0.035em) centered leading directly to a solitary pill action with zero distracting body paragraphs",
+            designRule: "Preserve absolute central symmetry and serene stillness. Never divide the hero into two lateral columns.",
+          },
+          {
+            name: "Feature Explorer",
+            layoutType: "Alternating Spacious Asymmetric Feature Rows",
+            density: "sprawling",
+            keyVisualElements: [
+              "Alternating 2-column layout (Text on left/media on right, then media on left/text on right)",
+              "Text column (col-md-4): H3 title, concise 2-sentence description, arrow link",
+              "Product column (col-md-8): Clean isolated hardware render with natural shadow on warm canvas",
+            ],
+            typographyHierarchy: "H3 feature title with high typographic contrast and arrow link",
+            designRule: "Let each product breathe in full-width alternating rhythm rather than cramming into equal-height cards.",
+          },
+          {
+            name: "Solutions & Programs",
+            layoutType: "High-Contrast Side-by-Side Solution Cards",
+            density: "balanced",
+            keyVisualElements: [
+              "Two clean white surface cards with 1px border",
+              "Targeted program for consumers vs enterprise",
+            ],
+            typographyHierarchy: "H3 solution title with concise benefit summary",
+            designRule: "Separate customer segments into clear, distinct value propositions.",
+          },
+          {
+            name: "Stay in Sync / Newsletter",
+            layoutType: "Centered Single-Input Subscription Pill",
+            density: "balanced",
+            keyVisualElements: [
+              "Centered headline: 'Fique em sincronia'",
+              "Full pill input field with embedded or adjacent pill subscribe button",
+            ],
+            typographyHierarchy: "H2 centered invite with muted reassurance subtitle",
+            designRule: "Zero marketing spam; clean, single-field subscription.",
+          },
+          {
+            name: "Footer",
+            layoutType: "Multi-Column Clean Navigational Grid",
+            density: "balanced",
+            keyVisualElements: [
+              "4 semantic category columns",
+              "Google Sans typography with subtle hover states",
+              "Bottom bar with copyright and design system inspection trigger",
+            ],
+            typographyHierarchy: "Semantic column titles in bold ink with muted link list",
+            designRule: "Provide comprehensive structural navigation without decorative clutter.",
+          },
+        ],
+        invariants: {
+          always: [
+            "Always maintain 100% central alignment and symmetry for the hero section.",
+            "Always use a solitary sculptured full-pill button in the hero.",
+            "Always use letter-spacing -0.035em on H1 display headings.",
+            "Always provide at least 100px-120px of vertical breathing room between major sections.",
+            "Always incorporate dynamic particle vortex or subtle orbital physics in canvas.",
+          ],
+          never: [
+            "Never use split-screen two-column layout in the hero section.",
+            "Never place product mockup cards or dynamic island widgets beside the hero title.",
+            "Never crowd the hero with secondary buttons, discount banners, or timer countdowns.",
+            "Never use 0px sharp corners on interactive buttons.",
+          ],
+        },
+        adaptationGuidance:
+          "When adapting Google Antigravity to any client domain (e.g. mobile store, finance, hardware), preserve the monumental central symmetry, solitary pill action, and particle vortex canvas. Adapt the primary action color (e.g. vibrant orange #FF6B00) and replace technical software features with physical hardware rows.",
+      };
+    }
+
     // Specific Archetype: AbacatePay (Playful Neo-Organic & Tactile High-Contrast)
     if (name.includes("abacate") || name.includes("avocado")) {
       return {
@@ -929,7 +1023,21 @@ Return ONLY valid JSON matching:
     let neutral = "#F9FAFB";
     let surface = "#FFFFFF";
 
-    if (contextLower.includes("nutri") || contextLower.includes("aliment") || contextLower.includes("diet") || brandName.toLowerCase().includes("abacate")) {
+    // Check for explicit color requests in user prompt
+    if (contextLower.includes("laranja") || contextLower.includes("orange")) {
+      tertiary = "#FF6B00";
+      if (brandName.toLowerCase().includes("antigravity")) {
+        primary = "#FF6B00";
+        neutral = "#FAF9F6";
+        surface = "#FFFFFF";
+      }
+    } else if (contextLower.includes("azul") || contextLower.includes("blue")) {
+      tertiary = "#1A73E8";
+    } else if (contextLower.includes("verde") || contextLower.includes("green") && !contextLower.includes("abacate")) {
+      tertiary = "#34A853";
+    } else if (contextLower.includes("roxo") || contextLower.includes("purple")) {
+      tertiary = "#7C3AED";
+    } else if (contextLower.includes("nutri") || contextLower.includes("aliment") || contextLower.includes("diet") || brandName.toLowerCase().includes("abacate")) {
       // Botanical vitality: Deep Pine Ink + Electric Lime Action + Fresh Canvas
       primary = "#1F4647"; // Deep Pine / Botanical Ink
       secondary = "#486E6F"; // Muted botanical slate
@@ -958,6 +1066,12 @@ Return ONLY valid JSON matching:
       tertiary = "#6366F1";
       neutral = "#0B0C10";
       surface = "#16181D";
+    } else if (brandName.toLowerCase().includes("antigravity")) {
+      primary = "#121317";
+      secondary = "#5F6368";
+      tertiary = "#FF6B00";
+      neutral = "#FAF9F6";
+      surface = "#FFFFFF";
     }
 
     const adaptedSections = dna.sectionBlueprints.map((sec) => ({
