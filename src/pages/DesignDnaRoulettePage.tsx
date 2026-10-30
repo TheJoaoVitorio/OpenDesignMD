@@ -308,6 +308,59 @@ const ROULETTE_NICHES: RouletteNiche[] = [
   },
 ];
 
+const FALLBACK_COMPANY: Company = {
+  id: 'google-antigravity',
+  name: 'Google Antigravity',
+  domain: 'antigravity.google',
+  category: 'AI & Developer Tools',
+  description: 'Estética de Engineered Calm',
+  logoUrl: 'https://cdn.simpleicons.org/google/1A73E8',
+  colors: {
+    primary: '#121317',
+    secondary: '#5F6368',
+    tertiary: '#1A73E8',
+    neutral: '#FAF9F6',
+    surface: '#FFFFFF',
+    accent: '#1A73E8',
+    border: '#E8EAED',
+  },
+  typography: {
+    fontFamily: 'Google Sans, Inter, sans-serif',
+    headingFamily: 'Google Sans, Inter, sans-serif',
+    monoFamily: 'monospace',
+    h1: { fontSize: '4rem', fontWeight: 500, letterSpacing: '-0.035em' },
+    h2: { fontSize: '2.5rem', fontWeight: 500 },
+    bodyMd: { fontSize: '1rem', fontWeight: 400 },
+  },
+  spacing: {},
+  rounded: { full: '9999px' },
+  components: {},
+  designMd: '',
+  dna: {
+    archetype: 'Engineered Calm, Monastic Purity & Gravitational Symmetry',
+    visualAtmosphere: 'Calmaria arquitetônica e simetria monumental',
+    spatialRhythm: {
+      density: 'sprawling',
+      whitespaceStrategy: 'Margens generosas com foco central',
+      containerMaxWidth: '1440px',
+    },
+    sectionBlueprints: [
+      {
+        name: 'Hero Section',
+        layoutType: 'Centrally Aligned Monumental Symmetry with Gravitational Particle Vortex',
+        density: 'sprawling',
+        keyVisualElements: ['Centered H1', 'Solitary Pill CTA', 'Particle Vortex'],
+        typographyHierarchy: 'H1 Display 4rem',
+        designRule: 'Preserve absolute central symmetry. Zero split-screen.',
+      },
+    ],
+    invariants: {
+      always: ['Manter simetria centralizada', 'Manter contraste WCAG AA'],
+      never: ['Nunca usar split-screen no hero', 'Nunca usar cantos de 0px'],
+    },
+  },
+};
+
 interface DesignDnaRoulettePageProps {
   companies: Company[];
   onShowToast: (message: string) => void;
@@ -339,8 +392,11 @@ export const DesignDnaRoulettePage: React.FC<DesignDnaRoulettePageProps> = ({ co
   // Antigravity Canvas Ref
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-  const activeNiche = ROULETTE_NICHES[selectedNicheIndex];
-  const selectedCompany = companies.find((c) => c.id === selectedCompanyId) || companies[0];
+  const activeNiche = ROULETTE_NICHES[selectedNicheIndex] || ROULETTE_NICHES[0];
+  const selectedCompany =
+    (Array.isArray(companies) && companies.length > 0
+      ? companies.find((c) => c?.id === selectedCompanyId) || companies[0]
+      : null) || FALLBACK_COMPANY;
 
   // Pick niche
   const handleSelectNiche = (index: number) => {
@@ -439,10 +495,10 @@ export const DesignDnaRoulettePage: React.FC<DesignDnaRoulettePageProps> = ({ co
 
   // Generate canonical DESIGN.MD for the current combination
   const generatedDesignMd = `---
-name: ${customClientName} Design System (Inspired by ${selectedCompany.name})
+name: ${customClientName} Design System (Inspired by ${selectedCompany?.name || 'Google Antigravity'})
 version: 1.0.0
-archetype: "${selectedCompany.dna?.archetype || 'Engineered Calm, Monastic Purity & Gravitational Symmetry'}"
-sourceReference: "${selectedCompany.name} (${selectedCompany.domain})"
+archetype: "${selectedCompany?.dna?.archetype || 'Engineered Calm, Monastic Purity & Gravitational Symmetry'}"
+sourceReference: "${selectedCompany?.name || 'Google Antigravity'} (${selectedCompany?.domain || 'antigravity.google'})"
 clientContext:
   businessSector: "${activeNiche.name}"
   clientProject: "${activeNiche.context}"
@@ -451,11 +507,11 @@ colors:
   primary: "${customPrimaryColor}"
   secondary: "#5F6368"
   tertiary: "${customPrimaryColor}"
-  neutral: "${selectedCompany.colors.neutral || '#FAF9F6'}"
+  neutral: "${selectedCompany?.colors?.neutral || '#FAF9F6'}"
   surface: "#FFFFFF"
-  border: "${selectedCompany.colors.border || '#E8EAED'}"
+  border: "${selectedCompany?.colors?.border || '#E8EAED'}"
 typography:
-  fontFamily: "${selectedCompany.typography.fontFamily || 'Google Sans, Inter, sans-serif'}"
+  fontFamily: "${selectedCompany?.typography?.fontFamily || 'Google Sans, Inter, sans-serif'}"
   h1:
     fontSize: "${selectedCompanyId === 'google-antigravity' ? '4rem' : '3.5rem'}"
     letterSpacing: "${selectedCompanyId === 'google-antigravity' ? '-0.035em' : '-0.02em'}"
@@ -464,20 +520,20 @@ rounded:
   full: 9999px
 ---
 
-# Design System: ${customClientName} (Inspirado em ${selectedCompany.name})
+# Design System: ${customClientName} (Inspirado em ${selectedCompany?.name || 'Google Antigravity'})
 
 ## 1. Visual Archetype & Creative Philosophy
-- **Arquétipo Herdado:** ${selectedCompany.dna?.archetype || 'Engineered Calm, Monastic Purity & Gravitational Symmetry'}
-- **Atmosfera Visual:** ${selectedCompany.dna?.visualAtmosphere || 'Calmaria arquitetônica, respiros generosos e pureza geométrica.'}
-- **Adaptação para o Nicho:** O projeto ${customClientName} preserva a integridade de layout e os blueprints de ${selectedCompany.name}, aplicando a cor primária ${customPrimaryColor} de forma cirúrgica.
+- **Arquétipo Herdado:** ${selectedCompany?.dna?.archetype || 'Engineered Calm, Monastic Purity & Gravitational Symmetry'}
+- **Atmosfera Visual:** ${selectedCompany?.dna?.visualAtmosphere || 'Calmaria arquitetônica, respiros generosos e pureza geométrica.'}
+- **Adaptação para o Nicho:** O projeto ${customClientName} preserva a integridade de layout e os blueprints de ${selectedCompany?.name || 'Google Antigravity'}, aplicando a cor primária ${customPrimaryColor} de forma cirúrgica.
 
 ## 2. Spatial Rhythm & Layout Density
-- **Densidade:** ${selectedCompany.dna?.spatialRhythm?.density?.toUpperCase() || 'SPRAWLING'}
-- **Estratégia de Espaçamento:** ${selectedCompany.dna?.spatialRhythm?.whitespaceStrategy || 'Margens de 100px a 120px para respiro e foco absoluto.'}
-- **Largura Máxima:** ${selectedCompany.dna?.spatialRhythm?.containerMaxWidth || '1440px'}
+- **Densidade:** ${selectedCompany?.dna?.spatialRhythm?.density?.toUpperCase() || 'SPRAWLING'}
+- **Estratégia de Espaçamento:** ${selectedCompany?.dna?.spatialRhythm?.whitespaceStrategy || 'Margens de 100px a 120px para respiro e foco absoluto.'}
+- **Largura Máxima:** ${selectedCompany?.dna?.spatialRhythm?.containerMaxWidth || '1440px'}
 
 ## 3. Section Blueprints (Layout Topology Garantido)
-${selectedCompany.dna?.sectionBlueprints?.map((s, idx) => `
+${selectedCompany?.dna?.sectionBlueprints?.map((s, idx) => `
 ### ${idx + 1}. ${s.name}
 - **Padrão de Layout:** ${s.layoutType}
 - **Densidade Visual:** ${s.density}
@@ -487,10 +543,10 @@ ${selectedCompany.dna?.sectionBlueprints?.map((s, idx) => `
 
 ## 4. Design Invariants (Regras Rígidas)
 ### SEMPRE:
-${selectedCompany.dna?.invariants?.always?.map(a => `- ${a}`).join('\n') || '- Manter coerência de raio de curvatura.\n- Garantir contraste WCAG AA.'}
+${selectedCompany?.dna?.invariants?.always?.map(a => `- ${a}`).join('\n') || '- Manter coerência de raio de curvatura.\n- Garantir contraste WCAG AA.'}
 
 ### NUNCA:
-${selectedCompany.dna?.invariants?.never?.map(n => `- ${n}`).join('\n') || '- Nunca usar split-screen no Hero se o arquétipo for centralizado.\n- Nunca usar cantos afiados de 0px.'}
+${selectedCompany?.dna?.invariants?.never?.map(n => `- ${n}`).join('\n') || '- Nunca usar split-screen no Hero se o arquétipo for centralizado.\n- Nunca usar cantos afiados de 0px.'}
 `;
 
   // Generated React Component Code
@@ -498,7 +554,7 @@ ${selectedCompany.dna?.invariants?.never?.map(n => `- ${n}`).join('\n') || '- Nu
 
 export default function ${customClientName.replace(/\s+/g, '')}LandingPage() {
   return (
-    <div className="min-h-screen bg-[${selectedCompany.colors.neutral || '#FAF9F6'}] text-[#121317] font-sans antialiased">
+    <div className="min-h-screen bg-[${selectedCompany?.colors?.neutral || '#FAF9F6'}] text-[#121317] font-sans antialiased">
       {/* 1. Header / Navbar */}
       <nav className="border-b border-[#E8EAED] bg-white/90 backdrop-blur-md px-6 py-4 flex justify-between items-center">
         <div className="font-bold text-lg">${customClientName}</div>
@@ -892,7 +948,7 @@ export default function ${customClientName.replace(/\s+/g, '')}LandingPage() {
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 text-[11px]">
-                  <span>Arquétipo: <strong>{selectedCompany.name}</strong></span>
+                  <span>Arquétipo: <strong>{selectedCompany?.name || 'Google Antigravity'}</strong></span>
                   <span>•</span>
                   <span style={{ color: customPrimaryColor }} className="font-bold">
                     {customPrimaryColor}
@@ -1224,7 +1280,7 @@ export default function ${customClientName.replace(/\s+/g, '')}LandingPage() {
                   DESIGN.MD Canônico Gerado para {customClientName}
                 </h3>
                 <p className="text-xs text-[#5F6368] font-mono">
-                  Documento com Blueprints de Seções, Topologia e Invariantes extraídos de {selectedCompany.name}
+                  Documento com Blueprints de Seções, Topologia e Invariantes extraídos de {selectedCompany?.name || 'Google Antigravity'}
                 </p>
               </div>
               <button
