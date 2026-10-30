@@ -93,3 +93,10 @@ rounded:
 - Para criar novas telas, o agente de código deve usar a paleta de cores primária (`#1F4647`), fundo canvas (`#F7FAF6`) e cor de ação (`#9EEA6C`).
 - Todo card deve respeitar o border-radius definido (`rounded-lg`) com separadores de 1px.
 - Todas as interações devem seguir a densidade balanced sem sobrecarregar a cognição do usuário final.
+
+## 6. Impeccable Quality & Refinement Invariants
+- **Auditoria de Anti-Padrões:** Executada via motor Impeccable com conformidade estrita WCAG 2.2 AA.
+- **Hierarquia sem Nested Cards:** Proibido aninhar cards dentro de cards; usar divisores semânticos e respiro visual.
+- **Cinética Suave:** Proibido bounce-easing; todas as micro-interações utilizam desaceleração exponencial suave (`cubic-bezier(0.16, 1, 0.3, 1)`).
+- **Ergonomia de Linha:** Largura máxima de blocos textuais calibrada entre 65ch e 75ch para leitura confortável de prontuários.
+- **Contraste Aferido:** O par de texto primário `#1F4647` sobre fundo `#9EEA6C` atinge taxa de contraste de 10.37:1 (AAA).

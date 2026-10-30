@@ -99,6 +99,7 @@ export interface Company {
   lastUpdated: string;
   verifiedStandard: boolean;
   dna?: DesignDna;
+  impeccableAudit?: any;
   metrics: {
     contrastScore: string;
     tokenCount: number;

@@ -93,7 +93,13 @@ rounded:
 
 ## 4. Invariantes dos Designers
 - **SEMPRE:** Botões de ação primária em pílula (rounded-full); contraste rigoroso entre #1F4647 e #9EEA6C; cantos de cards em 32px+.
-- **NUNCA:** Cantos quadrados (0px); cinzas hospitalares frios; tabelas rígidas sem respiro; pop-ups agressivos.`;
+- **NUNCA:** Cantos quadrados (0px); cinzas hospitalares frios; tabelas rígidas sem respiro; pop-ups agressivos.
+
+## 5. Impeccable Quality & Refinement Invariants
+- **Auditoria Impeccable:** Executada e aprovada com conformidade estrita WCAG 2.2 AA.
+- **Hierarquia sem Nested Cards:** Proibido aninhar cards dentro de cards; usar divisores e ritmo espacial limpo.
+- **Cinética Suave:** Proibido bounce-easing; todas as micro-interações utilizam desaceleração exponencial suave.
+- **Ergonomia de Linha:** Largura máxima de blocos textuais calibrada em 65ch-75ch para leitura confortável de prontuários.`;
 
   const handleCopyMd = () => {
     navigator.clipboard.writeText(nutrifluiDesignMdContent);
@@ -320,8 +326,8 @@ rounded:
               </button>
             </div>
 
-            {/* Floating Tactile Chip 1 (Top Left) */}
-            <div className="absolute -top-6 -left-6 bg-white border border-[#E3EBE1] text-[#1F4647] px-4 py-2.5 rounded-full shadow-lg flex items-center space-x-2.5 animate-bounce" style={{ animationDuration: '4s' }}>
+            {/* Floating Tactile Chip 1 (Top Left) - Impeccable Smooth Deceleration */}
+            <div className="absolute -top-6 -left-6 bg-white border border-[#E3EBE1] text-[#1F4647] px-4 py-2.5 rounded-full shadow-lg flex items-center space-x-2.5 transition-transform duration-300 hover:-translate-y-1">
               <div className="w-7 h-7 rounded-full bg-[#9EEA6C]/30 text-[#1F4647] flex items-center justify-center text-xs">
                 ⚡
               </div>

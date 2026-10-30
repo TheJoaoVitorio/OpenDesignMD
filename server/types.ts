@@ -93,6 +93,7 @@ export interface Company {
   extractedAt?: string;
   wcagContrast?: WCAGContrastReport;
   dna?: DesignDna;
+  impeccableAudit?: any;
 }
 
 export type AIProviderType = "gemini" | "openai" | "claude" | "local" | "heuristic";

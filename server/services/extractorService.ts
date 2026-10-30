@@ -1,6 +1,7 @@
 import { Company, DesignTokens, ExtractionResponse, WCAGContrastReport } from "../types.js";
 import { companiesStore } from "../data/companiesStore.js";
 import { aiService } from "./aiService.js";
+import { impeccableService } from "./impeccableService.js";
 import puppeteer from "puppeteer-core";
 import fs from "fs";
 import path from "path";
@@ -526,6 +527,14 @@ export class ExtractorService {
       },
     };
 
+    // 7.5 Impeccable Quality & Anti-Pattern Refinement Gate
+    let impeccableAudit: any = null;
+    try {
+      impeccableAudit = await impeccableService.auditTarget(normalizedUrl);
+    } catch (e) {
+      console.warn("[ExtractorService] Impeccable audit fallback:", e);
+    }
+
     // 8. Synthesize Canonical Google Labs DESIGN.MD
     const canonicalDesignMd = this.synthesizeCanonicalDesignMd({
       name: brandName,
@@ -546,6 +555,7 @@ export class ExtractorService {
       spacing,
       rounded,
       wcagReport,
+      impeccableAudit,
     });
 
     const company: Company = {
@@ -575,6 +585,7 @@ export class ExtractorService {
       verified: true,
       extractedAt: new Date().toISOString(),
       wcagContrast: wcagReport,
+      impeccableAudit,
     };
 
     // Analyze and enrich with Design DNA (Archetype, Blueprints, Invariants)
@@ -646,8 +657,15 @@ export class ExtractorService {
     spacing: any;
     rounded: any;
     wcagReport: WCAGContrastReport;
+    impeccableAudit?: any;
   }): string {
-    const { name, domain, description, colors, typography, spacing, rounded, wcagReport } = params;
+    const { name, domain, description, colors, typography, spacing, rounded, wcagReport, impeccableAudit } = params;
+
+    const impeccableSection = impeccableAudit && impeccableAudit.refinementsApplied?.length > 0
+      ? `\n\n## Impeccable Quality & Refinement Invariants
+- **Auditoria de Anti-Padrões:** Executada via motor Impeccable (${impeccableAudit.warningsCount} alertas, ${impeccableAudit.advisoriesCount} orientações).
+${impeccableAudit.refinementsApplied.map((r: string) => `- ${r}`).join('\n')}`
+      : "";
 
     return `---
 name: ${name}
@@ -738,7 +756,7 @@ Este sistema de design foi extraído e sintetizado a partir de **${name}** (\`${
 
 ### Don'ts:
 - Nunca misture famílias tipográficas externas sem declaração no token.
-- Nunca aplique estilos ad-hoc fora da especificação do DESIGN.MD.`;
+- Nunca aplique estilos ad-hoc fora da especificação do DESIGN.MD.${impeccableSection}`;
   }
 }
 
