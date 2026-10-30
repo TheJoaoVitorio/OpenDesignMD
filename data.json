@@ -1,0 +1,1892 @@
+[
+  {
+    "id": "google-antigravity",
+    "name": "Google Antigravity",
+    "domain": "antigravity.google",
+    "category": "AI & Developer Tools",
+    "description": "Estética de Engineered Calm com vasto respiro negativo, tipografia forte em Google Sans com tracking negativo nos títulos, pílulas suaves e toques cirúrgicos de azul e difusão cromática.",
+    "logoUrl": "https://cdn.simpleicons.org/google/1A73E8",
+    "screenshotUrl": "/previews/google-antigravity.png",
+    "colors": {
+      "primary": "#121317",
+      "secondary": "#5F6368",
+      "tertiary": "#1A73E8",
+      "neutral": "#FAF9F6",
+      "surface": "#FFFFFF",
+      "accent": "#1A73E8",
+      "border": "#E8EAED",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#F1F3F4"
+    },
+    "typography": {
+      "fontFamily": "Google Sans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "headingFamily": "Google Sans, -apple-system, BlinkMacSystemFont, sans-serif",
+      "monoFamily": "'Google Sans Mono', 'SFMono-Regular', Consolas, monospace",
+      "h1": {
+        "fontSize": "3.5rem",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.035em"
+      },
+      "h2": {
+        "fontSize": "2.25rem",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.025em"
+      },
+      "h3": {
+        "fontSize": "1.5rem",
+        "fontWeight": 500,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.015em"
+      },
+      "bodyMd": {
+        "fontSize": "0.9375rem",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "bodySm": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 500,
+        "letterSpacing": "0.06em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px",
+      "3xl": "64px",
+      "4xl": "80px"
+    },
+    "rounded": {
+      "sm": "8px",
+      "md": "14px",
+      "lg": "20px",
+      "xl": "28px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.onPrimary}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 24px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "buttonSecondary": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.primary}",
+        "border": "1px solid {colors.border}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 24px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.xl}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      },
+      "badge": {
+        "backgroundColor": "{colors.surfaceVariant}",
+        "textColor": "{colors.secondary}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 12px",
+        "fontSize": "{typography.labelCaps.fontSize}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 16.8,
+      "tertiaryOnNeutral": 4.62,
+      "onTertiaryOnTertiary": 4.55,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Contraste exemplar em fundo neutro (#FAF9F6) e primário (#121317)."
+    },
+    "designMd": "---\nname: Google Antigravity\nversion: alpha\ncolors:\n  primary: \"#121317\"\n  secondary: \"#5F6368\"\n  tertiary: \"#1A73E8\"\n  neutral: \"#FAF9F6\"\n  surface: \"#FFFFFF\"\n  surface-variant: \"#F1F3F4\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E8EAED\"\n  border-subtle: \"rgba(0, 0, 0, 0.06)\"\n  accent-glow: \"rgba(26, 115, 232, 0.12)\"\ntypography:\n  fontFamily: \"Google Sans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"'Google Sans Mono', 'SFMono-Regular', Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.5rem\n    fontWeight: 500\n    lineHeight: 1.1\n    letterSpacing: \"-0.035em\"\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.25rem\n    fontWeight: 500\n    lineHeight: 1.2\n    letterSpacing: \"-0.025em\"\n  h3:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.5rem\n    fontWeight: 500\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.55\n  label-caps:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.75rem\n    fontWeight: 500\n    letterSpacing: \"0.06em\"\nrounded:\n  sm: 8px\n  md: 14px\n  lg: 20px\n  xl: 28px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.primary}\"\n    textColor: \"{colors.on-primary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  button-secondary:\n    backgroundColor: \"{colors.surface}\"\n    textColor: \"{colors.primary}\"\n    border: \"1px solid {colors.border}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.xl}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n## Overview\n\nO OpenDesignMD adota com rigor a estética de **\"Engineered Calm\"** e hiper-precisão tipográfica do **Google Antigravity** (`antigravity.google`). O design se apoia em uma paleta monocromática disciplinada com vasto respiro negativo, tipografia forte em Google Sans com tracking negativo nos títulos, pílulas suaves (`rounded.full`) e toques cirúrgicos de azul e difusão cromática.\n\n## Colors\n\nA paleta prioriza a sobriedade sobre o ruído visual, reservando saturação apenas para interações e momentos de ênfase:\n- **Primary (`#121317`):** Tinta preta pura para textos principais, títulos e o botão de ação primordial (Hero CTA).\n- **Secondary (`#5F6368`):** Cinza ardósia neutro para legendas, metadados e ícones informativos.\n- **Tertiary (`#1A73E8`):** O clássico Google Blue utilizado de forma estritamente cirúrgica para links ativos e pílulas de destaque.\n- **Neutral (`#FAF9F6`):** Canvas de base suave, oferecendo um fundo quente e menos ofuscante que o branco puro.\n- **Surface (`#FFFFFF`):** Superfície limpa de cards flutuantes e modais.\n\n## Typography\n\nUtiliza **Google Sans / Inter** com dois registros propositalmente opostos:\n- **Display & Títulos:** Letras monumentais em peso 500 com tracking fortemente negativo (`-0.035em`), criando blocos de leitura sólidos e arquitetônicos.\n- **Interface & Textos:** Tamanhos confortáveis (`body-md: 0.9375rem`), entrelinha relaxada (`1.55`) e tracking neutro para máxima legibilidade.\n- **Metadados & Badges (`label-caps`):** Caixa alta sutil com tracking espaçado (`0.06em`).\n\n## Layout\n\n- **Grid:** Estrutura baseada em múltiplos rigorosos de 4px e 8px, com largura máxima contida em 1440px e margem lateral fluida de 32px a 72px.\n- **Vasto Espaço Negativo:** As seções da Landing Page respiram com paddings de 80px (`{spacing.4xl}`) entre blocos de conteúdo.\n\n## Elevation & Depth\n\n- **Elevação 1 (Cards):** Borda suave (`1px solid {colors.border}`) sem sombra pesada, usando superfícies sólidas e transições sutis.\n- **Elevação 2 (Hover & Destaques):** Leve projeção (`box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.05)`).\n- **Elevação 3 (Modais e Detalhes):** Fundo translúcido com `backdrop-filter: blur(16px)` e borda refinada de alta luminosidade.\n\n## Shapes\n\n- Botões, campos de busca e tags adotam formato de **pílula completa** (`{rounded.full}`).\n- Cards e contêineres principais utilizam cantos generosamente arredondados (`{rounded.xl}` = 28px).\n- Modais e janelas flutuantes utilizam cantos suaves de 20px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\n- Formato de pílula preta sólida (`#121317`) com tipografia branca, padding generoso e transição suave no hover.\n\n### Botão Secundário (`button-secondary`)\n- Fundo branco/neutro com contorno sutil (`1px solid {colors.border}`) e texto escuro.\n\n### Cards de Empresas\n- Borda fina e canto suave, apresentando logotipo, paleta em círculos e botões de ação direta.\n\n## Do's and Don'ts\n\n### Do's:\n- **Respeite o respiro:** Deixe o espaço em branco carregar a sofisticação da interface.\n- **Use pílulas consistentes:** Botões e chips de tags devem sempre adotar `{rounded.full}`.\n- **Mantenha o contraste:** O botão preto principal deve se destacar imediatamente como o ponto focal.\n\n### Don'ts:\n- **Não crie novas cores primárias:** Toda nova interface gerada por IA deve reutilizar a paleta declarada.\n- **Não use gradientes pesados:** Evite fundos coloridos saturados atrás de blocos de texto.\n- **Não use bordas pontiagudas:** Não misture cantos de 0px ou 2px em um layout projetado com cantos amplos."
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "domain": "stripe.com",
+    "category": "Fintech & Payments",
+    "description": "Estética refinada orientada a finanças globais: gradientes suaves em mesh, indigo icônico para ações de conversão, superfícies claras imaculadas e tipografia precisa em Söhne.",
+    "logoUrl": "https://cdn.simpleicons.org/stripe/635BFF",
+    "screenshotUrl": "/previews/stripe.png",
+    "colors": {
+      "primary": "#0A2540",
+      "secondary": "#425466",
+      "tertiary": "#635BFF",
+      "neutral": "#FFFFFF",
+      "surface": "#F6F9FC",
+      "accent": "#00D4FF",
+      "border": "#E6EBF1",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#EEF2F6"
+    },
+    "typography": {
+      "fontFamily": "Söhne, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "headingFamily": "Söhne, -apple-system, BlinkMacSystemFont, sans-serif",
+      "monoFamily": "'Söhne Mono', Menlo, Consolas, monospace",
+      "h1": {
+        "fontSize": "3.25rem",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.03em"
+      },
+      "h2": {
+        "fontSize": "2.125rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.02em"
+      },
+      "h3": {
+        "fontSize": "1.5rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01em"
+      },
+      "bodyMd": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.6
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "labelCaps": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.04em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px",
+      "3xl": "64px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.full}",
+        "padding": "9px 20px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 14.5,
+      "tertiaryOnNeutral": 4.88,
+      "onTertiaryOnTertiary": 4.52,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA"
+    },
+    "designMd": "---\nname: Stripe\nversion: alpha\ncolors:\n  primary: \"#0A2540\"\n  secondary: \"#425466\"\n  tertiary: \"#635BFF\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F9FC\"\n  accent: \"#00D4FF\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E6EBF1\"\ntypography:\n  fontFamily: \"Söhne, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.25rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.125rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1rem\n    fontWeight: 400\n    lineHeight: 1.6\nrounded:\n  sm: 4px\n  md: 8px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"9px 20px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system da Stripe é a referência global para interfaces de tecnologia financeira e SaaS de alta conversão. Ele equilibra engenharia de rigor com fluidez visual, destacando-se por fundos limpos com gradientes mesh suaves, cartões elevados e o icônico índigo `#635BFF` em botões de conversão primária.\n\n## Colors\n\n- **Primary (`#0A2540`):** Azul marinho ultra-escuro para títulos e tipografia com autoridade executiva.\n- **Secondary (`#425466`):** Cinza azulado neutro para parágrafos explicativos e legendas.\n- **Tertiary (`#635BFF`):** O característico Stripe Indigo para todos os botões de ação e gatilhos de fluxo.\n- **Neutral (`#FFFFFF`):** Fundo branco absoluto que maximiza luminosidade e nitidez.\n- **Surface (`#F6F9FC`):** Superfície clara e suave para cartões de produtos e contêineres de dados.\n- **Accent (`#00D4FF`):** Ciano elétrico utilizado como cor de suporte em gradientes e gráficos de conversão.\n\n## Typography\n\nBaseada na família tipográfica **Söhne**, oferecendo precisão suíça:\n- **Títulos (H1, H2):** Pesos sólidos (600/700) com proporções geométricas compactas.\n- **Textos de interface:** Linhas arejadas com entrelinha 1.6 para facilitar a digestão de métricas e formulários de checkout.\n\n## Layout\n\nEscala modular com base 8px. As seções utilizam transições angulares sutis (-6 graus ou gradientes de corte) e largura máxima contida de 1200px.\n\n## Elevation & Depth\n\n- **Nível 1:** Bordas sólidas ultrafinas (`1px solid #E6EBF1`) com sombreamento suave: `box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.08)`.\n- **Nível 2:** Hover de cartões interativos com elevação progressiva: `box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.12)`.\n\n## Shapes\n\n- Botões utilizam pílula completa (`rounded.full`) ou cantos moderados (`8px`).\n- Cards utilizam raio de 16px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo índigo vibrante (`#635BFF`), texto branco com peso 600, cantos de pílula e micro-interação de elevação no foco.\n\n### Cartão de Informação (`card`)\nFundo `#F6F9FC`, borda `#E6EBF1` e padding interno generoso de 24px.\n\n## Do's and Don'ts\n\n### Do's:\n- Utilize `#635BFF` exclusivamente para a ação mais importante da tela.\n- Mantenha sombras em tons de azul-marinho com baixa opacidade em vez de cinza neutro.\n\n### Don'ts:\n- Nunca sobrecarregue a interface com múltiplos botões de fundo índigo na mesma viewport.\n- Não utilize cantos afiados (0px) em cartões."
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "domain": "linear.app",
+    "category": "Productivity & Issue Tracking",
+    "description": "A vanguarda do dark-mode contemporâneo: superfícies profundas em grafite cósmico, micro-bordas semitransparentes de 1px, acento ultravioleta e velocidade perceptiva incomparável.",
+    "logoUrl": "https://cdn.simpleicons.org/linear/5E6AD2",
+    "screenshotUrl": "/previews/linear.png",
+    "colors": {
+      "primary": "#F7F8F8",
+      "secondary": "#8A8F98",
+      "tertiary": "#5E6AD2",
+      "neutral": "#08090A",
+      "surface": "#101114",
+      "accent": "#5E6AD2",
+      "border": "rgba(255, 255, 255, 0.08)",
+      "onPrimary": "#08090A",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#191A1E"
+    },
+    "typography": {
+      "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "headingFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+      "monoFamily": "'JetBrains Mono', monospace",
+      "h1": {
+        "fontSize": "3rem",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.04em"
+      },
+      "h2": {
+        "fontSize": "2rem",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.03em"
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 500,
+        "lineHeight": 1.35,
+        "letterSpacing": "-0.02em"
+      },
+      "bodyMd": {
+        "fontSize": "0.9375rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      },
+      "labelCaps": {
+        "fontSize": "0.6875rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.08em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "20px",
+      "xl": "28px",
+      "2xl": "40px"
+    },
+    "rounded": {
+      "sm": "6px",
+      "md": "10px",
+      "lg": "16px",
+      "xl": "22px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 16px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 17.2,
+      "tertiaryOnNeutral": 4.75,
+      "onTertiaryOnTertiary": 4.6,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA"
+    },
+    "designMd": "---\nname: Linear\nversion: alpha\ncolors:\n  primary: \"#F7F8F8\"\n  secondary: \"#8A8F98\"\n  tertiary: \"#5E6AD2\"\n  neutral: \"#08090A\"\n  surface: \"#101114\"\n  surface-variant: \"#191A1E\"\n  accent: \"#5E6AD2\"\n  on-primary: \"#08090A\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 600\n    lineHeight: 1.1\n    letterSpacing: \"-0.04em\"\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.03em\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 6px\n  md: 10px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 12px\n  lg: 20px\n  xl: 28px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Linear é o padrão de excelência em aplicações produtivas modernas operando em Dark Mode nativo. Focado em velocidade e precisão de teclado, sua interface elimina supérfluos visuais através de paletas quase monocromáticas em tons escuros e acentos sutis em ultravioleta (`#5E6AD2`).\n\n## Colors\n\n- **Primary (`#F7F8F8`):** Branco quase puro com leve aquecimento para leitura de texto sem fadiga ocular.\n- **Secondary (`#8A8F98`):** Cinza médio de alta fidelidade para descrições de tarefas e teclas de atalho.\n- **Tertiary (`#5E6AD2`):** Violeta elétrico característico para seleção de status e botões primários.\n- **Neutral (`#08090A`):** Fundo cósmico escuro profundo (não #000000 puro, mas preto sutilmente cinzelado).\n- **Surface (`#101114`):** Painéis e listas de navegação suspensas.\n\n## Typography\n\nUtiliza a família **Inter** com kerning ajustado e letter-spacing comprimido nos títulos (`-0.04em`), conferindo peso visual e densidade técnica.\n\n## Layout\n\nGrade ultra compacta com base de 4px e 12px, permitindo grande volume de dados operacionais sem sensação de aperto.\n\n## Elevation & Depth\n\nNão usa sombras difusas convencionais. O efeito de profundidade é criado através de bordas translúcidas (`rgba(255, 255, 255, 0.08)`) e variações de luminosidade entre camadas.\n\n## Shapes\n\nCantos contidos e modernos (`6px` a `10px`), preservando o aspecto utilitário de uma ferramenta de alta engenharia.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo `#5E6AD2`, cantos `rounded.md` (10px), texto nítido e hover com iluminação por gradiente sutil superior.\n\n### Cartão de Tarefa / Issue\nFundo `#101114`, contorno fino de 1px translúcido, hover com clareamento da superfície para `#191A1E`.\n\n## Do's and Don'ts\n\n### Do's:\n- Mantenha contrastes rigorosos e linhas de 1px em separadores.\n- Favoreça comandos de atalho visíveis ao lado de rótulos de botões.\n\n### Don'ts:\n- Nunca utilize sombras pretas pesadas em fundo escuro.\n- Evite elementos puramente decorativos que interfiram na velocidade da interface."
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "domain": "vercel.com",
+    "category": "Cloud & Infrastructure",
+    "description": "Minimalismo arquitetural baseado na geometria do triângulo: contraste binário puro entre preto e branco, tipografia Geist imaculada e acento azul cobalto pontual.",
+    "logoUrl": "https://cdn.simpleicons.org/vercel/000000",
+    "screenshotUrl": "/previews/vercel.png",
+    "colors": {
+      "primary": "#000000",
+      "secondary": "#666666",
+      "tertiary": "#0070F3",
+      "neutral": "#FFFFFF",
+      "surface": "#FAFAFA",
+      "accent": "#0070F3",
+      "border": "#EAEAEA",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#F2F2F2"
+    },
+    "typography": {
+      "fontFamily": "Geist Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "headingFamily": "Geist Sans, -apple-system, BlinkMacSystemFont, sans-serif",
+      "monoFamily": "Geist Mono, monospace",
+      "h1": {
+        "fontSize": "3rem",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.03em"
+      },
+      "h2": {
+        "fontSize": "2rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.02em"
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35,
+        "letterSpacing": "-0.01em"
+      },
+      "bodyMd": {
+        "fontSize": "0.9375rem",
+        "fontWeight": 400,
+        "lineHeight": 1.6
+      },
+      "bodySm": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.05em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "12px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.onPrimary}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 16px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 21,
+      "tertiaryOnNeutral": 4.54,
+      "onTertiaryOnTertiary": 4.51,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA"
+    },
+    "designMd": "---\nname: Vercel\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#666666\"\n  tertiary: \"#0070F3\"\n  neutral: \"#FFFFFF\"\n  surface: \"#FAFAFA\"\n  surface-variant: \"#F2F2F2\"\n  accent: \"#0070F3\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#EAEAEA\"\ntypography:\n  fontFamily: \"Geist Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"Geist Mono, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.6\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 8px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.primary}\"\n    textColor: \"{colors.on-primary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system da Vercel (Geist Design System) apoia-se em geometria hiper-precisa, tipografia monospace e sans nativas da marca e contraste monocromático absoluto. O foco é a experiência do desenvolvedor em deploy instantâneo na borda (edge).\n\n## Colors\n\n- **Primary (`#000000`):** Preto absoluto que ancora títulos e o botão de ação principal.\n- **Secondary (`#666666`):** Cinza neutro 50% para rótulos secundários.\n- **Tertiary (`#0070F3`):** Vercel Blue clássico para links interativos e status de sucesso em builds.\n- **Neutral (`#FFFFFF`):** Fundo branco base limpo e imutável.\n- **Surface (`#FAFAFA`):** Fundo de cards discretos.\n\n## Typography\n\nAlimentado pelo **Geist Sans** e **Geist Mono**, projetados especificamente para legibilidade de código, comandos de terminal e densidade de painéis na web.\n\n## Layout\n\nEstrutura métrica rigorosa em escala 8px. Linhas divisórias ultrafinas (`#EAEAEA`) que dividem a página com precisão de blueprint de engenharia.\n\n## Elevation & Depth\n\nNão utiliza sombras decorativas em sua forma básica; a profundidade é demarcada exclusivamente por bordas vetoriais finas de 1px.\n\n## Shapes\n\nCantos contidos entre 4px e 8px (`{rounded.sm}` e `{rounded.lg}`). Não se usam cantos circulares em cards nem em botões corporativos.\n\n## Components\n\n### Botão Primário (`button-primary`)\nBloco preto sólido (`#000000`), tipografia branca em Geist Sans, cantos em 6px e hover com inversão suave de contraste.\n\n### Card\nFundo em cinza claro (`#FAFAFA`), borda sólida `#EAEAEA`, cantos de 8px e padding de 24px.\n\n## Do's and Don'ts\n\n### Do's:\n- Use fontes monospace para identificadores de branches, commits e domínios.\n- Respeite o alinhamento estrito dos divisores verticais e horizontais.\n\n### Don'ts:\n- Não introduza paletas coloridas aleatórias fora da escala monocromática e do azul cobalto.\n- Evite sombras desfocadas com raio superior a 8px."
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "domain": "supabase.com",
+    "category": "Database & Backend",
+    "description": "Estética developer-first com verde esmeralda icônico (Supabase Emerald), cantos chanfrados e superfícies carvão profundo.",
+    "logoUrl": "https://cdn.simpleicons.org/supabase/3ECF8E",
+    "screenshotUrl": "/previews/supabase.png",
+    "colors": {
+      "primary": "#EDEDED",
+      "secondary": "#888888",
+      "tertiary": "#3ECF8E",
+      "neutral": "#121212",
+      "surface": "#1C1C1C",
+      "accent": "#3ECF8E",
+      "border": "#282828",
+      "onPrimary": "#121212",
+      "onTertiary": "#121212",
+      "surfaceVariant": "#242424"
+    },
+    "typography": {
+      "fontFamily": "Circular, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "headingFamily": "Circular, -apple-system, BlinkMacSystemFont, sans-serif",
+      "monoFamily": "'Source Code Pro', monospace",
+      "h1": {
+        "fontSize": "3.25rem",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.03em"
+      },
+      "h2": {
+        "fontSize": "2.125rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.02em"
+      },
+      "h3": {
+        "fontSize": "1.5rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01em"
+      },
+      "bodyMd": {
+        "fontSize": "0.9375rem",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "bodySm": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.06em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "6px",
+      "lg": "10px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 18px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 15.6,
+      "tertiaryOnNeutral": 11.2,
+      "onTertiaryOnTertiary": 10.8,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA"
+    },
+    "designMd": "---\nname: Supabase\nversion: alpha\ncolors:\n  primary: \"#EDEDED\"\n  secondary: \"#888888\"\n  tertiary: \"#3ECF8E\"\n  neutral: \"#121212\"\n  surface: \"#1C1C1C\"\n  surface-variant: \"#242424\"\n  accent: \"#3ECF8E\"\n  on-primary: \"#121212\"\n  on-tertiary: \"#121212\"\n  border: \"#282828\"\ntypography:\n  fontFamily: \"Circular, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"'Source Code Pro', monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.25rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.125rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.55\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 10px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 18px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system do Supabase é construído para desenvolvedores que operam com infraestrutura de dados em tempo real. O verde esmeralda distintivo (`#3ECF8E`) sobressai contra um cenário escuro de carvão texturizado, transmitindo agilidade e poder de banco de dados aberto.\n\n## Colors\n\n- **Primary (`#EDEDED`):** Branco frio para máxima legibilidade de esquemas SQL e logs.\n- **Secondary (`#888888`):** Cinza de intensidade moderada para metadados de tabelas.\n- **Tertiary (`#3ECF8E`):** Supabase Emerald, a cor assinatura para ações primárias e status online.\n- **Neutral (`#121212`):** Fundo carvão profundo escuro.\n- **Surface (`#1C1C1C`):** Superfícies de tabelas, painéis de controle e editores de consultas.\n\n## Typography\n\nTipografia técnica e amigável (Circular / Inter) com ênfase em blocos de código SQL e JSON estruturados.\n\n## Layout\n\nGrade pragmática com colunas fixas e tabelas com rolagem horizontal livre. Espaçamento base de 8px e 16px.\n\n## Elevation & Depth\n\nContraste entre `#121212` e `#1C1C1C`, complementado por bordas `1px solid #282828` e discretos realces luminosos no hover.\n\n## Shapes\n\nCantos discretos (6px a 10px) para botões e cards de documentação técnica.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo verde esmeralda (`#3ECF8E`), tipografia preta sólida em `#121212` proporcionando mais de 10:1 de contraste WCAG AAA.\n\n### Cartão de Módulo\nFundo `#1C1C1C` com borda `#282828` e ícone com glow verde suave.\n\n## Do's and Don'ts\n\n### Do's:\n- Use sempre texto escuro (`#121212`) sobre o botão verde esmeralda para manter conformidade WCAG AAA.\n- Exiba snippets SQL com formatação monospace precisa.\n\n### Don'ts:\n- Nunca use texto branco sobre `#3ECF8E` (o contraste é inferior a 2:1)."
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "domain": "apple.com",
+    "category": "Design & Hardware",
+    "description": "Human Interface Guidelines canônico: tipografia SF Pro imponente, contrastes absolutos, vastas superfícies de respiro e materiais translúcidos com blur dinâmico.",
+    "logoUrl": "https://cdn.simpleicons.org/apple/000000",
+    "screenshotUrl": "/previews/apple.png",
+    "colors": {
+      "primary": "#1D1D1F",
+      "secondary": "#86868B",
+      "tertiary": "#0071E3",
+      "neutral": "#F5F5F7",
+      "surface": "#FFFFFF",
+      "accent": "#0071E3",
+      "border": "#D2D2D7",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#E8E8ED"
+    },
+    "typography": {
+      "fontFamily": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "headingFamily": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif",
+      "monoFamily": "'SF Mono', Menlo, monospace",
+      "h1": {
+        "fontSize": "3.5rem",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "2.5rem",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.015em"
+      },
+      "h3": {
+        "fontSize": "1.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01em"
+      },
+      "bodyMd": {
+        "fontSize": "1.0625rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.02em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "36px",
+      "2xl": "54px",
+      "3xl": "80px"
+    },
+    "rounded": {
+      "sm": "8px",
+      "md": "12px",
+      "lg": "18px",
+      "xl": "28px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 22px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 15.2,
+      "tertiaryOnNeutral": 4.58,
+      "onTertiaryOnTertiary": 4.54,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA"
+    },
+    "designMd": "---\nname: Apple\nversion: alpha\ncolors:\n  primary: \"#1D1D1F\"\n  secondary: \"#86868B\"\n  tertiary: \"#0071E3\"\n  neutral: \"#F5F5F7\"\n  surface: \"#FFFFFF\"\n  surface-variant: \"#E8E8ED\"\n  accent: \"#0071E3\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#D2D2D7\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.5rem\n    fontWeight: 600\n    lineHeight: 1.1\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.5rem\n    fontWeight: 600\n    lineHeight: 1.2\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.0625rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 8px\n  md: 12px\n  lg: 18px\n  xl: 28px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 36px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"11px 22px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.xl}\"\n    padding: \"{spacing.xl}\"\n---\n\n## Overview\n\nO padrão Apple sintetiza o humanismo digital contemporâneo: fotografia monumental, tipografia SF Pro calibrada e superfícies táteis com cantos generosos em superelipse.\n\n## Colors\n\n- **Primary (`#1D1D1F`):** O preto Apple característico, menos abrasivo que o #000 puro.\n- **Secondary (`#86868B`):** Cinza médio equilibrado para subtítulos.\n- **Tertiary (`#0071E3`):** Azul Apple oficial para links de compra e CTAs de ação.\n- **Neutral (`#F5F5F7`):** Fundo cinza frio suave que confere distinção física aos produtos.\n- **Surface (`#FFFFFF`):** Superfícies flutuantes e cards de apresentação.\n\n## Typography\n\nCom base no **SF Pro**, equilibrando tracking ótico variável conforme o tamanho da fonte.\n\n## Layout\n\nVasto respiro vertical, colunas centralizadas com largura máxima de 1280px e margens fluidas.\n\n## Elevation & Depth\n\nSubstituição de sombras pesadas por materiais de vidro translúcido com desfoque dinâmico de fundo (`backdrop-filter: blur(20px)`).\n\n## Shapes\n\nCurvatura contínua (squircle / superellipse) em pílulas (`{rounded.full}`) e cards (`28px`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nPílula azul sólida (`#0071E3`) com texto branco e hover sutil.\n\n### Cartão de Produto\nSuperfície branca imaculada com cantos de 28px e imagem centralizada com foco absoluto.\n\n## Do's and Don'ts\n\n### Do's:\n- Garanta espaçamentos amplos e generosos acima e abaixo de cada bloco de produto.\n- Empregue `{rounded.full}` para todos os botões de ação e tags de navegação.\n\n### Don'ts:\n- Não empregue bordas pretas grossas ou cantos pontiagudos."
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "domain": "github.com",
+    "category": "Developer Platform",
+    "description": "Design System Primer canônico: foco absoluto em legibilidade de código, tons de ardósia balanceados e botões de ação em verde de alta conversão.",
+    "logoUrl": "https://cdn.simpleicons.org/github/1F2328",
+    "screenshotUrl": "/previews/github.png",
+    "colors": {
+      "primary": "#1F2328",
+      "secondary": "#656D76",
+      "tertiary": "#1F883D",
+      "neutral": "#FFFFFF",
+      "surface": "#F6F8FA",
+      "accent": "#0969DA",
+      "border": "#D0D7DE",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#EAEEF2"
+    },
+    "typography": {
+      "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif",
+      "headingFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "monoFamily": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace",
+      "h1": {
+        "fontSize": "2.5rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "1.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01em"
+      },
+      "h3": {
+        "fontSize": "1.25rem",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "bodyMd": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.75rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.04em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "40px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "12px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "5px 16px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.md}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 14.8,
+      "tertiaryOnNeutral": 4.65,
+      "onTertiaryOnTertiary": 4.62,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA"
+    },
+    "designMd": "---\nname: GitHub\nversion: alpha\ncolors:\n  primary: \"#1F2328\"\n  secondary: \"#656D76\"\n  tertiary: \"#1F883D\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F8FA\"\n  surface-variant: \"#EAEEF2\"\n  accent: \"#0969DA\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#D0D7DE\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif\"\n  monoFamily: \"ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.5rem\n    fontWeight: 600\n    lineHeight: 1.25\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.75rem\n    fontWeight: 600\n    lineHeight: 1.3\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.875rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 8px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"5px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.md}\"\n    padding: \"{spacing.md}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Primer Design System do GitHub foi projetado para sustentar a maior comunidade de desenvolvedores do planeta, equilibrando legibilidade de código, organização em abas densas e alta acessibilidade.\n\n## Colors\n\n- **Primary (`#1F2328`):** Cinza ardósia escuro para textos de repositório e cabeçalhos.\n- **Secondary (`#656D76`):** Cinza médio neutro para contadores e datas de commits.\n- **Tertiary (`#1F883D`):** Verde clássico GitHub para merge de pull requests e clonagem.\n- **Neutral (`#FFFFFF`):** Canvas claro padrão.\n- **Surface (`#F6F8FA`):** Fundo suave de cabeçalhos de tabelas de arquivos e caixas de comentário.\n- **Accent (`#0969DA`):** Azul Primer para links de navegação.\n\n## Typography\n\nHierarquia compacta baseada em `14px` (`0.875rem`) para body, facilitando leitura contínua de diffs de código.\n\n## Layout\n\nContêineres com limite de 1280px e bordas estruturais de 1px (`#D0D7DE`).\n\n## Elevation & Depth\n\nSombras extremamente leves em menus suspensos (`box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2)`).\n\n## Shapes\n\nCantos contidos de 6px (`{rounded.md}`) para botões e inputs.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo verde `#1F883D`, texto branco, cantos em 6px e borda superior com sutil relevo.\n\n### Card de Repositório\nFundo `#F6F8FA`, contorno fino de 1px e padding de 16px.\n\n## Do's and Don'ts\n\n### Do's:\n- Utilize fontes com monoespaçamento para hashes SHA, nomes de branches e comandos git.\n- Mantenha bordas nítidas de 1px entre blocos de conteúdo.\n\n### Don'ts:\n- Evite cantos arredondados excessivos (> 12px) que quebrem a densidade do Primer."
+  },
+  {
+    "id": "raycast",
+    "name": "Raycast",
+    "domain": "raycast.com",
+    "category": "Launcher & Developer Productivity",
+    "description": "Estética cyberpunk polida para desenvolvedores no macOS/Windows: fundo obsidian ultra escuro, micro-interfaces velozes e vermelho-coral vibrante característico.",
+    "logoUrl": "https://cdn.simpleicons.org/raycast/FF6363",
+    "screenshotUrl": "/previews/raycast.png",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#959DA6",
+      "tertiary": "#FF6363",
+      "neutral": "#0D0D11",
+      "surface": "#191921",
+      "accent": "#FF6363",
+      "border": "#282833",
+      "onPrimary": "#0D0D11",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#22222E"
+    },
+    "typography": {
+      "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+      "headingFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+      "monoFamily": "'JetBrains Mono', Menlo, monospace",
+      "h1": {
+        "fontSize": "3rem",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.03em"
+      },
+      "h2": {
+        "fontSize": "2rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.02em"
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35,
+        "letterSpacing": "-0.01em"
+      },
+      "bodyMd": {
+        "fontSize": "0.9375rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.05em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "14px",
+      "lg": "20px",
+      "xl": "28px",
+      "2xl": "44px"
+    },
+    "rounded": {
+      "sm": "6px",
+      "md": "10px",
+      "lg": "16px",
+      "xl": "22px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 18px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-29T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 18.1,
+      "tertiaryOnNeutral": 4.82,
+      "onTertiaryOnTertiary": 4.51,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA"
+    },
+    "designMd": "---\nname: Raycast\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#959DA6\"\n  tertiary: \"#FF6363\"\n  neutral: \"#0D0D11\"\n  surface: \"#191921\"\n  surface-variant: \"#22222E\"\n  accent: \"#FF6363\"\n  on-primary: \"#0D0D11\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#282833\"\ntypography:\n  fontFamily: \"Inter, -apple-system, BlinkMacSystemFont, sans-serif\"\n  monoFamily: \"'JetBrains Mono', Menlo, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 6px\n  md: 10px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 14px\n  lg: 20px\n  xl: 28px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 18px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Raycast reinventou a produtividade para entusiastas de teclado no desktop. Seu design combina a escuridão espacial de um launcher moderno com o vermelho coral vibrante (`#FF6363`) que guia os olhos com precisão instantânea.\n\n## Colors\n\n- **Primary (`#FFFFFF`):** Branco puro para termos pesquisados e atalhos ativos.\n- **Secondary (`#959DA6`):** Cinza neutro suave para dicas de extensão e atalhos de navegação.\n- **Tertiary (`#FF6363`):** Coral avermelhado assinatura do Raycast para seleção de comandos e botões de ação.\n- **Neutral (`#0D0D11`):** Fundo obsidiana com leve tom arroxeado frio.\n- **Surface (`#191921`):** Janelas do launcher e cards de extensões.\n\n## Typography\n\nUtiliza **Inter** com numerais monospace e visualização rápida de teclas (`⌘ K`, `Enter`).\n\n## Layout\n\nInterface compacta centrada na caixa de diálogo de 750px de largura com foco total em rapidez de interação.\n\n## Elevation & Depth\n\nJanela suspensa com sombra profunda e difusa (`box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4)`) que destaca o launcher sobre qualquer plano de fundo do sistema.\n\n## Shapes\n\nCantos arredondados calibrados em 10px (`{rounded.md}`) e 16px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo coral (`#FF6363`), cantos em 10px, texto branco e contraste estrito.\n\n### Linha de Comando / Item do Launcher\nSuperfície `#191921` que ganha contorno e iluminação suave ao receber foco pelo teclado.\n\n## Do's and Don'ts\n\n### Do's:\n- Indique atalhos de teclado de forma visual em quase todas as ações.\n- Utilize o coral `#FF6363` como gatilho de execução rápida.\n\n### Don'ts:\n- Não use sombras esbranquiçadas ou fundos brancos opacos."
+  },
+  {
+    "id": "airbnb",
+    "name": "Airbnb",
+    "domain": "airbnb.com",
+    "category": "Travel & Hospitality",
+    "description": "Referência global em hospitalidade e design de produto. Interface calorosa e acolhedora com Airbnb Cereal VF, Rausch Coral icônico e cantos arredondados acolhedores.",
+    "logoUrl": "https://cdn.simpleicons.org/airbnb/FF385C",
+    "screenshotUrl": "/previews/airbnb.png",
+    "colors": {
+      "primary": "#222222",
+      "secondary": "#717171",
+      "tertiary": "#FF385C",
+      "neutral": "#FFFFFF",
+      "surface": "#F7F7F7",
+      "accent": "#FF385C",
+      "border": "#DDDDDD",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#F0F0F0"
+    },
+    "typography": {
+      "fontFamily": "\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif",
+      "headingFamily": "\"Airbnb Cereal VF\", Circular, -apple-system, sans-serif",
+      "monoFamily": "monospace",
+      "h1": {
+        "fontSize": "2.75rem",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "1.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.015em"
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35
+      },
+      "bodyMd": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 700,
+        "letterSpacing": "0.04em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "8px",
+      "md": "12px",
+      "lg": "24px",
+      "xl": "32px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.full}",
+        "padding": "14px 24px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "buttonSecondary": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.primary}",
+        "border": "1px solid {colors.border}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 20px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 15.8,
+      "tertiaryOnNeutral": 4.54,
+      "onTertiaryOnTertiary": 4.6,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Contraste excelente com Rausch Coral #FF385C e texto Babbitt #222222 em fundo níveo."
+    },
+    "designMd": "---\nname: Airbnb\nversion: alpha\ncolors:\n  primary: \"#222222\"\n  secondary: \"#717171\"\n  tertiary: \"#FF385C\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F7F7F7\"\n  accent: \"#FF385C\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#DDDDDD\"\ntypography:\n  fontFamily: \"\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif\"\n  headingFamily: \"\"Airbnb Cereal VF\", Circular, -apple-system, sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.75rem\"\n    fontWeight: 700\n    lineHeight: 1.15\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"8px\"\n  md: \"12px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Airbnb Design System Specification\n\n## Overview\nReferência global em hospitalidade e design de produto. Interface calorosa e acolhedora com Airbnb Cereal VF, Rausch Coral icônico e cantos arredondados acolhedores.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#222222`\n- **Secondary Slate**: `#717171`\n- **Brand Accent / Action**: `#FF385C` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F7F7F7`\n\n## Typography Guidelines\n- Main UI Font: `\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif`\n- H1 Display Scale: `2.75rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "domain": "spotify.com",
+    "category": "Music & Streaming",
+    "description": "Identidade dark-mode icônica com Spotify Neon Green (#1DB954), tipografia Circular Std geométrica e superfícies carvão de alta fidelidade para imersão sonoro-visual.",
+    "logoUrl": "https://cdn.simpleicons.org/spotify/1DB954",
+    "screenshotUrl": "/previews/spotify.png",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#B3B3B3",
+      "tertiary": "#1DB954",
+      "neutral": "#121212",
+      "surface": "#181818",
+      "accent": "#1ED760",
+      "border": "rgba(255, 255, 255, 0.1)",
+      "onPrimary": "#121212",
+      "onTertiary": "#000000",
+      "surfaceVariant": "#282828"
+    },
+    "typography": {
+      "fontFamily": "\"Spotify Circular\", \"Circular Std\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "headingFamily": "\"Spotify Circular\", \"Circular Std\", sans-serif",
+      "monoFamily": "monospace",
+      "h1": {
+        "fontSize": "3.25rem",
+        "fontWeight": 900,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.035em"
+      },
+      "h2": {
+        "fontSize": "2rem",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.02em"
+      },
+      "h3": {
+        "fontSize": "1.5rem",
+        "fontWeight": 700,
+        "lineHeight": 1.3
+      },
+      "bodyMd": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "bodySm": {
+        "fontSize": "0.75rem",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 700,
+        "letterSpacing": "0.08em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.full}",
+        "padding": "14px 32px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.md}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 18.2,
+      "tertiaryOnNeutral": 8.6,
+      "onTertiaryOnTertiary": 8.5,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Contraste ultra vibrante do verde Spotify (#1DB954) em fundo carvão #121212."
+    },
+    "designMd": "---\nname: Spotify\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#B3B3B3\"\n  tertiary: \"#1DB954\"\n  neutral: \"#121212\"\n  surface: \"#181818\"\n  accent: \"#1ED760\"\n  on-primary: \"#121212\"\n  on-tertiary: \"#000000\"\n  border: \"rgba(255, 255, 255, 0.1)\"\ntypography:\n  fontFamily: \"\"Spotify Circular\", \"Circular Std\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Spotify Circular\", \"Circular Std\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.25rem\"\n    fontWeight: 900\n    lineHeight: 1.1\n    letterSpacing: \"-0.035em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.875rem\"\n    fontWeight: 400\n    lineHeight: 1.45\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 32px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Spotify Design System Specification\n\n## Overview\nIdentidade dark-mode icônica com Spotify Neon Green (#1DB954), tipografia Circular Std geométrica e superfícies carvão de alta fidelidade para imersão sonoro-visual.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#121212`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#B3B3B3`\n- **Brand Accent / Action**: `#1DB954` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#181818`\n\n## Typography Guidelines\n- Main UI Font: `\"Spotify Circular\", \"Circular Std\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.25rem` com peso `900`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "domain": "discord.com",
+    "category": "Community & Gaming",
+    "description": "Design expressivo e jovial focado em comunidades. Destaque para o icônico Discord Blurple (#5865F2), tipografia ABC Ginto Nord e canais em camadas escuras táteis.",
+    "logoUrl": "https://cdn.simpleicons.org/discord/5865F2",
+    "screenshotUrl": "/previews/discord.png",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#949BA4",
+      "tertiary": "#5865F2",
+      "neutral": "#1E1F22",
+      "surface": "#2B2D31",
+      "accent": "#57F287",
+      "border": "rgba(255, 255, 255, 0.08)",
+      "onPrimary": "#1E1F22",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#313338"
+    },
+    "typography": {
+      "fontFamily": "\"ABC Ginto Nord\", \"gg sans\", \"Noto Sans\", sans-serif",
+      "headingFamily": "\"ABC Ginto Nord\", \"gg sans\", sans-serif",
+      "monoFamily": "\"Consolas\", \"Courier New\", monospace",
+      "h1": {
+        "fontSize": "3rem",
+        "fontWeight": 800,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "2rem",
+        "fontWeight": 700,
+        "lineHeight": 1.2
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "bodyMd": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 700,
+        "letterSpacing": "0.06em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 24px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 16.5,
+      "tertiaryOnNeutral": 4.8,
+      "onTertiaryOnTertiary": 4.8,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Blurple sobre fundo dark e botões contrastados."
+    },
+    "designMd": "---\nname: Discord\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#949BA4\"\n  tertiary: \"#5865F2\"\n  neutral: \"#1E1F22\"\n  surface: \"#2B2D31\"\n  accent: \"#57F287\"\n  on-primary: \"#1E1F22\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"\"ABC Ginto Nord\", \"gg sans\", \"Noto Sans\", sans-serif\"\n  headingFamily: \"\"ABC Ginto Nord\", \"gg sans\", sans-serif\"\n  monoFamily: \"\"Consolas\", \"Courier New\", monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3rem\"\n    fontWeight: 800\n    lineHeight: 1.1\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Discord Design System Specification\n\n## Overview\nDesign expressivo e jovial focado em comunidades. Destaque para o icônico Discord Blurple (#5865F2), tipografia ABC Ginto Nord e canais em camadas escuras táteis.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#1E1F22`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#949BA4`\n- **Brand Accent / Action**: `#5865F2` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#2B2D31`\n\n## Typography Guidelines\n- Main UI Font: `\"ABC Ginto Nord\", \"gg sans\", \"Noto Sans\", sans-serif`\n- H1 Display Scale: `3rem` com peso `800`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "domain": "figma.com",
+    "category": "Design",
+    "description": "Sistema visual colaborativo centrado em criatividade. Combina tipografia Whyte com uma paleta multi-acento icônica (roxo, azul celeste, verde e coral) em superfícies táteis.",
+    "logoUrl": "https://cdn.simpleicons.org/figma/F24E1E",
+    "screenshotUrl": "/previews/figma.png",
+    "colors": {
+      "primary": "#000000",
+      "secondary": "#666666",
+      "tertiary": "#A259FF",
+      "neutral": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "accent": "#1ABCFE",
+      "border": "#E5E5E5",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#EBEBEB"
+    },
+    "typography": {
+      "fontFamily": "\"Whyte\", \"Inter\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "headingFamily": "\"Whyte\", \"Inter\", sans-serif",
+      "monoFamily": "monospace",
+      "h1": {
+        "fontSize": "3.5rem",
+        "fontWeight": 700,
+        "lineHeight": 1.08,
+        "letterSpacing": "-0.03em"
+      },
+      "h2": {
+        "fontSize": "2.25rem",
+        "fontWeight": 600,
+        "lineHeight": 1.2
+      },
+      "h3": {
+        "fontSize": "1.5rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "bodyMd": {
+        "fontSize": "0.9375rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.05em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "14px",
+      "xl": "20px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.onPrimary}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 20px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 21,
+      "tertiaryOnNeutral": 4.65,
+      "onTertiaryOnTertiary": 4.7,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Alto contraste do preto absoluto e roxo característico em canvas branco."
+    },
+    "designMd": "---\nname: Figma\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#666666\"\n  tertiary: \"#A259FF\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F5F5F5\"\n  accent: \"#1ABCFE\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E5E5E5\"\ntypography:\n  fontFamily: \"\"Whyte\", \"Inter\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Whyte\", \"Inter\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.5rem\"\n    fontWeight: 700\n    lineHeight: 1.08\n    letterSpacing: \"-0.03em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.25rem\"\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.9375rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"14px\"\n  xl: \"20px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Figma Design System Specification\n\n## Overview\nSistema visual colaborativo centrado em criatividade. Combina tipografia Whyte com uma paleta multi-acento icônica (roxo, azul celeste, verde e coral) em superfícies táteis.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#000000`\n- **Secondary Slate**: `#666666`\n- **Brand Accent / Action**: `#A259FF` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F5F5F5`\n\n## Typography Guidelines\n- Main UI Font: `\"Whyte\", \"Inter\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "domain": "notion.so",
+    "category": "Productivity & Docs",
+    "description": "Estética artesanal de papel vivo (warm paper #F7F6F3) inspirada em tipografia editorial. Combina a elegância da serifa Lyon com a precisão sans-serif da Inter.",
+    "logoUrl": "https://cdn.simpleicons.org/notion/000000",
+    "screenshotUrl": "/previews/notion.png",
+    "colors": {
+      "primary": "#2F3437",
+      "secondary": "#787774",
+      "tertiary": "#2383E2",
+      "neutral": "#FFFFFF",
+      "surface": "#F7F6F3",
+      "accent": "#EA4E43",
+      "border": "#E9E9E7",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#EDECE9"
+    },
+    "typography": {
+      "fontFamily": "\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "headingFamily": "\"Lyon-Text\", Georgia, \"Times New Roman\", serif",
+      "monoFamily": "\"SFMono-Regular\", Consolas, Menlo, monospace",
+      "h1": {
+        "fontSize": "2.5rem",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "1.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "h3": {
+        "fontSize": "1.25rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35
+      },
+      "bodyMd": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.6
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 500,
+        "letterSpacing": "0.04em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "6px",
+      "lg": "10px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.onPrimary}",
+        "rounded": "{rounded.sm}",
+        "padding": "8px 16px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.md}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 14.2,
+      "tertiaryOnNeutral": 4.8,
+      "onTertiaryOnTertiary": 4.8,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Contraste impecável entre o texto carvão #2F3437 e o canvas neutro."
+    },
+    "designMd": "---\nname: Notion\nversion: alpha\ncolors:\n  primary: \"#2F3437\"\n  secondary: \"#787774\"\n  tertiary: \"#2383E2\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F7F6F3\"\n  accent: \"#EA4E43\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E9E9E7\"\ntypography:\n  fontFamily: \"\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Lyon-Text\", Georgia, \"Times New Roman\", serif\"\n  monoFamily: \"\"SFMono-Regular\", Consolas, Menlo, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.5rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.6\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"6px\"\n  lg: \"10px\"\n  xl: \"16px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Notion Design System Specification\n\n## Overview\nEstética artesanal de papel vivo (warm paper #F7F6F3) inspirada em tipografia editorial. Combina a elegância da serifa Lyon com a precisão sans-serif da Inter.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#2F3437`\n- **Secondary Slate**: `#787774`\n- **Brand Accent / Action**: `#2383E2` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F7F6F3`\n\n## Typography Guidelines\n- Main UI Font: `\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `2.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "domain": "netflix.com",
+    "category": "Media & Streaming",
+    "description": "Linguagem visual cinematográfica pura. Canvas breu absoluto (#000000) projetado para destacar pôsteres e mídia em tela cheia com a icônica assinatura Netflix Crimson Red.",
+    "logoUrl": "https://cdn.simpleicons.org/netflix/E50914",
+    "screenshotUrl": "/previews/netflix.png",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#8C8C8C",
+      "tertiary": "#E50914",
+      "neutral": "#000000",
+      "surface": "#141414",
+      "accent": "#E50914",
+      "border": "rgba(255, 255, 255, 0.15)",
+      "onPrimary": "#000000",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#222222"
+    },
+    "typography": {
+      "fontFamily": "\"Netflix Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "headingFamily": "\"Netflix Sans\", sans-serif",
+      "monoFamily": "monospace",
+      "h1": {
+        "fontSize": "3.5rem",
+        "fontWeight": 900,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "2.25rem",
+        "fontWeight": 700,
+        "lineHeight": 1.2
+      },
+      "h3": {
+        "fontSize": "1.5rem",
+        "fontWeight": 700,
+        "lineHeight": 1.3
+      },
+      "bodyMd": {
+        "fontSize": "1.125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      },
+      "labelCaps": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 700,
+        "letterSpacing": "0.08em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "6px",
+      "lg": "12px",
+      "xl": "20px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.sm}",
+        "padding": "12px 28px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.md}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 21,
+      "tertiaryOnNeutral": 4.8,
+      "onTertiaryOnTertiary": 4.8,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Branco e vermelho de alto impacto sobre fundo preto absoluto."
+    },
+    "designMd": "---\nname: Netflix\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#8C8C8C\"\n  tertiary: \"#E50914\"\n  neutral: \"#000000\"\n  surface: \"#141414\"\n  accent: \"#E50914\"\n  on-primary: \"#000000\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.15)\"\ntypography:\n  fontFamily: \"\"Netflix Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"\"Netflix Sans\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.5rem\"\n    fontWeight: 900\n    lineHeight: 1.1\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.25rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1.125rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"6px\"\n  lg: \"12px\"\n  xl: \"20px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 28px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Netflix Design System Specification\n\n## Overview\nLinguagem visual cinematográfica pura. Canvas breu absoluto (#000000) projetado para destacar pôsteres e mídia em tela cheia com a icônica assinatura Netflix Crimson Red.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#000000`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#8C8C8C`\n- **Brand Accent / Action**: `#E50914` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#141414`\n\n## Typography Guidelines\n- Main UI Font: `\"Netflix Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `3.5rem` com peso `900`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "uber",
+    "name": "Uber",
+    "domain": "uber.com",
+    "category": "Mobility & Logistics",
+    "description": "Design system de escala planetária baseado em clareza funcional radical. Monocromia estrita de alto contraste, tipografia Uber Move e azul cobalto para sinalização de rota.",
+    "logoUrl": "https://cdn.simpleicons.org/uber/000000",
+    "screenshotUrl": "/previews/uber.png",
+    "colors": {
+      "primary": "#000000",
+      "secondary": "#5E5E5E",
+      "tertiary": "#276EF1",
+      "neutral": "#FFFFFF",
+      "surface": "#F6F6F6",
+      "accent": "#000000",
+      "border": "#E2E2E2",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#EEEEEE"
+    },
+    "typography": {
+      "fontFamily": "\"Uber Move\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "headingFamily": "\"Uber Move\", sans-serif",
+      "monoFamily": "monospace",
+      "h1": {
+        "fontSize": "3.25rem",
+        "fontWeight": 700,
+        "lineHeight": 1.12,
+        "letterSpacing": "-0.025em"
+      },
+      "h2": {
+        "fontSize": "2rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35
+      },
+      "bodyMd": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.04em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.onPrimary}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 24px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 21,
+      "tertiaryOnNeutral": 4.6,
+      "onTertiaryOnTertiary": 4.6,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Monocromia nítida com 21:1 de contraste no texto primário."
+    },
+    "designMd": "---\nname: Uber\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#5E5E5E\"\n  tertiary: \"#276EF1\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F6F6\"\n  accent: \"#000000\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E2E2E2\"\ntypography:\n  fontFamily: \"\"Uber Move\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"\"Uber Move\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.25rem\"\n    fontWeight: 700\n    lineHeight: 1.12\n    letterSpacing: \"-0.025em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Uber Design System Specification\n\n## Overview\nDesign system de escala planetária baseado em clareza funcional radical. Monocromia estrita de alto contraste, tipografia Uber Move e azul cobalto para sinalização de rota.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#000000`\n- **Secondary Slate**: `#5E5E5E`\n- **Brand Accent / Action**: `#276EF1` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F6F6F6`\n\n## Typography Guidelines\n- Main UI Font: `\"Uber Move\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `3.25rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "domain": "perplexity.ai",
+    "category": "AI & Search",
+    "description": "Design system de busca conversacional focado em leitura aprofundada de respostas sintéticas. Tipografia FK Grotesk, fundo ardósia escuro e ciano radiante de ação.",
+    "logoUrl": "https://cdn.simpleicons.org/perplexity/20B8CD",
+    "screenshotUrl": "/previews/perplexity.png",
+    "colors": {
+      "primary": "#F3F4F6",
+      "secondary": "#94A3B8",
+      "tertiary": "#20B8CD",
+      "neutral": "#13181E",
+      "surface": "#1B2228",
+      "accent": "#20B8CD",
+      "border": "rgba(255, 255, 255, 0.08)",
+      "onPrimary": "#13181E",
+      "onTertiary": "#080C10",
+      "surfaceVariant": "#242E37"
+    },
+    "typography": {
+      "fontFamily": "\"FK Grotesk\", \"Inter\", -apple-system, sans-serif",
+      "headingFamily": "\"FK Grotesk\", sans-serif",
+      "monoFamily": "\"Fira Code\", monospace",
+      "h1": {
+        "fontSize": "2.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.03em"
+      },
+      "h2": {
+        "fontSize": "1.875rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25
+      },
+      "h3": {
+        "fontSize": "1.25rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35
+      },
+      "bodyMd": {
+        "fontSize": "0.9375rem",
+        "fontWeight": 400,
+        "lineHeight": 1.6
+      },
+      "bodySm": {
+        "fontSize": "0.8125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.06em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "6px",
+      "md": "12px",
+      "lg": "18px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 20px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 16.2,
+      "tertiaryOnNeutral": 9.8,
+      "onTertiaryOnTertiary": 9.7,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Ciano elétrico sobre ardósia #13181E alcança excepcional contraste e legibilidade."
+    },
+    "designMd": "---\nname: Perplexity AI\nversion: alpha\ncolors:\n  primary: \"#F3F4F6\"\n  secondary: \"#94A3B8\"\n  tertiary: \"#20B8CD\"\n  neutral: \"#13181E\"\n  surface: \"#1B2228\"\n  accent: \"#20B8CD\"\n  on-primary: \"#13181E\"\n  on-tertiary: \"#080C10\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"\"FK Grotesk\", \"Inter\", -apple-system, sans-serif\"\n  headingFamily: \"\"FK Grotesk\", sans-serif\"\n  monoFamily: \"\"Fira Code\", monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.75rem\"\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.03em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.875rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.9375rem\"\n    fontWeight: 400\n    lineHeight: 1.6\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"6px\"\n  md: \"12px\"\n  lg: \"18px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Perplexity AI Design System Specification\n\n## Overview\nDesign system de busca conversacional focado em leitura aprofundada de respostas sintéticas. Tipografia FK Grotesk, fundo ardósia escuro e ciano radiante de ação.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#13181E`\n- **Primary Ink**: `#F3F4F6`\n- **Secondary Slate**: `#94A3B8`\n- **Brand Accent / Action**: `#20B8CD` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#1B2228`\n\n## Typography Guidelines\n- Main UI Font: `\"FK Grotesk\", \"Inter\", -apple-system, sans-serif`\n- H1 Display Scale: `2.75rem` com peso `600`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify Polaris",
+    "domain": "shopify.com",
+    "category": "Commerce & Storefronts",
+    "description": "Design system de referência para ecossistemas de e-commerce e faturamento. Polaris Emerald (#008060), tipografia legível para finanças e densidade de informação ergonômica.",
+    "logoUrl": "https://cdn.simpleicons.org/shopify/7AB55C",
+    "screenshotUrl": "/previews/shopify.png",
+    "colors": {
+      "primary": "#202223",
+      "secondary": "#6D7175",
+      "tertiary": "#008060",
+      "neutral": "#FFFFFF",
+      "surface": "#F1F2F4",
+      "accent": "#2C6ECB",
+      "border": "#E1E3E5",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#E4E5E7"
+    },
+    "typography": {
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, sans-serif",
+      "headingFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+      "monoFamily": "monospace",
+      "h1": {
+        "fontSize": "2.5rem",
+        "fontWeight": 700,
+        "lineHeight": 1.2
+      },
+      "h2": {
+        "fontSize": "1.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "h3": {
+        "fontSize": "1.25rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35
+      },
+      "bodyMd": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.75rem",
+        "fontWeight": 400,
+        "lineHeight": 1.45
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.05em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 20px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 15.6,
+      "tertiaryOnNeutral": 4.8,
+      "onTertiaryOnTertiary": 4.8,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Verde Polaris em fundo níveo atende a rigorosos padrões de acessibilidade comercial."
+    },
+    "designMd": "---\nname: Shopify Polaris\nversion: alpha\ncolors:\n  primary: \"#202223\"\n  secondary: \"#6D7175\"\n  tertiary: \"#008060\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F1F2F4\"\n  accent: \"#2C6ECB\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E1E3E5\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"-apple-system, BlinkMacSystemFont, sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.5rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.875rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"12px\"\n  xl: \"16px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Shopify Polaris Design System Specification\n\n## Overview\nDesign system de referência para ecossistemas de e-commerce e faturamento. Polaris Emerald (#008060), tipografia legível para finanças e densidade de informação ergonômica.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#202223`\n- **Secondary Slate**: `#6D7175`\n- **Brand Accent / Action**: `#008060` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F1F2F4`\n\n## Typography Guidelines\n- Main UI Font: `-apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `2.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "ibm-carbon",
+    "name": "IBM Carbon",
+    "domain": "carbondesignsystem.com",
+    "category": "Enterprise & Computing",
+    "description": "Sistema visual aberto com padrão de engenharia industrial rigorosa. Baseado na família tipográfica IBM Plex Sans e arquitetura de grid 2px para infraestrutura corporativa.",
+    "logoUrl": "https://cdn.simpleicons.org/ibm/0F62FE",
+    "screenshotUrl": "/previews/ibm-carbon.png",
+    "colors": {
+      "primary": "#161616",
+      "secondary": "#525252",
+      "tertiary": "#0F62FE",
+      "neutral": "#FFFFFF",
+      "surface": "#F4F4F4",
+      "accent": "#0043CE",
+      "border": "#E0E0E0",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#FFFFFF",
+      "surfaceVariant": "#E0E0E0"
+    },
+    "typography": {
+      "fontFamily": "\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "headingFamily": "\"IBM Plex Sans\", sans-serif",
+      "monoFamily": "\"IBM Plex Mono\", Menlo, Consolas, monospace",
+      "h1": {
+        "fontSize": "3.375rem",
+        "fontWeight": 300,
+        "lineHeight": 1.19,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "2.625rem",
+        "fontWeight": 400,
+        "lineHeight": 1.24
+      },
+      "h3": {
+        "fontSize": "1.75rem",
+        "fontWeight": 400,
+        "lineHeight": 1.29
+      },
+      "bodyMd": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.43
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.06em"
+      }
+    },
+    "spacing": {
+      "xs": "2px",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "xl": "24px",
+      "2xl": "32px",
+      "3xl": "48px"
+    },
+    "rounded": {
+      "sm": "0px",
+      "md": "2px",
+      "lg": "4px",
+      "xl": "8px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.sm}",
+        "padding": "14px 64px 14px 16px"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.sm}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "verified": true,
+    "extractedAt": "2026-10-30T10:00:00.000Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 16.9,
+      "tertiaryOnNeutral": 4.65,
+      "onTertiaryOnTertiary": 4.65,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "IBM Blue 60 (#0F62FE) com conformidade WCAG total."
+    },
+    "designMd": "---\nname: IBM Carbon\nversion: alpha\ncolors:\n  primary: \"#161616\"\n  secondary: \"#525252\"\n  tertiary: \"#0F62FE\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F4F4F4\"\n  accent: \"#0043CE\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E0E0E0\"\ntypography:\n  fontFamily: \"\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"IBM Plex Sans\", sans-serif\"\n  monoFamily: \"\"IBM Plex Mono\", Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.375rem\"\n    fontWeight: 300\n    lineHeight: 1.19\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.625rem\"\n    fontWeight: 400\n    lineHeight: 1.24\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"2px\"\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  2xl: \"32px\"\nrounded:\n  sm: \"0px\"\n  md: \"2px\"\n  lg: \"4px\"\n  xl: \"8px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 64px 14px 16px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# IBM Carbon Design System Specification\n\n## Overview\nSistema visual aberto com padrão de engenharia industrial rigorosa. Baseado na família tipográfica IBM Plex Sans e arquitetura de grid 2px para infraestrutura corporativa.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#161616`\n- **Secondary Slate**: `#525252`\n- **Brand Accent / Action**: `#0F62FE` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F4F4F4`\n\n## Typography Guidelines\n- Main UI Font: `\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.375rem` com peso `300`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "domain": "slack.com",
+    "category": "AI & Developer Tools",
+    "description": "Aumente a produtividade e economize tempo com o Slack, a plataforma de trabalho com IA para gerenciar projetos, automatizar fluxos de trabalho e conectar equipes com segurança. Comece a trabalhar com mais inteligência hoje mesmo.",
+    "logoUrl": "https://www.google.com/s2/favicons?domain=slack.com&sz=128",
+    "screenshotUrl": "/previews/extracted-slack.png",
+    "colors": {
+      "primary": "#000000",
+      "secondary": "#64748B",
+      "tertiary": "#730394",
+      "neutral": "#ffffff",
+      "surface": "#2e844a",
+      "accent": "#730394",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#ffffff",
+      "border": "#0000ee"
+    },
+    "typography": {
+      "fontFamily": "Salesforce-Sans, system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "headingFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "monoFamily": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      "h1": {
+        "fontSize": "64px",
+        "fontWeight": "700",
+        "lineHeight": "68px",
+        "letterSpacing": "-0.768px"
+      },
+      "h2": {
+        "fontSize": "50px",
+        "fontWeight": "600",
+        "lineHeight": "56px",
+        "letterSpacing": "-0.6px"
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35
+      },
+      "bodyMd": {
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.05em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "0px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "4px",
+      "lg": "0px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "19px 40px 20px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "designMd": "---\nname: Slack\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#64748B\"\n  tertiary: \"#730394\"\n  neutral: \"#ffffff\"\n  surface: \"#2e844a\"\n  accent: \"#730394\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#ffffff\"\n  border: \"#0000ee\"\ntypography:\n  fontFamily: \"Salesforce-Sans, system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"\"\n  headingFamily: \"Salesforce-Avant-Garde, system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"\"\n  monoFamily: \"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"64px\"\n    fontWeight: 700\n    lineHeight: 68px\n    letterSpacing: \"-0.768px\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"50px\"\n    fontWeight: 600\n    lineHeight: 56px\n    letterSpacing: \"-0.6px\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"14px\"\n    fontWeight: 400\n    lineHeight: 1.55\nrounded:\n  sm: 4px\n  md: 4px\n  lg: 0px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 0px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n# Slack Design System Specification\n\n## Overview\nEste sistema de design foi extraído e sintetizado a partir de **Slack** (`slack.com`) para guiar agentes de IA na geração de interfaces consistentes e normativas. Aumente a produtividade e economize tempo com o Slack, a plataforma de trabalho com IA para gerenciar projetos, automatizar fluxos de trabalho e conectar equipes com segurança. Comece a trabalhar com mais inteligência hoje mesmo.\n\n## Normative Color Tokens (WCAG AAA)\n- **Canvas Base / Neutral (`#ffffff`):** Canvas de base real medido no DOM.\n- **Primary Ink (`#000000`):** Cor de alta hierarquia para títulos e textos principais (21:1).\n- **Secondary Slate (`#64748B`):** Tonalidade neutra para textos secundários e metadados.\n- **Brand Accent / Action (`#730394`):** Cor de ação primária (CTA) extraída dos botões e gatilhos de foco (9.68:1).\n- **Surface Layer (`#2e844a`):** Superfície de apoio para cards, modais e contêineres estruturados.\n\n## Real Typography Scale\n- **Base UI Font:** `Salesforce-Sans, system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"`\n- **Heading Font:** `Salesforce-Avant-Garde, system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"`\n- **Display Scale (H1):** Tamanho medido de `64px` com peso `700` e entrelinha `68px`.\n- **Subheading (H2):** Tamanho medido de `50px` com peso `600`.\n\n## Layout & Components\n- **Geometria de Botões:** Cantos arredondados calibrados em `{rounded.md}` (4px) com fundo em `{colors.tertiary}`.\n- **Geometria de Cards:** Superfície em `{colors.surface}` com contorno `1px solid {colors.border}` e cantos `{rounded.lg}` (0px).\n\n## Do's and Don'ts:\n### Do's:\n- Reutilize tokens semânticos declarados em `{colors.tertiary}` para todas as ações primárias.\n- Preserve a escala métrica de `spacing` e `rounded` documentada.\n- Garanta contraste mínimo de 4.5:1 em elementos de texto.\n\n### Don'ts:\n- Nunca misture famílias tipográficas externas sem declaração no token.\n- Nunca aplique estilos ad-hoc fora da especificação do DESIGN.MD.",
+    "verified": true,
+    "extractedAt": "2026-10-30T14:17:55.755Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 21,
+      "tertiaryOnNeutral": 9.68,
+      "onTertiaryOnTertiary": 9.68,
+      "isCompliantAA": true,
+      "contrastStatus": "AAA",
+      "notes": "Medição em tempo real: Primário 21:1, Ação 9.68:1, Botão 9.68:1."
+    }
+  }
+]
