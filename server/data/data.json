@@ -1888,5 +1888,103 @@
       "contrastStatus": "AAA",
       "notes": "Medição em tempo real: Primário 21:1, Ação 9.68:1, Botão 9.68:1."
     }
+  },
+  {
+    "id": "abacatepay",
+    "name": "AbacatePay",
+    "domain": "abacatepay.com",
+    "category": "Fintech & Payments",
+    "description": "O gateway de pagamento ideal para SaaS. Integração fácil via API, comunidade ativa e taxas transparentes. Receba via Pix e boleto.",
+    "logoUrl": "https://www.google.com/s2/favicons?domain=abacatepay.com&sz=128",
+    "screenshotUrl": "/previews/extracted-abacatepay.png",
+    "colors": {
+      "primary": "#1f4647",
+      "secondary": "#64748B",
+      "tertiary": "#9eea6c",
+      "neutral": "#ffffff",
+      "surface": "#1f4647",
+      "accent": "#9eea6c",
+      "onPrimary": "#FFFFFF",
+      "onTertiary": "#1f4647",
+      "border": "#1f4647"
+    },
+    "typography": {
+      "fontFamily": "\"Fustat Variable\", Fustat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFamily": "\"Fustat Variable\", Fustat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "monoFamily": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      "h1": {
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "lineHeight": "48px",
+        "letterSpacing": "-0.32px"
+      },
+      "h2": {
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "26px",
+        "letterSpacing": "-0.6px"
+      },
+      "h3": {
+        "fontSize": "1.375rem",
+        "fontWeight": 600,
+        "lineHeight": 1.35
+      },
+      "bodyMd": {
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "bodySm": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "labelCaps": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "letterSpacing": "0.05em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "112px 24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "rounded": {
+      "sm": "4px",
+      "md": "600px",
+      "lg": "56px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "backgroundColor": "{colors.tertiary}",
+        "textColor": "{colors.onTertiary}",
+        "rounded": "{rounded.md}",
+        "padding": "0px 16px",
+        "fontSize": "{typography.bodyMd.fontSize}"
+      },
+      "card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "border": "1px solid {colors.border}",
+        "padding": "{spacing.lg}"
+      }
+    },
+    "designMd": "---\nname: AbacatePay\nversion: alpha\ncolors:\n  primary: \"#1f4647\"\n  secondary: \"#64748B\"\n  tertiary: \"#9eea6c\"\n  neutral: \"#ffffff\"\n  surface: \"#1f4647\"\n  accent: \"#9eea6c\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#1f4647\"\n  border: \"#1f4647\"\ntypography:\n  fontFamily: \"\"Fustat Variable\", Fustat, system-ui, -apple-system, \"Segoe UI\", sans-serif\"\n  headingFamily: \"\"Fustat Variable\", Fustat, system-ui, -apple-system, \"Segoe UI\", sans-serif\"\n  monoFamily: \"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"32px\"\n    fontWeight: 700\n    lineHeight: 48px\n    letterSpacing: \"-0.32px\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"20px\"\n    fontWeight: 700\n    lineHeight: 26px\n    letterSpacing: \"-0.6px\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"16px\"\n    fontWeight: 400\n    lineHeight: 1.55\nrounded:\n  sm: 4px\n  md: 600px\n  lg: 56px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 112px 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n# AbacatePay Design System Specification\n\n## Overview\nEste sistema de design foi extraído e sintetizado a partir de **AbacatePay** (`abacatepay.com`) para guiar agentes de IA na geração de interfaces consistentes e normativas. O gateway de pagamento ideal para SaaS. Integração fácil via API, comunidade ativa e taxas transparentes. Receba via Pix e boleto.\n\n## Normative Color Tokens (WCAG AA)\n- **Canvas Base / Neutral (`#ffffff`):** Canvas de base real medido no DOM.\n- **Primary Ink (`#1f4647`):** Cor de alta hierarquia para títulos e textos principais (10.37:1).\n- **Secondary Slate (`#64748B`):** Tonalidade neutra para textos secundários e metadados.\n- **Brand Accent / Action (`#9eea6c`):** Cor de ação primária (CTA) extraída dos botões e gatilhos de foco (1.45:1).\n- **Surface Layer (`#1f4647`):** Superfície de apoio para cards, modais e contêineres estruturados.\n\n## Real Typography Scale\n- **Base UI Font:** `\"Fustat Variable\", Fustat, system-ui, -apple-system, \"Segoe UI\", sans-serif`\n- **Heading Font:** `\"Fustat Variable\", Fustat, system-ui, -apple-system, \"Segoe UI\", sans-serif`\n- **Display Scale (H1):** Tamanho medido de `32px` com peso `700` e entrelinha `48px`.\n- **Subheading (H2):** Tamanho medido de `20px` com peso `700`.\n\n## Layout & Components\n- **Geometria de Botões:** Cantos arredondados calibrados em `{rounded.md}` (600px) com fundo em `{colors.tertiary}`.\n- **Geometria de Cards:** Superfície em `{colors.surface}` com contorno `1px solid {colors.border}` e cantos `{rounded.lg}` (56px).\n\n## Do's and Don'ts:\n### Do's:\n- Reutilize tokens semânticos declarados em `{colors.tertiary}` para todas as ações primárias.\n- Preserve a escala métrica de `spacing` e `rounded` documentada.\n- Garanta contraste mínimo de 4.5:1 em elementos de texto.\n\n### Don'ts:\n- Nunca misture famílias tipográficas externas sem declaração no token.\n- Nunca aplique estilos ad-hoc fora da especificação do DESIGN.MD.",
+    "verified": true,
+    "extractedAt": "2026-10-30T14:28:31.291Z",
+    "wcagContrast": {
+      "primaryOnNeutral": 10.37,
+      "tertiaryOnNeutral": 1.45,
+      "onTertiaryOnTertiary": 7.13,
+      "isCompliantAA": false,
+      "contrastStatus": "AA",
+      "notes": "Medição em tempo real: Primário 10.37:1, Ação 1.45:1, Botão 7.13:1."
+    }
   }
 ]

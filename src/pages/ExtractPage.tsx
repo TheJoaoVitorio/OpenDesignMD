@@ -139,6 +139,7 @@ export const ExtractPage: React.FC<ExtractPageProps> = ({
         accentColor: tertiaryHex,
         heroGradient: `linear-gradient(135deg, #121317 0%, ${tertiaryHex} 70%, #4285F4 100%)`,
         previewBg: '#121317',
+        screenshotUrl: beComp?.screenshotUrl || extractedData?.screenshotUrl || `/previews/extracted-${domain.split('.')[0]}.png`,
         lastUpdated: 'Just now',
         verifiedStandard: true,
         metrics: {
