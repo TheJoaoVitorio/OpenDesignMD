@@ -3370,75 +3370,90 @@
       "notes": "Medição em tempo real: Primário 10.37:1, Ação 1.45:1, Botão 7.13:1."
     },
     "dna": {
-      "archetype": "Contemporary Clean Functionalism",
-      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "archetype": "Playful Neo-Organic & Tactile High-Contrast",
+      "visualAtmosphere": "Botanical vitality and friendly precision combining deep pine/avocado ink (#1F4647), high-contrast electric lime accents (#9EEA6C), ultra-rounded pill touch targets (border-radius: 9999px), generous organic container curves (32px to 56px), and witty tactile micro-chips.",
       "spatialRhythm": {
         "density": "balanced",
-        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "whitespaceStrategy": "Generous organic breathing room (32px-48px) with elevated white cards layered against subtle tinted canvases or deep pine hero spotlight decks.",
         "containerMaxWidth": "1280px"
       },
       "sectionBlueprints": [
         {
           "name": "Hero Section",
-          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "layoutType": "Asymmetric Split Hero with High-Contrast Pill CTA & Floating Notification Chips",
           "density": "balanced",
           "keyVisualElements": [
-            "Elevated product screenshot",
-            "Primary action button with icon",
-            "Customer review snippet"
+            "Full pill primary button in electric lime #9EEA6C",
+            "Floating pill status badges",
+            "Organic rounded preview card (rounded-[36px])"
           ],
-          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
-          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+          "typographyHierarchy": "Bold H1 Display in Fustat/System Sans (-0.02em tracking) with high-contrast emerald text",
+          "designRule": "Pair serious reliability with approachable botanical freshness and instant pill actions."
         },
         {
           "name": "Feature Showcase",
-          "layoutType": "3-Column Grid with Icon Headers",
+          "layoutType": "Organic Bento Grid with Alternating Pine & Ivory Surface Cards",
           "density": "balanced",
           "keyVisualElements": [
-            "Rounded icon badges",
-            "Surface cards with 1px border",
-            "Feature bullet points"
+            "Deep pine container #1F4647 with lime text",
+            "Rounded-3xl organic cards",
+            "Micro-chips with verified badges"
           ],
-          "typographyHierarchy": "H3 feature title with descriptive body text",
-          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+          "typographyHierarchy": "H3 bold tile headlines with punchy 1-sentence value propositions",
+          "designRule": "Alternate between deep dark pine cards and bright clean cards to create dynamic visual pacing."
         },
         {
-          "name": "Social Proof",
-          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "name": "Interactive Demo / Calculator",
+          "layoutType": "Playful Interactive Simulator Card",
           "density": "balanced",
           "keyVisualElements": [
-            "Customer avatar",
-            "Company logo",
-            "Star rating"
+            "Range slider with lime fill",
+            "Real-time savings/progress counter",
+            "Pill result toggle"
           ],
-          "typographyHierarchy": "Direct quote with customer name and verified title",
-          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+          "typographyHierarchy": "Display number metrics in extra bold font",
+          "designRule": "Provide immediate tactile feedback without requiring page reloads."
         },
         {
-          "name": "CTA Section",
-          "layoutType": "High-Contrast Closing Banner",
+          "name": "Social Proof & Metrics",
+          "layoutType": "Community Trust Billboard with Floating Avatar Clusters",
           "density": "balanced",
           "keyVisualElements": [
-            "Full-width surface card",
-            "Instant access form or single primary button"
+            "Large numerical volume counters",
+            "Verified user pill tags",
+            "Customer quote cards with avatar circles"
           ],
-          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
-          "designRule": "Remove friction and provide immediate access to the core value."
+          "typographyHierarchy": "Massive statistical digits paired with concise human endorsements",
+          "designRule": "Demonstrate explosive community traction and genuine user delight."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Immersive Deep Pine Curved Deck with Electric Lime Trigger",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width curved container #1F4647",
+            "Glowing lime pill CTA button",
+            "Zero-friction guarantee tag"
+          ],
+          "typographyHierarchy": "H2 invitation headline in crisp white text with secondary lime sub-accent",
+          "designRule": "Close with irresistible visual energy and zero form-field friction."
         }
       ],
       "invariants": {
         "always": [
-          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
-          "Always use consistent border radius across all buttons and input fields.",
-          "Always provide explicit hover and focus states for keyboard accessibility."
+          "Always use full pill radius (border-radius: 9999px) for primary action buttons.",
+          "Always pair deep dark pine green (#1F4647) with electric lime (#9EEA6C) for maximum visual vitality.",
+          "Always use large organic corner radiuses (32px to 56px) on major section cards.",
+          "Always include playful, reassuring microcopy (e.g., 'Sem burocracia', 'Em 2 minutos')."
         ],
         "never": [
-          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
-          "Never mix discordant border radii on the same visual plane.",
-          "Never hide primary navigation on desktop viewports."
+          "Never use sharp 0px or square corners on interactive buttons.",
+          "Never use cold corporate blue or clinical hospital sterile grays.",
+          "Never place low-contrast text that impairs accessibility.",
+          "Never design dense, rigid spreadsheet-style tables without organic breathing space."
         ]
       },
-      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+      "adaptationGuidance": "When adapting this system to nutrition, wellness, or health domains, translate the botanical avocado theme into vitality, healthy nutrition tracking, and patient motivation while preserving the pill buttons, dark pine depth, and high-contrast lime highlights."
     }
   }
 ]

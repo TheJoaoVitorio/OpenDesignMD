@@ -6,6 +6,7 @@ import { LoginPage } from './components/LoginPage';
 import { PlatformDashboard } from './components/PlatformDashboard';
 import { DesignSystemDetailPage } from './pages/DesignSystemDetailPage';
 import { ExtractPage } from './pages/ExtractPage';
+import { NutriFluiLandingPage } from './pages/NutriFluiLandingPage';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { mockCompanies } from './data/mockCompanies';
@@ -21,6 +22,8 @@ export function AppContent() {
   useLenis();
 
   const isLoginPage = location.pathname === '/login';
+  const isPreviewPage = location.pathname.startsWith('/preview/');
+  const hideNavbar = isLoginPage || isPreviewPage;
 
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     try {
@@ -130,8 +133,8 @@ export function AppContent() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF9F6] text-[#121317] dark:bg-[#0D0E12] dark:text-[#F3F4F6] transition-colors duration-200">
-      {/* Navigation Bar - Hidden on /login */}
-      {!isLoginPage && (
+      {/* Navigation Bar - Hidden on /login and /preview */}
+      {!hideNavbar && (
         <Navbar
           theme={theme}
           onToggleTheme={toggleTheme}
@@ -158,6 +161,12 @@ export function AppContent() {
           <Route
             path="/login"
             element={<LoginPage onLoginSuccess={handleLoginSuccess} />}
+          />
+
+          {/* Live Prototype Test: NutriFlui generated from AbacatePay */}
+          <Route
+            path="/preview/nutriflui"
+            element={<NutriFluiLandingPage onShowToast={showToast} />}
           />
 
           {/* Protected Catalog Dashboard */}

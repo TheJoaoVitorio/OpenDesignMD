@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Sparkles,
   Layers,
@@ -388,6 +389,31 @@ export const DesignDnaTab: React.FC<DesignDnaTabProps> = ({ company, onShowToast
             ))}
           </ul>
         </div>
+      </div>
+
+      {/* Validation Spotlight for AbacatePay / General Test */}
+      <div className="p-6 rounded-3xl bg-[#1F4647] text-white border-2 border-[#9EEA6C] shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="space-y-1">
+          <div className="flex items-center space-x-2">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#9EEA6C] animate-ping" />
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#9EEA6C]">
+              Caso de Teste em Produção: NutriFlui
+            </span>
+          </div>
+          <h4 className="text-base font-bold text-white">
+            Landing Page Completa gerada a partir do Design DNA de AbacatePay!
+          </h4>
+          <p className="text-xs text-white/80 max-w-xl leading-relaxed">
+            Testamos o transplante da estética botanical neo-organic e pílulas arredondadas de AbacatePay para uma plataforma de nutrição clínica (NutriFlui).
+          </p>
+        </div>
+        <Link
+          to="/preview/nutriflui"
+          className="px-6 py-2.5 rounded-full bg-[#9EEA6C] text-[#1F4647] font-bold text-xs hover:scale-105 active:scale-95 transition-transform shadow-md flex items-center space-x-2 whitespace-nowrap flex-shrink-0"
+        >
+          <span>Ver Landing Page NutriFlui</span>
+          <ArrowRight className="w-4 h-4" />
+        </Link>
       </div>
 
       {/* 4. Interactive AI Context Adaptation Engine */}

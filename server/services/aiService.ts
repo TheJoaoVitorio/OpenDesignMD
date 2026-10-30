@@ -542,6 +542,78 @@ Return ONLY valid JSON matching:
     const isDark = neutral.startsWith("#0") || neutral.startsWith("#1") || neutral.startsWith("#2");
     const name = company.name.toLowerCase();
 
+    // Specific Archetype: AbacatePay (Playful Neo-Organic & Tactile High-Contrast)
+    if (name.includes("abacate") || name.includes("avocado")) {
+      return {
+        archetype: "Playful Neo-Organic & Tactile High-Contrast",
+        visualAtmosphere:
+          "Botanical vitality and friendly precision combining deep pine/avocado ink (#1F4647), high-contrast electric lime accents (#9EEA6C), ultra-rounded pill touch targets (border-radius: 9999px), generous organic container curves (32px to 56px), and witty tactile micro-chips.",
+        spatialRhythm: {
+          density: "balanced",
+          whitespaceStrategy: "Generous organic breathing room (32px-48px) with elevated white cards layered against subtle tinted canvases or deep pine hero spotlight decks.",
+          containerMaxWidth: "1280px",
+        },
+        sectionBlueprints: [
+          {
+            name: "Hero Section",
+            layoutType: "Asymmetric Split Hero with High-Contrast Pill CTA & Floating Notification Chips",
+            density: "balanced",
+            keyVisualElements: ["Full pill primary button in electric lime #9EEA6C", "Floating pill status badges", "Organic rounded preview card (rounded-[36px])"],
+            typographyHierarchy: "Bold H1 Display in Fustat/System Sans (-0.02em tracking) with high-contrast emerald text",
+            designRule: "Pair serious reliability with approachable botanical freshness and instant pill actions.",
+          },
+          {
+            name: "Feature Showcase",
+            layoutType: "Organic Bento Grid with Alternating Pine & Ivory Surface Cards",
+            density: "balanced",
+            keyVisualElements: ["Deep pine container #1F4647 with lime text", "Rounded-3xl organic cards", "Micro-chips with verified badges"],
+            typographyHierarchy: "H3 bold tile headlines with punchy 1-sentence value propositions",
+            designRule: "Alternate between deep dark pine cards and bright clean cards to create dynamic visual pacing.",
+          },
+          {
+            name: "Interactive Demo / Calculator",
+            layoutType: "Playful Interactive Simulator Card",
+            density: "balanced",
+            keyVisualElements: ["Range slider with lime fill", "Real-time savings/progress counter", "Pill result toggle"],
+            typographyHierarchy: "Display number metrics in extra bold font",
+            designRule: "Provide immediate tactile feedback without requiring page reloads.",
+          },
+          {
+            name: "Social Proof & Metrics",
+            layoutType: "Community Trust Billboard with Floating Avatar Clusters",
+            density: "balanced",
+            keyVisualElements: ["Large numerical volume counters", "Verified user pill tags", "Customer quote cards with avatar circles"],
+            typographyHierarchy: "Massive statistical digits paired with concise human endorsements",
+            designRule: "Demonstrate explosive community traction and genuine user delight.",
+          },
+          {
+            name: "CTA & Closing",
+            layoutType: "Immersive Deep Pine Curved Deck with Electric Lime Trigger",
+            density: "balanced",
+            keyVisualElements: ["Full-width curved container #1F4647", "Glowing lime pill CTA button", "Zero-friction guarantee tag"],
+            typographyHierarchy: "H2 invitation headline in crisp white text with secondary lime sub-accent",
+            designRule: "Close with irresistible visual energy and zero form-field friction.",
+          },
+        ],
+        invariants: {
+          always: [
+            "Always use full pill radius (border-radius: 9999px) for primary action buttons.",
+            "Always pair deep dark pine green (#1F4647) with electric lime (#9EEA6C) for maximum visual vitality.",
+            "Always use large organic corner radiuses (32px to 56px) on major section cards.",
+            "Always include playful, reassuring microcopy (e.g., 'Sem burocracia', 'Em 2 minutos').",
+          ],
+          never: [
+            "Never use sharp 0px or square corners on interactive buttons.",
+            "Never use cold corporate blue or clinical hospital sterile grays.",
+            "Never place low-contrast text that impairs accessibility.",
+            "Never design dense, rigid spreadsheet-style tables without organic breathing space.",
+          ],
+        },
+        adaptationGuidance:
+          "When adapting this system to nutrition, wellness, or health domains, translate the botanical avocado theme into vitality, healthy nutrition tracking, and patient motivation while preserving the pill buttons, dark pine depth, and high-contrast lime highlights.",
+      };
+    }
+
     // Archetype detection based on aesthetic signatures
     if (name.includes("linear") || name.includes("raycast") || name.includes("supabase")) {
       return {
@@ -817,7 +889,14 @@ Return ONLY valid JSON matching:
     let neutral = "#F9FAFB";
     let surface = "#FFFFFF";
 
-    if (contextLower.includes("saude") || contextLower.includes("médic") || contextLower.includes("clínica") || contextLower.includes("hospital")) {
+    if (contextLower.includes("nutri") || contextLower.includes("aliment") || contextLower.includes("diet") || brandName.toLowerCase().includes("abacate")) {
+      // Botanical vitality: Deep Pine Ink + Electric Lime Action + Fresh Canvas
+      primary = "#1F4647"; // Deep Pine / Botanical Ink
+      secondary = "#486E6F"; // Muted botanical slate
+      tertiary = "#9EEA6C"; // Electric Lime / Fresh vitality CTA
+      neutral = "#F7FAF6"; // Organic fresh paper
+      surface = "#FFFFFF"; // Clean white card
+    } else if (contextLower.includes("saude") || contextLower.includes("médic") || contextLower.includes("clínica") || contextLower.includes("hospital")) {
       tertiary = "#0D9488"; // Medical Teal
       neutral = "#F0FDFA";
       primary = "#0F172A";
