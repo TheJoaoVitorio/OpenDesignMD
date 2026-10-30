@@ -20,6 +20,7 @@ import {
 import { Company } from '../types';
 import { mockCompanies } from '../data/mockCompanies';
 import { useTranslation } from '../i18n/LanguageContext';
+import { DesignDnaTab } from '../components/DesignDnaTab';
 
 interface DesignSystemDetailPageProps {
   companies: Company[];
@@ -34,7 +35,7 @@ export const DesignSystemDetailPage: React.FC<DesignSystemDetailPageProps> = ({
   const navigate = useNavigate();
   const { t, language } = useTranslation();
 
-  const [activeTab, setActiveTab] = useState<'spec' | 'yaml' | 'palette' | 'tailwind' | 'raw'>('spec');
+  const [activeTab, setActiveTab] = useState<'spec' | 'dna' | 'yaml' | 'palette' | 'tailwind' | 'raw'>('spec');
   const [copiedAction, setCopiedAction] = useState<string | null>(null);
   const [company, setCompany] = useState<Company | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -339,6 +340,18 @@ ${(company.colorTokens || [])
               </button>
 
               <button
+                onClick={() => setActiveTab('dna')}
+                className={`px-4 py-2 rounded-full text-xs font-medium flex items-center space-x-1.5 transition-all whitespace-nowrap ${
+                  activeTab === 'dna'
+                    ? 'bg-[#121317] text-white dark:bg-white dark:text-[#121317] shadow-xs'
+                    : 'text-[#1A73E8] dark:text-[#4285F4] hover:text-[#121317] dark:hover:text-white'
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5 text-[#FBBC05]" />
+                <span className="font-semibold">{t.detail.tabs.dna}</span>
+              </button>
+
+              <button
                 onClick={() => setActiveTab('yaml')}
                 className={`px-4 py-2 rounded-full text-xs font-medium flex items-center space-x-1.5 transition-all whitespace-nowrap ${
                   activeTab === 'yaml'
@@ -550,6 +563,11 @@ ${(company.colorTokens || [])
                   </div>
                 </div>
               </div>
+            )}
+
+            {/* Tab: Design DNA & AI Transfer */}
+            {activeTab === 'dna' && (
+              <DesignDnaTab company={company} onShowToast={onShowToast} />
             )}
 
             {/* Tab 2: YAML Tokens */}

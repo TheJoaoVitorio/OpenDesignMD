@@ -1,5 +1,6 @@
 import { Company, DesignTokens, ExtractionResponse, WCAGContrastReport } from "../types.js";
 import { companiesStore } from "../data/companiesStore.js";
+import { aiService } from "./aiService.js";
 import puppeteer from "puppeteer-core";
 import fs from "fs";
 import path from "path";
@@ -575,6 +576,17 @@ export class ExtractorService {
       extractedAt: new Date().toISOString(),
       wcagContrast: wcagReport,
     };
+
+    // Analyze and enrich with Design DNA (Archetype, Blueprints, Invariants)
+    try {
+      company.dna = await aiService.analyzeDesignDna({
+        company,
+        screenshotUrl,
+      });
+    } catch (dnaErr) {
+      console.warn("[ExtractorService] DNA analysis notice:", dnaErr);
+      company.dna = aiService.heuristicAnalyzeDna(company);
+    }
 
     // Automatically register in companiesStore (which saves to data.json)
     companiesStore.addCompany(company);

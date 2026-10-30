@@ -54,6 +54,31 @@ export interface DesignSystem {
   components: Record<string, ComponentToken>;
 }
 
+export interface SectionBlueprint {
+  name: string;
+  layoutType: string;
+  density: 'compact' | 'balanced' | 'sprawling';
+  keyVisualElements: string[];
+  typographyHierarchy: string;
+  designRule: string;
+}
+
+export interface DesignDna {
+  archetype: string;
+  visualAtmosphere: string;
+  spatialRhythm: {
+    density: 'compact' | 'balanced' | 'sprawling';
+    whitespaceStrategy: string;
+    containerMaxWidth: string;
+  };
+  sectionBlueprints: SectionBlueprint[];
+  invariants: {
+    always: string[];
+    never: string[];
+  };
+  adaptationGuidance: string;
+}
+
 export interface Company {
   id: string;
   name: string;
@@ -73,10 +98,51 @@ export interface Company {
   rawYaml: string;
   lastUpdated: string;
   verifiedStandard: boolean;
+  dna?: DesignDna;
   metrics: {
     contrastScore: string;
     tokenCount: number;
     agentReadyScore: number;
+  };
+}
+
+export type AIProviderType = 'gemini' | 'openai' | 'claude' | 'local' | 'heuristic';
+
+export interface AIProviderConfig {
+  provider: AIProviderType;
+  apiKey?: string;
+  baseUrl?: string;
+  model?: string;
+}
+
+export interface AdaptedSection {
+  name: string;
+  description: string;
+  dnaRuleApplied: string;
+}
+
+export interface AdaptDesignRequest {
+  companyId?: string;
+  brandName?: string;
+  designDna?: DesignDna;
+  designTokens?: any;
+  clientProjectContext: string;
+  clientName?: string;
+  providerConfig?: AIProviderConfig;
+}
+
+export interface AdaptDesignResponse {
+  success: boolean;
+  adaptedDesignMd: string;
+  rationale: string;
+  archetypeApplied: string;
+  adaptedSections: AdaptedSection[];
+  suggestedTokens: {
+    primary: string;
+    secondary: string;
+    tertiary: string;
+    neutral: string;
+    surface: string;
   };
 }
 

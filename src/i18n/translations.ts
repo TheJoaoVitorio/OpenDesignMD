@@ -117,6 +117,7 @@ export const translations = {
       markdownCopied: 'Markdown Copiado!',
       tabs: {
         spec: 'Especificação Renderizada',
+        dna: 'DNA & IA (Estilo & Seções)',
         yaml: 'Front Matter YAML',
         palette: 'Paleta de Cores',
         tailwind: 'Tailwind v4 (@theme)',
@@ -330,6 +331,7 @@ export const translations = {
       markdownCopied: 'Markdown Copied!',
       tabs: {
         spec: 'Rendered Spec',
+        dna: 'Design DNA & AI Transfer',
         yaml: 'YAML Front Matter',
         palette: 'Color Palette',
         tailwind: 'Tailwind v4 (@theme)',

@@ -3,7 +3,8 @@ import cors from "cors";
 import { companiesStore } from "./data/companiesStore.js";
 import { extractorService } from "./services/extractorService.js";
 import { exportService } from "./services/exportService.js";
-import { Company, ExportFormat } from "./types.js";
+import { aiService } from "./services/aiService.js";
+import { Company, ExportFormat, AdaptDesignRequest } from "./types.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -151,6 +152,151 @@ app.get("/api/export/:id/:format", (req: Request, res: Response) => {
   res.setHeader("Content-Type", exportResult.contentType);
   res.setHeader("Content-Disposition", `attachment; filename="${exportResult.filename}"`);
   res.send(exportResult.content);
+});
+
+// 8. List supported AI providers & defaults
+app.get("/api/ai/providers", (_req: Request, res: Response) => {
+  res.json({
+    success: true,
+    providers: [
+      {
+        id: "heuristic",
+        name: "Motor Heurístico Embutido",
+        description: "Zero configuração, roda 100% offline e sem necessidade de chaves de API.",
+        requiresApiKey: false,
+        requiresBaseUrl: false,
+        defaultModel: "heuristic-v1",
+      },
+      {
+        id: "local",
+        name: "IA Local (Ollama / LM Studio / vLLM)",
+        description: "Execute modelos multimodais locais como llama3.2-vision, qwen2.5-vl ou minicpm-v no seu computador.",
+        requiresApiKey: false,
+        requiresBaseUrl: true,
+        defaultBaseUrl: "http://localhost:11434/v1",
+        defaultModel: "llama3.2-vision",
+      },
+      {
+        id: "gemini",
+        name: "Google Gemini",
+        description: "Gemini 2.0 Flash / Pro Vision da Google com entendimento multimodal avançado de design.",
+        requiresApiKey: true,
+        requiresBaseUrl: false,
+        defaultModel: "gemini-2.0-flash",
+      },
+      {
+        id: "openai",
+        name: "OpenAI / OpenRouter / Groq",
+        description: "Compatível com GPT-4o, GPT-4o-mini ou qualquer API compatível com o formato OpenAI.",
+        requiresApiKey: true,
+        requiresBaseUrl: true,
+        defaultBaseUrl: "https://api.openai.com/v1",
+        defaultModel: "gpt-4o",
+      },
+      {
+        id: "claude",
+        name: "Anthropic Claude",
+        description: "Claude 3.5 Sonnet com precisão refinada em arquitetura de software e sistemas de design.",
+        requiresApiKey: true,
+        requiresBaseUrl: false,
+        defaultModel: "claude-3-5-sonnet-20241022",
+      },
+    ],
+  });
+});
+
+// 9. Analyze Design DNA (Archetype, Atmosphere, Section Blueprints, Invariants)
+app.post("/api/ai/analyze-dna", async (req: Request, res: Response) => {
+  try {
+    const { companyId, providerConfig } = req.body;
+
+    if (!companyId) {
+      res.status(400).json({ success: false, error: "companyId is required." });
+      return;
+    }
+
+    const company = companiesStore.getCompanyById(companyId);
+    if (!company) {
+      res.status(404).json({ success: false, error: `Company '${companyId}' not found.` });
+      return;
+    }
+
+    const dna = await aiService.analyzeDesignDna({
+      company,
+      screenshotUrl: company.screenshotUrl,
+      providerConfig,
+    });
+
+    // Save DNA to company in store
+    company.dna = dna;
+    companiesStore.addCompany(company);
+
+    res.json({
+      success: true,
+      companyId,
+      dna,
+    });
+  } catch (err: any) {
+    console.error("Analyze DNA error:", err);
+    res.status(500).json({
+      success: false,
+      error: "Failed to analyze design DNA.",
+      details: err?.message || String(err),
+    });
+  }
+});
+
+// 10. Adapt Design System to Client Project Context
+app.post("/api/ai/adapt-context", async (req: Request, res: Response) => {
+  try {
+    const payload = req.body as AdaptDesignRequest;
+
+    if (!payload.clientProjectContext || payload.clientProjectContext.trim() === "") {
+      res.status(400).json({
+        success: false,
+        error: "Param 'clientProjectContext' is required (describe the client's business/project).",
+      });
+      return;
+    }
+
+    // If companyId was given, load company
+    let brandName = payload.brandName;
+    let designDna = payload.designDna;
+    let designTokens = payload.designTokens;
+
+    if (payload.companyId) {
+      const company = companiesStore.getCompanyById(payload.companyId);
+      if (company) {
+        brandName = brandName || company.name;
+        designDna = designDna || company.dna || aiService.heuristicAnalyzeDna(company);
+        designTokens = designTokens || {
+          colors: company.colors,
+          typography: company.typography,
+          spacing: company.spacing,
+          rounded: company.rounded,
+        };
+      }
+    }
+
+    const adaptationResult = await aiService.adaptDesignToClient({
+      companyId: payload.companyId,
+      brandName: brandName || "Reference Brand",
+      designDna,
+      designTokens,
+      clientProjectContext: payload.clientProjectContext,
+      clientName: payload.clientName,
+      providerConfig: payload.providerConfig,
+    });
+
+    res.json(adaptationResult);
+  } catch (err: any) {
+    console.error("Adapt context error:", err);
+    res.status(500).json({
+      success: false,
+      error: "Failed to adapt design system to client context.",
+      details: err?.message || String(err),
+    });
+  }
 });
 
 // Start listening

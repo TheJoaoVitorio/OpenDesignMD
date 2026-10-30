@@ -113,7 +113,78 @@
       "contrastStatus": "AAA",
       "notes": "Contraste exemplar em fundo neutro (#FAF9F6) e primário (#121317)."
     },
-    "designMd": "---\nname: Google Antigravity\nversion: alpha\ncolors:\n  primary: \"#121317\"\n  secondary: \"#5F6368\"\n  tertiary: \"#1A73E8\"\n  neutral: \"#FAF9F6\"\n  surface: \"#FFFFFF\"\n  surface-variant: \"#F1F3F4\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E8EAED\"\n  border-subtle: \"rgba(0, 0, 0, 0.06)\"\n  accent-glow: \"rgba(26, 115, 232, 0.12)\"\ntypography:\n  fontFamily: \"Google Sans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"'Google Sans Mono', 'SFMono-Regular', Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.5rem\n    fontWeight: 500\n    lineHeight: 1.1\n    letterSpacing: \"-0.035em\"\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.25rem\n    fontWeight: 500\n    lineHeight: 1.2\n    letterSpacing: \"-0.025em\"\n  h3:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.5rem\n    fontWeight: 500\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.55\n  label-caps:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.75rem\n    fontWeight: 500\n    letterSpacing: \"0.06em\"\nrounded:\n  sm: 8px\n  md: 14px\n  lg: 20px\n  xl: 28px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.primary}\"\n    textColor: \"{colors.on-primary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  button-secondary:\n    backgroundColor: \"{colors.surface}\"\n    textColor: \"{colors.primary}\"\n    border: \"1px solid {colors.border}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.xl}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n## Overview\n\nO OpenDesignMD adota com rigor a estética de **\"Engineered Calm\"** e hiper-precisão tipográfica do **Google Antigravity** (`antigravity.google`). O design se apoia em uma paleta monocromática disciplinada com vasto respiro negativo, tipografia forte em Google Sans com tracking negativo nos títulos, pílulas suaves (`rounded.full`) e toques cirúrgicos de azul e difusão cromática.\n\n## Colors\n\nA paleta prioriza a sobriedade sobre o ruído visual, reservando saturação apenas para interações e momentos de ênfase:\n- **Primary (`#121317`):** Tinta preta pura para textos principais, títulos e o botão de ação primordial (Hero CTA).\n- **Secondary (`#5F6368`):** Cinza ardósia neutro para legendas, metadados e ícones informativos.\n- **Tertiary (`#1A73E8`):** O clássico Google Blue utilizado de forma estritamente cirúrgica para links ativos e pílulas de destaque.\n- **Neutral (`#FAF9F6`):** Canvas de base suave, oferecendo um fundo quente e menos ofuscante que o branco puro.\n- **Surface (`#FFFFFF`):** Superfície limpa de cards flutuantes e modais.\n\n## Typography\n\nUtiliza **Google Sans / Inter** com dois registros propositalmente opostos:\n- **Display & Títulos:** Letras monumentais em peso 500 com tracking fortemente negativo (`-0.035em`), criando blocos de leitura sólidos e arquitetônicos.\n- **Interface & Textos:** Tamanhos confortáveis (`body-md: 0.9375rem`), entrelinha relaxada (`1.55`) e tracking neutro para máxima legibilidade.\n- **Metadados & Badges (`label-caps`):** Caixa alta sutil com tracking espaçado (`0.06em`).\n\n## Layout\n\n- **Grid:** Estrutura baseada em múltiplos rigorosos de 4px e 8px, com largura máxima contida em 1440px e margem lateral fluida de 32px a 72px.\n- **Vasto Espaço Negativo:** As seções da Landing Page respiram com paddings de 80px (`{spacing.4xl}`) entre blocos de conteúdo.\n\n## Elevation & Depth\n\n- **Elevação 1 (Cards):** Borda suave (`1px solid {colors.border}`) sem sombra pesada, usando superfícies sólidas e transições sutis.\n- **Elevação 2 (Hover & Destaques):** Leve projeção (`box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.05)`).\n- **Elevação 3 (Modais e Detalhes):** Fundo translúcido com `backdrop-filter: blur(16px)` e borda refinada de alta luminosidade.\n\n## Shapes\n\n- Botões, campos de busca e tags adotam formato de **pílula completa** (`{rounded.full}`).\n- Cards e contêineres principais utilizam cantos generosamente arredondados (`{rounded.xl}` = 28px).\n- Modais e janelas flutuantes utilizam cantos suaves de 20px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\n- Formato de pílula preta sólida (`#121317`) com tipografia branca, padding generoso e transição suave no hover.\n\n### Botão Secundário (`button-secondary`)\n- Fundo branco/neutro com contorno sutil (`1px solid {colors.border}`) e texto escuro.\n\n### Cards de Empresas\n- Borda fina e canto suave, apresentando logotipo, paleta em círculos e botões de ação direta.\n\n## Do's and Don'ts\n\n### Do's:\n- **Respeite o respiro:** Deixe o espaço em branco carregar a sofisticação da interface.\n- **Use pílulas consistentes:** Botões e chips de tags devem sempre adotar `{rounded.full}`.\n- **Mantenha o contraste:** O botão preto principal deve se destacar imediatamente como o ponto focal.\n\n### Don'ts:\n- **Não crie novas cores primárias:** Toda nova interface gerada por IA deve reutilizar a paleta declarada.\n- **Não use gradientes pesados:** Evite fundos coloridos saturados atrás de blocos de texto.\n- **Não use bordas pontiagudas:** Não misture cantos de 0px ou 2px em um layout projetado com cantos amplos."
+    "designMd": "---\nname: Google Antigravity\nversion: alpha\ncolors:\n  primary: \"#121317\"\n  secondary: \"#5F6368\"\n  tertiary: \"#1A73E8\"\n  neutral: \"#FAF9F6\"\n  surface: \"#FFFFFF\"\n  surface-variant: \"#F1F3F4\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E8EAED\"\n  border-subtle: \"rgba(0, 0, 0, 0.06)\"\n  accent-glow: \"rgba(26, 115, 232, 0.12)\"\ntypography:\n  fontFamily: \"Google Sans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"'Google Sans Mono', 'SFMono-Regular', Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.5rem\n    fontWeight: 500\n    lineHeight: 1.1\n    letterSpacing: \"-0.035em\"\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.25rem\n    fontWeight: 500\n    lineHeight: 1.2\n    letterSpacing: \"-0.025em\"\n  h3:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.5rem\n    fontWeight: 500\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.55\n  label-caps:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.75rem\n    fontWeight: 500\n    letterSpacing: \"0.06em\"\nrounded:\n  sm: 8px\n  md: 14px\n  lg: 20px\n  xl: 28px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.primary}\"\n    textColor: \"{colors.on-primary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  button-secondary:\n    backgroundColor: \"{colors.surface}\"\n    textColor: \"{colors.primary}\"\n    border: \"1px solid {colors.border}\"\n    rounded: \"{rounded.full}\"\n    padding: \"10px 24px\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.xl}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n## Overview\n\nO OpenDesignMD adota com rigor a estética de **\"Engineered Calm\"** e hiper-precisão tipográfica do **Google Antigravity** (`antigravity.google`). O design se apoia em uma paleta monocromática disciplinada com vasto respiro negativo, tipografia forte em Google Sans com tracking negativo nos títulos, pílulas suaves (`rounded.full`) e toques cirúrgicos de azul e difusão cromática.\n\n## Colors\n\nA paleta prioriza a sobriedade sobre o ruído visual, reservando saturação apenas para interações e momentos de ênfase:\n- **Primary (`#121317`):** Tinta preta pura para textos principais, títulos e o botão de ação primordial (Hero CTA).\n- **Secondary (`#5F6368`):** Cinza ardósia neutro para legendas, metadados e ícones informativos.\n- **Tertiary (`#1A73E8`):** O clássico Google Blue utilizado de forma estritamente cirúrgica para links ativos e pílulas de destaque.\n- **Neutral (`#FAF9F6`):** Canvas de base suave, oferecendo um fundo quente e menos ofuscante que o branco puro.\n- **Surface (`#FFFFFF`):** Superfície limpa de cards flutuantes e modais.\n\n## Typography\n\nUtiliza **Google Sans / Inter** com dois registros propositalmente opostos:\n- **Display & Títulos:** Letras monumentais em peso 500 com tracking fortemente negativo (`-0.035em`), criando blocos de leitura sólidos e arquitetônicos.\n- **Interface & Textos:** Tamanhos confortáveis (`body-md: 0.9375rem`), entrelinha relaxada (`1.55`) e tracking neutro para máxima legibilidade.\n- **Metadados & Badges (`label-caps`):** Caixa alta sutil com tracking espaçado (`0.06em`).\n\n## Layout\n\n- **Grid:** Estrutura baseada em múltiplos rigorosos de 4px e 8px, com largura máxima contida em 1440px e margem lateral fluida de 32px a 72px.\n- **Vasto Espaço Negativo:** As seções da Landing Page respiram com paddings de 80px (`{spacing.4xl}`) entre blocos de conteúdo.\n\n## Elevation & Depth\n\n- **Elevação 1 (Cards):** Borda suave (`1px solid {colors.border}`) sem sombra pesada, usando superfícies sólidas e transições sutis.\n- **Elevação 2 (Hover & Destaques):** Leve projeção (`box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.05)`).\n- **Elevação 3 (Modais e Detalhes):** Fundo translúcido com `backdrop-filter: blur(16px)` e borda refinada de alta luminosidade.\n\n## Shapes\n\n- Botões, campos de busca e tags adotam formato de **pílula completa** (`{rounded.full}`).\n- Cards e contêineres principais utilizam cantos generosamente arredondados (`{rounded.xl}` = 28px).\n- Modais e janelas flutuantes utilizam cantos suaves de 20px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\n- Formato de pílula preta sólida (`#121317`) com tipografia branca, padding generoso e transição suave no hover.\n\n### Botão Secundário (`button-secondary`)\n- Fundo branco/neutro com contorno sutil (`1px solid {colors.border}`) e texto escuro.\n\n### Cards de Empresas\n- Borda fina e canto suave, apresentando logotipo, paleta em círculos e botões de ação direta.\n\n## Do's and Don'ts\n\n### Do's:\n- **Respeite o respiro:** Deixe o espaço em branco carregar a sofisticação da interface.\n- **Use pílulas consistentes:** Botões e chips de tags devem sempre adotar `{rounded.full}`.\n- **Mantenha o contraste:** O botão preto principal deve se destacar imediatamente como o ponto focal.\n\n### Don'ts:\n- **Não crie novas cores primárias:** Toda nova interface gerada por IA deve reutilizar a paleta declarada.\n- **Não use gradientes pesados:** Evite fundos coloridos saturados atrás de blocos de texto.\n- **Não use bordas pontiagudas:** Não misture cantos de 0px ou 2px em um layout projetado com cantos amplos.",
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "stripe",
@@ -213,7 +284,78 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA"
     },
-    "designMd": "---\nname: Stripe\nversion: alpha\ncolors:\n  primary: \"#0A2540\"\n  secondary: \"#425466\"\n  tertiary: \"#635BFF\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F9FC\"\n  accent: \"#00D4FF\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E6EBF1\"\ntypography:\n  fontFamily: \"Söhne, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.25rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.125rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1rem\n    fontWeight: 400\n    lineHeight: 1.6\nrounded:\n  sm: 4px\n  md: 8px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"9px 20px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system da Stripe é a referência global para interfaces de tecnologia financeira e SaaS de alta conversão. Ele equilibra engenharia de rigor com fluidez visual, destacando-se por fundos limpos com gradientes mesh suaves, cartões elevados e o icônico índigo `#635BFF` em botões de conversão primária.\n\n## Colors\n\n- **Primary (`#0A2540`):** Azul marinho ultra-escuro para títulos e tipografia com autoridade executiva.\n- **Secondary (`#425466`):** Cinza azulado neutro para parágrafos explicativos e legendas.\n- **Tertiary (`#635BFF`):** O característico Stripe Indigo para todos os botões de ação e gatilhos de fluxo.\n- **Neutral (`#FFFFFF`):** Fundo branco absoluto que maximiza luminosidade e nitidez.\n- **Surface (`#F6F9FC`):** Superfície clara e suave para cartões de produtos e contêineres de dados.\n- **Accent (`#00D4FF`):** Ciano elétrico utilizado como cor de suporte em gradientes e gráficos de conversão.\n\n## Typography\n\nBaseada na família tipográfica **Söhne**, oferecendo precisão suíça:\n- **Títulos (H1, H2):** Pesos sólidos (600/700) com proporções geométricas compactas.\n- **Textos de interface:** Linhas arejadas com entrelinha 1.6 para facilitar a digestão de métricas e formulários de checkout.\n\n## Layout\n\nEscala modular com base 8px. As seções utilizam transições angulares sutis (-6 graus ou gradientes de corte) e largura máxima contida de 1200px.\n\n## Elevation & Depth\n\n- **Nível 1:** Bordas sólidas ultrafinas (`1px solid #E6EBF1`) com sombreamento suave: `box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.08)`.\n- **Nível 2:** Hover de cartões interativos com elevação progressiva: `box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.12)`.\n\n## Shapes\n\n- Botões utilizam pílula completa (`rounded.full`) ou cantos moderados (`8px`).\n- Cards utilizam raio de 16px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo índigo vibrante (`#635BFF`), texto branco com peso 600, cantos de pílula e micro-interação de elevação no foco.\n\n### Cartão de Informação (`card`)\nFundo `#F6F9FC`, borda `#E6EBF1` e padding interno generoso de 24px.\n\n## Do's and Don'ts\n\n### Do's:\n- Utilize `#635BFF` exclusivamente para a ação mais importante da tela.\n- Mantenha sombras em tons de azul-marinho com baixa opacidade em vez de cinza neutro.\n\n### Don'ts:\n- Nunca sobrecarregue a interface com múltiplos botões de fundo índigo na mesma viewport.\n- Não utilize cantos afiados (0px) em cartões."
+    "designMd": "---\nname: Stripe\nversion: alpha\ncolors:\n  primary: \"#0A2540\"\n  secondary: \"#425466\"\n  tertiary: \"#635BFF\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F9FC\"\n  accent: \"#00D4FF\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E6EBF1\"\ntypography:\n  fontFamily: \"Söhne, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.25rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.125rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1rem\n    fontWeight: 400\n    lineHeight: 1.6\nrounded:\n  sm: 4px\n  md: 8px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"9px 20px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system da Stripe é a referência global para interfaces de tecnologia financeira e SaaS de alta conversão. Ele equilibra engenharia de rigor com fluidez visual, destacando-se por fundos limpos com gradientes mesh suaves, cartões elevados e o icônico índigo `#635BFF` em botões de conversão primária.\n\n## Colors\n\n- **Primary (`#0A2540`):** Azul marinho ultra-escuro para títulos e tipografia com autoridade executiva.\n- **Secondary (`#425466`):** Cinza azulado neutro para parágrafos explicativos e legendas.\n- **Tertiary (`#635BFF`):** O característico Stripe Indigo para todos os botões de ação e gatilhos de fluxo.\n- **Neutral (`#FFFFFF`):** Fundo branco absoluto que maximiza luminosidade e nitidez.\n- **Surface (`#F6F9FC`):** Superfície clara e suave para cartões de produtos e contêineres de dados.\n- **Accent (`#00D4FF`):** Ciano elétrico utilizado como cor de suporte em gradientes e gráficos de conversão.\n\n## Typography\n\nBaseada na família tipográfica **Söhne**, oferecendo precisão suíça:\n- **Títulos (H1, H2):** Pesos sólidos (600/700) com proporções geométricas compactas.\n- **Textos de interface:** Linhas arejadas com entrelinha 1.6 para facilitar a digestão de métricas e formulários de checkout.\n\n## Layout\n\nEscala modular com base 8px. As seções utilizam transições angulares sutis (-6 graus ou gradientes de corte) e largura máxima contida de 1200px.\n\n## Elevation & Depth\n\n- **Nível 1:** Bordas sólidas ultrafinas (`1px solid #E6EBF1`) com sombreamento suave: `box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.08)`.\n- **Nível 2:** Hover de cartões interativos com elevação progressiva: `box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.12)`.\n\n## Shapes\n\n- Botões utilizam pílula completa (`rounded.full`) ou cantos moderados (`8px`).\n- Cards utilizam raio de 16px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo índigo vibrante (`#635BFF`), texto branco com peso 600, cantos de pílula e micro-interação de elevação no foco.\n\n### Cartão de Informação (`card`)\nFundo `#F6F9FC`, borda `#E6EBF1` e padding interno generoso de 24px.\n\n## Do's and Don'ts\n\n### Do's:\n- Utilize `#635BFF` exclusivamente para a ação mais importante da tela.\n- Mantenha sombras em tons de azul-marinho com baixa opacidade em vez de cinza neutro.\n\n### Don'ts:\n- Nunca sobrecarregue a interface com múltiplos botões de fundo índigo na mesma viewport.\n- Não utilize cantos afiados (0px) em cartões.",
+    "dna": {
+      "archetype": "Prismatic High-Precision Tech",
+      "visualAtmosphere": "Sleek developer-centric elegance featuring prismatic gradient mesh backdrops, crisp 1px borders, monospace accent chips, interactive code tabs, and impeccable typographic scale.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Structured mathematical rhythm balancing technical documentation density with commercial landing page elegance.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Split-Screen 55/45: Value Proposition & Live Interactive Terminal",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Multi-angle gradient mesh canvas",
+            "Interactive live code snippet with syntax highlighting",
+            "Copy to clipboard button"
+          ],
+          "typographyHierarchy": "Crisp H1 with gradient highlight words",
+          "designRule": "Prove the product's value with copy-pasteable real code in the hero viewport."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "Modular Architecture Diagram Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "SVG animated flow lines",
+            "1px border surface containers",
+            "Monospace tech badges"
+          ],
+          "typographyHierarchy": "Clear H3 title with monospaced API route label",
+          "designRule": "Treat every feature as an infrastructure component with predictable inputs and outputs."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Enterprise Metrics Billboard",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Stat counter (99.999% uptime, $100B+ volume)",
+            "Enterprise logo cluster"
+          ],
+          "typographyHierarchy": "Massive statistical digits in bold display font",
+          "designRule": "Lead with undeniable scale, volume, and uptime reliability."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Dual Path: Developer Terminal vs Sales Contact",
+          "density": "balanced",
+          "keyVisualElements": [
+            "One-click CLI install snippet",
+            "Direct enterprise sales consultation button"
+          ],
+          "typographyHierarchy": "Action-oriented H2 with clear bifurcation for dev vs executive",
+          "designRule": "Never force developers into a sales call; always offer instant CLI or API signup."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always incorporate live code snippets or interactive sandboxes.",
+          "Always align text and elements strictly to a 4px/8px grid.",
+          "Always include monospaced font for tokens, technical parameters, and API endpoints.",
+          "Always use prismatic gradient accents to guide visual attention to focal points."
+        ],
+        "never": [
+          "Never use low-resolution screenshots or non-interactive mockups.",
+          "Never use vague buzzwords without demonstrating concrete technical implementation.",
+          "Never use clunky modal popups that block reading."
+        ]
+      },
+      "adaptationGuidance": "Adapt this system by framing the client's offering as high-reliability infrastructure. Use gradient mesh accents, live interactive calculators or code blocks, and crisp geometric cards."
+    }
   },
   {
     "id": "linear",
@@ -312,7 +454,90 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA"
     },
-    "designMd": "---\nname: Linear\nversion: alpha\ncolors:\n  primary: \"#F7F8F8\"\n  secondary: \"#8A8F98\"\n  tertiary: \"#5E6AD2\"\n  neutral: \"#08090A\"\n  surface: \"#101114\"\n  surface-variant: \"#191A1E\"\n  accent: \"#5E6AD2\"\n  on-primary: \"#08090A\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 600\n    lineHeight: 1.1\n    letterSpacing: \"-0.04em\"\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.03em\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 6px\n  md: 10px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 12px\n  lg: 20px\n  xl: 28px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Linear é o padrão de excelência em aplicações produtivas modernas operando em Dark Mode nativo. Focado em velocidade e precisão de teclado, sua interface elimina supérfluos visuais através de paletas quase monocromáticas em tons escuros e acentos sutis em ultravioleta (`#5E6AD2`).\n\n## Colors\n\n- **Primary (`#F7F8F8`):** Branco quase puro com leve aquecimento para leitura de texto sem fadiga ocular.\n- **Secondary (`#8A8F98`):** Cinza médio de alta fidelidade para descrições de tarefas e teclas de atalho.\n- **Tertiary (`#5E6AD2`):** Violeta elétrico característico para seleção de status e botões primários.\n- **Neutral (`#08090A`):** Fundo cósmico escuro profundo (não #000000 puro, mas preto sutilmente cinzelado).\n- **Surface (`#101114`):** Painéis e listas de navegação suspensas.\n\n## Typography\n\nUtiliza a família **Inter** com kerning ajustado e letter-spacing comprimido nos títulos (`-0.04em`), conferindo peso visual e densidade técnica.\n\n## Layout\n\nGrade ultra compacta com base de 4px e 12px, permitindo grande volume de dados operacionais sem sensação de aperto.\n\n## Elevation & Depth\n\nNão usa sombras difusas convencionais. O efeito de profundidade é criado através de bordas translúcidas (`rgba(255, 255, 255, 0.08)`) e variações de luminosidade entre camadas.\n\n## Shapes\n\nCantos contidos e modernos (`6px` a `10px`), preservando o aspecto utilitário de uma ferramenta de alta engenharia.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo `#5E6AD2`, cantos `rounded.md` (10px), texto nítido e hover com iluminação por gradiente sutil superior.\n\n### Cartão de Tarefa / Issue\nFundo `#101114`, contorno fino de 1px translúcido, hover com clareamento da superfície para `#191A1E`.\n\n## Do's and Don'ts\n\n### Do's:\n- Mantenha contrastes rigorosos e linhas de 1px em separadores.\n- Favoreça comandos de atalho visíveis ao lado de rótulos de botões.\n\n### Don'ts:\n- Nunca utilize sombras pretas pesadas em fundo escuro.\n- Evite elementos puramente decorativos que interfiram na velocidade da interface."
+    "designMd": "---\nname: Linear\nversion: alpha\ncolors:\n  primary: \"#F7F8F8\"\n  secondary: \"#8A8F98\"\n  tertiary: \"#5E6AD2\"\n  neutral: \"#08090A\"\n  surface: \"#101114\"\n  surface-variant: \"#191A1E\"\n  accent: \"#5E6AD2\"\n  on-primary: \"#08090A\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 600\n    lineHeight: 1.1\n    letterSpacing: \"-0.04em\"\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.03em\"\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 6px\n  md: 10px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 12px\n  lg: 20px\n  xl: 28px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Linear é o padrão de excelência em aplicações produtivas modernas operando em Dark Mode nativo. Focado em velocidade e precisão de teclado, sua interface elimina supérfluos visuais através de paletas quase monocromáticas em tons escuros e acentos sutis em ultravioleta (`#5E6AD2`).\n\n## Colors\n\n- **Primary (`#F7F8F8`):** Branco quase puro com leve aquecimento para leitura de texto sem fadiga ocular.\n- **Secondary (`#8A8F98`):** Cinza médio de alta fidelidade para descrições de tarefas e teclas de atalho.\n- **Tertiary (`#5E6AD2`):** Violeta elétrico característico para seleção de status e botões primários.\n- **Neutral (`#08090A`):** Fundo cósmico escuro profundo (não #000000 puro, mas preto sutilmente cinzelado).\n- **Surface (`#101114`):** Painéis e listas de navegação suspensas.\n\n## Typography\n\nUtiliza a família **Inter** com kerning ajustado e letter-spacing comprimido nos títulos (`-0.04em`), conferindo peso visual e densidade técnica.\n\n## Layout\n\nGrade ultra compacta com base de 4px e 12px, permitindo grande volume de dados operacionais sem sensação de aperto.\n\n## Elevation & Depth\n\nNão usa sombras difusas convencionais. O efeito de profundidade é criado através de bordas translúcidas (`rgba(255, 255, 255, 0.08)`) e variações de luminosidade entre camadas.\n\n## Shapes\n\nCantos contidos e modernos (`6px` a `10px`), preservando o aspecto utilitário de uma ferramenta de alta engenharia.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo `#5E6AD2`, cantos `rounded.md` (10px), texto nítido e hover com iluminação por gradiente sutil superior.\n\n### Cartão de Tarefa / Issue\nFundo `#101114`, contorno fino de 1px translúcido, hover com clareamento da superfície para `#191A1E`.\n\n## Do's and Don'ts\n\n### Do's:\n- Mantenha contrastes rigorosos e linhas de 1px em separadores.\n- Favoreça comandos de atalho visíveis ao lado de rótulos de botões.\n\n### Don'ts:\n- Nunca utilize sombras pretas pesadas em fundo escuro.\n- Evite elementos puramente decorativos que interfiram na velocidade da interface.",
+    "dna": {
+      "archetype": "Engineered Calm (Tactile Darkroom)",
+      "visualAtmosphere": "High-precision dark workspace characterized by 1px borders with 8-12% opacity, micro-radiuses, subtle radial glow lights behind key focal points, keyboard shortcut indicators (KBD tags), and monochromatic depth planes.",
+      "spatialRhythm": {
+        "density": "compact",
+        "whitespaceStrategy": "Disciplined mathematical rhythm (8px baseline grid) prioritizing information density and zero visual clutter.",
+        "containerMaxWidth": "1200px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centered High-Impact Typography with Floating App Viewport",
+          "density": "compact",
+          "keyVisualElements": [
+            "1px subtle border app mockup",
+            "Micro-badge status indicator",
+            "Dual CTA with keyboard shortcut"
+          ],
+          "typographyHierarchy": "Display H1 with negative tracking (-0.03em) leading directly to muted secondary subtitle",
+          "designRule": "Never use stock illustration; showcase the actual user interface running inside a dark glass enclosure."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "Asymmetric Bento Grid (3-to-4 Columns)",
+          "density": "compact",
+          "keyVisualElements": [
+            "Glassmorphic dark cards",
+            "Subtle white/10 border on hover",
+            "Interactive state previews"
+          ],
+          "typographyHierarchy": "Card titles in H3 semibold with muted body text and monospace keyboard tag",
+          "designRule": "Each bento tile must highlight an engineering capability rather than marketing superlatives."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Monochromatic Logo Ribbon",
+          "density": "compact",
+          "keyVisualElements": [
+            "SVG logos rendered in 40% opacity grayscale",
+            "No heavy badge backgrounds"
+          ],
+          "typographyHierarchy": "Single muted labelCaps lead text",
+          "designRule": "All logos must normalize to equal optical height and disappear into the dark background."
+        },
+        {
+          "name": "Interactive Demo",
+          "layoutType": "Keyboard-Driven Interactive Sandbox",
+          "density": "compact",
+          "keyVisualElements": [
+            "Command menu mockup (⌘K)",
+            "Interactive list view with keyboard navigation"
+          ],
+          "typographyHierarchy": "Monospaced code labels and compact row items",
+          "designRule": "Allow the user to experience software responsiveness before signing up."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Minimalist Radial Spotlight Deck",
+          "density": "compact",
+          "keyVisualElements": [
+            "Single primary button with inner highlight border",
+            "Subtle gradient mesh beneath card"
+          ],
+          "typographyHierarchy": "H2 display headline followed by instant signup button",
+          "designRule": "Zero distractions; a single high-contrast primary action button."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always use 1px border with rgba(255, 255, 255, 0.08) to separate dark containers.",
+          "Always include keyboard shortcuts (⌘K, Enter) near interactive actions.",
+          "Always maintain strict 8px/16px spatial padding for tactical ergonomics.",
+          "Always provide instant visual feedback on hover using border luminance shifts rather than scale bounce."
+        ],
+        "never": [
+          "Never use bubbly, high-saturation cartoon illustrations or hand-drawn doodles.",
+          "Never use colored drop shadows or diffuse blur > 20px.",
+          "Never use rounded pill buttons (border-radius: 9999px); strictly use 6px-10px squircle radius.",
+          "Never use low-contrast gray text on dark gray without meeting WCAG AA 4.5:1 ratio."
+        ]
+      },
+      "adaptationGuidance": "When adapting this system to client products, frame the client's problem as an engineering workflow. Use dark themes with 1px translucent borders, tight spacing, monospaced metadata, and high-efficiency keyboard-navigable components."
+    }
   },
   {
     "id": "vercel",
@@ -411,7 +636,78 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA"
     },
-    "designMd": "---\nname: Vercel\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#666666\"\n  tertiary: \"#0070F3\"\n  neutral: \"#FFFFFF\"\n  surface: \"#FAFAFA\"\n  surface-variant: \"#F2F2F2\"\n  accent: \"#0070F3\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#EAEAEA\"\ntypography:\n  fontFamily: \"Geist Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"Geist Mono, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.6\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 8px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.primary}\"\n    textColor: \"{colors.on-primary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system da Vercel (Geist Design System) apoia-se em geometria hiper-precisa, tipografia monospace e sans nativas da marca e contraste monocromático absoluto. O foco é a experiência do desenvolvedor em deploy instantâneo na borda (edge).\n\n## Colors\n\n- **Primary (`#000000`):** Preto absoluto que ancora títulos e o botão de ação principal.\n- **Secondary (`#666666`):** Cinza neutro 50% para rótulos secundários.\n- **Tertiary (`#0070F3`):** Vercel Blue clássico para links interativos e status de sucesso em builds.\n- **Neutral (`#FFFFFF`):** Fundo branco base limpo e imutável.\n- **Surface (`#FAFAFA`):** Fundo de cards discretos.\n\n## Typography\n\nAlimentado pelo **Geist Sans** e **Geist Mono**, projetados especificamente para legibilidade de código, comandos de terminal e densidade de painéis na web.\n\n## Layout\n\nEstrutura métrica rigorosa em escala 8px. Linhas divisórias ultrafinas (`#EAEAEA`) que dividem a página com precisão de blueprint de engenharia.\n\n## Elevation & Depth\n\nNão utiliza sombras decorativas em sua forma básica; a profundidade é demarcada exclusivamente por bordas vetoriais finas de 1px.\n\n## Shapes\n\nCantos contidos entre 4px e 8px (`{rounded.sm}` e `{rounded.lg}`). Não se usam cantos circulares em cards nem em botões corporativos.\n\n## Components\n\n### Botão Primário (`button-primary`)\nBloco preto sólido (`#000000`), tipografia branca em Geist Sans, cantos em 6px e hover com inversão suave de contraste.\n\n### Card\nFundo em cinza claro (`#FAFAFA`), borda sólida `#EAEAEA`, cantos de 8px e padding de 24px.\n\n## Do's and Don'ts\n\n### Do's:\n- Use fontes monospace para identificadores de branches, commits e domínios.\n- Respeite o alinhamento estrito dos divisores verticais e horizontais.\n\n### Don'ts:\n- Não introduza paletas coloridas aleatórias fora da escala monocromática e do azul cobalto.\n- Evite sombras desfocadas com raio superior a 8px."
+    "designMd": "---\nname: Vercel\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#666666\"\n  tertiary: \"#0070F3\"\n  neutral: \"#FFFFFF\"\n  surface: \"#FAFAFA\"\n  surface-variant: \"#F2F2F2\"\n  accent: \"#0070F3\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#EAEAEA\"\ntypography:\n  fontFamily: \"Geist Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"Geist Mono, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.6\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 8px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.primary}\"\n    textColor: \"{colors.on-primary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system da Vercel (Geist Design System) apoia-se em geometria hiper-precisa, tipografia monospace e sans nativas da marca e contraste monocromático absoluto. O foco é a experiência do desenvolvedor em deploy instantâneo na borda (edge).\n\n## Colors\n\n- **Primary (`#000000`):** Preto absoluto que ancora títulos e o botão de ação principal.\n- **Secondary (`#666666`):** Cinza neutro 50% para rótulos secundários.\n- **Tertiary (`#0070F3`):** Vercel Blue clássico para links interativos e status de sucesso em builds.\n- **Neutral (`#FFFFFF`):** Fundo branco base limpo e imutável.\n- **Surface (`#FAFAFA`):** Fundo de cards discretos.\n\n## Typography\n\nAlimentado pelo **Geist Sans** e **Geist Mono**, projetados especificamente para legibilidade de código, comandos de terminal e densidade de painéis na web.\n\n## Layout\n\nEstrutura métrica rigorosa em escala 8px. Linhas divisórias ultrafinas (`#EAEAEA`) que dividem a página com precisão de blueprint de engenharia.\n\n## Elevation & Depth\n\nNão utiliza sombras decorativas em sua forma básica; a profundidade é demarcada exclusivamente por bordas vetoriais finas de 1px.\n\n## Shapes\n\nCantos contidos entre 4px e 8px (`{rounded.sm}` e `{rounded.lg}`). Não se usam cantos circulares em cards nem em botões corporativos.\n\n## Components\n\n### Botão Primário (`button-primary`)\nBloco preto sólido (`#000000`), tipografia branca em Geist Sans, cantos em 6px e hover com inversão suave de contraste.\n\n### Card\nFundo em cinza claro (`#FAFAFA`), borda sólida `#EAEAEA`, cantos de 8px e padding de 24px.\n\n## Do's and Don'ts\n\n### Do's:\n- Use fontes monospace para identificadores de branches, commits e domínios.\n- Respeite o alinhamento estrito dos divisores verticais e horizontais.\n\n### Don'ts:\n- Não introduza paletas coloridas aleatórias fora da escala monocromática e do azul cobalto.\n- Evite sombras desfocadas com raio superior a 8px.",
+    "dna": {
+      "archetype": "Prismatic High-Precision Tech",
+      "visualAtmosphere": "Sleek developer-centric elegance featuring prismatic gradient mesh backdrops, crisp 1px borders, monospace accent chips, interactive code tabs, and impeccable typographic scale.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Structured mathematical rhythm balancing technical documentation density with commercial landing page elegance.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Split-Screen 55/45: Value Proposition & Live Interactive Terminal",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Multi-angle gradient mesh canvas",
+            "Interactive live code snippet with syntax highlighting",
+            "Copy to clipboard button"
+          ],
+          "typographyHierarchy": "Crisp H1 with gradient highlight words",
+          "designRule": "Prove the product's value with copy-pasteable real code in the hero viewport."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "Modular Architecture Diagram Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "SVG animated flow lines",
+            "1px border surface containers",
+            "Monospace tech badges"
+          ],
+          "typographyHierarchy": "Clear H3 title with monospaced API route label",
+          "designRule": "Treat every feature as an infrastructure component with predictable inputs and outputs."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Enterprise Metrics Billboard",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Stat counter (99.999% uptime, $100B+ volume)",
+            "Enterprise logo cluster"
+          ],
+          "typographyHierarchy": "Massive statistical digits in bold display font",
+          "designRule": "Lead with undeniable scale, volume, and uptime reliability."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Dual Path: Developer Terminal vs Sales Contact",
+          "density": "balanced",
+          "keyVisualElements": [
+            "One-click CLI install snippet",
+            "Direct enterprise sales consultation button"
+          ],
+          "typographyHierarchy": "Action-oriented H2 with clear bifurcation for dev vs executive",
+          "designRule": "Never force developers into a sales call; always offer instant CLI or API signup."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always incorporate live code snippets or interactive sandboxes.",
+          "Always align text and elements strictly to a 4px/8px grid.",
+          "Always include monospaced font for tokens, technical parameters, and API endpoints.",
+          "Always use prismatic gradient accents to guide visual attention to focal points."
+        ],
+        "never": [
+          "Never use low-resolution screenshots or non-interactive mockups.",
+          "Never use vague buzzwords without demonstrating concrete technical implementation.",
+          "Never use clunky modal popups that block reading."
+        ]
+      },
+      "adaptationGuidance": "Adapt this system by framing the client's offering as high-reliability infrastructure. Use gradient mesh accents, live interactive calculators or code blocks, and crisp geometric cards."
+    }
   },
   {
     "id": "supabase",
@@ -510,7 +806,90 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA"
     },
-    "designMd": "---\nname: Supabase\nversion: alpha\ncolors:\n  primary: \"#EDEDED\"\n  secondary: \"#888888\"\n  tertiary: \"#3ECF8E\"\n  neutral: \"#121212\"\n  surface: \"#1C1C1C\"\n  surface-variant: \"#242424\"\n  accent: \"#3ECF8E\"\n  on-primary: \"#121212\"\n  on-tertiary: \"#121212\"\n  border: \"#282828\"\ntypography:\n  fontFamily: \"Circular, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"'Source Code Pro', monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.25rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.125rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.55\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 10px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 18px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system do Supabase é construído para desenvolvedores que operam com infraestrutura de dados em tempo real. O verde esmeralda distintivo (`#3ECF8E`) sobressai contra um cenário escuro de carvão texturizado, transmitindo agilidade e poder de banco de dados aberto.\n\n## Colors\n\n- **Primary (`#EDEDED`):** Branco frio para máxima legibilidade de esquemas SQL e logs.\n- **Secondary (`#888888`):** Cinza de intensidade moderada para metadados de tabelas.\n- **Tertiary (`#3ECF8E`):** Supabase Emerald, a cor assinatura para ações primárias e status online.\n- **Neutral (`#121212`):** Fundo carvão profundo escuro.\n- **Surface (`#1C1C1C`):** Superfícies de tabelas, painéis de controle e editores de consultas.\n\n## Typography\n\nTipografia técnica e amigável (Circular / Inter) com ênfase em blocos de código SQL e JSON estruturados.\n\n## Layout\n\nGrade pragmática com colunas fixas e tabelas com rolagem horizontal livre. Espaçamento base de 8px e 16px.\n\n## Elevation & Depth\n\nContraste entre `#121212` e `#1C1C1C`, complementado por bordas `1px solid #282828` e discretos realces luminosos no hover.\n\n## Shapes\n\nCantos discretos (6px a 10px) para botões e cards de documentação técnica.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo verde esmeralda (`#3ECF8E`), tipografia preta sólida em `#121212` proporcionando mais de 10:1 de contraste WCAG AAA.\n\n### Cartão de Módulo\nFundo `#1C1C1C` com borda `#282828` e ícone com glow verde suave.\n\n## Do's and Don'ts\n\n### Do's:\n- Use sempre texto escuro (`#121212`) sobre o botão verde esmeralda para manter conformidade WCAG AAA.\n- Exiba snippets SQL com formatação monospace precisa.\n\n### Don'ts:\n- Nunca use texto branco sobre `#3ECF8E` (o contraste é inferior a 2:1)."
+    "designMd": "---\nname: Supabase\nversion: alpha\ncolors:\n  primary: \"#EDEDED\"\n  secondary: \"#888888\"\n  tertiary: \"#3ECF8E\"\n  neutral: \"#121212\"\n  surface: \"#1C1C1C\"\n  surface-variant: \"#242424\"\n  accent: \"#3ECF8E\"\n  on-primary: \"#121212\"\n  on-tertiary: \"#121212\"\n  border: \"#282828\"\ntypography:\n  fontFamily: \"Circular, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif\"\n  monoFamily: \"'Source Code Pro', monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.25rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.125rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.55\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 10px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 18px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO design system do Supabase é construído para desenvolvedores que operam com infraestrutura de dados em tempo real. O verde esmeralda distintivo (`#3ECF8E`) sobressai contra um cenário escuro de carvão texturizado, transmitindo agilidade e poder de banco de dados aberto.\n\n## Colors\n\n- **Primary (`#EDEDED`):** Branco frio para máxima legibilidade de esquemas SQL e logs.\n- **Secondary (`#888888`):** Cinza de intensidade moderada para metadados de tabelas.\n- **Tertiary (`#3ECF8E`):** Supabase Emerald, a cor assinatura para ações primárias e status online.\n- **Neutral (`#121212`):** Fundo carvão profundo escuro.\n- **Surface (`#1C1C1C`):** Superfícies de tabelas, painéis de controle e editores de consultas.\n\n## Typography\n\nTipografia técnica e amigável (Circular / Inter) com ênfase em blocos de código SQL e JSON estruturados.\n\n## Layout\n\nGrade pragmática com colunas fixas e tabelas com rolagem horizontal livre. Espaçamento base de 8px e 16px.\n\n## Elevation & Depth\n\nContraste entre `#121212` e `#1C1C1C`, complementado por bordas `1px solid #282828` e discretos realces luminosos no hover.\n\n## Shapes\n\nCantos discretos (6px a 10px) para botões e cards de documentação técnica.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo verde esmeralda (`#3ECF8E`), tipografia preta sólida em `#121212` proporcionando mais de 10:1 de contraste WCAG AAA.\n\n### Cartão de Módulo\nFundo `#1C1C1C` com borda `#282828` e ícone com glow verde suave.\n\n## Do's and Don'ts\n\n### Do's:\n- Use sempre texto escuro (`#121212`) sobre o botão verde esmeralda para manter conformidade WCAG AAA.\n- Exiba snippets SQL com formatação monospace precisa.\n\n### Don'ts:\n- Nunca use texto branco sobre `#3ECF8E` (o contraste é inferior a 2:1).",
+    "dna": {
+      "archetype": "Engineered Calm (Tactile Darkroom)",
+      "visualAtmosphere": "High-precision dark workspace characterized by 1px borders with 8-12% opacity, micro-radiuses, subtle radial glow lights behind key focal points, keyboard shortcut indicators (KBD tags), and monochromatic depth planes.",
+      "spatialRhythm": {
+        "density": "compact",
+        "whitespaceStrategy": "Disciplined mathematical rhythm (8px baseline grid) prioritizing information density and zero visual clutter.",
+        "containerMaxWidth": "1200px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centered High-Impact Typography with Floating App Viewport",
+          "density": "compact",
+          "keyVisualElements": [
+            "1px subtle border app mockup",
+            "Micro-badge status indicator",
+            "Dual CTA with keyboard shortcut"
+          ],
+          "typographyHierarchy": "Display H1 with negative tracking (-0.03em) leading directly to muted secondary subtitle",
+          "designRule": "Never use stock illustration; showcase the actual user interface running inside a dark glass enclosure."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "Asymmetric Bento Grid (3-to-4 Columns)",
+          "density": "compact",
+          "keyVisualElements": [
+            "Glassmorphic dark cards",
+            "Subtle white/10 border on hover",
+            "Interactive state previews"
+          ],
+          "typographyHierarchy": "Card titles in H3 semibold with muted body text and monospace keyboard tag",
+          "designRule": "Each bento tile must highlight an engineering capability rather than marketing superlatives."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Monochromatic Logo Ribbon",
+          "density": "compact",
+          "keyVisualElements": [
+            "SVG logos rendered in 40% opacity grayscale",
+            "No heavy badge backgrounds"
+          ],
+          "typographyHierarchy": "Single muted labelCaps lead text",
+          "designRule": "All logos must normalize to equal optical height and disappear into the dark background."
+        },
+        {
+          "name": "Interactive Demo",
+          "layoutType": "Keyboard-Driven Interactive Sandbox",
+          "density": "compact",
+          "keyVisualElements": [
+            "Command menu mockup (⌘K)",
+            "Interactive list view with keyboard navigation"
+          ],
+          "typographyHierarchy": "Monospaced code labels and compact row items",
+          "designRule": "Allow the user to experience software responsiveness before signing up."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Minimalist Radial Spotlight Deck",
+          "density": "compact",
+          "keyVisualElements": [
+            "Single primary button with inner highlight border",
+            "Subtle gradient mesh beneath card"
+          ],
+          "typographyHierarchy": "H2 display headline followed by instant signup button",
+          "designRule": "Zero distractions; a single high-contrast primary action button."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always use 1px border with rgba(255, 255, 255, 0.08) to separate dark containers.",
+          "Always include keyboard shortcuts (⌘K, Enter) near interactive actions.",
+          "Always maintain strict 8px/16px spatial padding for tactical ergonomics.",
+          "Always provide instant visual feedback on hover using border luminance shifts rather than scale bounce."
+        ],
+        "never": [
+          "Never use bubbly, high-saturation cartoon illustrations or hand-drawn doodles.",
+          "Never use colored drop shadows or diffuse blur > 20px.",
+          "Never use rounded pill buttons (border-radius: 9999px); strictly use 6px-10px squircle radius.",
+          "Never use low-contrast gray text on dark gray without meeting WCAG AA 4.5:1 ratio."
+        ]
+      },
+      "adaptationGuidance": "When adapting this system to client products, frame the client's problem as an engineering workflow. Use dark themes with 1px translucent borders, tight spacing, monospaced metadata, and high-efficiency keyboard-navigable components."
+    }
   },
   {
     "id": "apple",
@@ -609,7 +988,78 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA"
     },
-    "designMd": "---\nname: Apple\nversion: alpha\ncolors:\n  primary: \"#1D1D1F\"\n  secondary: \"#86868B\"\n  tertiary: \"#0071E3\"\n  neutral: \"#F5F5F7\"\n  surface: \"#FFFFFF\"\n  surface-variant: \"#E8E8ED\"\n  accent: \"#0071E3\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#D2D2D7\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.5rem\n    fontWeight: 600\n    lineHeight: 1.1\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.5rem\n    fontWeight: 600\n    lineHeight: 1.2\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.0625rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 8px\n  md: 12px\n  lg: 18px\n  xl: 28px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 36px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"11px 22px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.xl}\"\n    padding: \"{spacing.xl}\"\n---\n\n## Overview\n\nO padrão Apple sintetiza o humanismo digital contemporâneo: fotografia monumental, tipografia SF Pro calibrada e superfícies táteis com cantos generosos em superelipse.\n\n## Colors\n\n- **Primary (`#1D1D1F`):** O preto Apple característico, menos abrasivo que o #000 puro.\n- **Secondary (`#86868B`):** Cinza médio equilibrado para subtítulos.\n- **Tertiary (`#0071E3`):** Azul Apple oficial para links de compra e CTAs de ação.\n- **Neutral (`#F5F5F7`):** Fundo cinza frio suave que confere distinção física aos produtos.\n- **Surface (`#FFFFFF`):** Superfícies flutuantes e cards de apresentação.\n\n## Typography\n\nCom base no **SF Pro**, equilibrando tracking ótico variável conforme o tamanho da fonte.\n\n## Layout\n\nVasto respiro vertical, colunas centralizadas com largura máxima de 1280px e margens fluidas.\n\n## Elevation & Depth\n\nSubstituição de sombras pesadas por materiais de vidro translúcido com desfoque dinâmico de fundo (`backdrop-filter: blur(20px)`).\n\n## Shapes\n\nCurvatura contínua (squircle / superellipse) em pílulas (`{rounded.full}`) e cards (`28px`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nPílula azul sólida (`#0071E3`) com texto branco e hover sutil.\n\n### Cartão de Produto\nSuperfície branca imaculada com cantos de 28px e imagem centralizada com foco absoluto.\n\n## Do's and Don'ts\n\n### Do's:\n- Garanta espaçamentos amplos e generosos acima e abaixo de cada bloco de produto.\n- Empregue `{rounded.full}` para todos os botões de ação e tags de navegação.\n\n### Don'ts:\n- Não empregue bordas pretas grossas ou cantos pontiagudos."
+    "designMd": "---\nname: Apple\nversion: alpha\ncolors:\n  primary: \"#1D1D1F\"\n  secondary: \"#86868B\"\n  tertiary: \"#0071E3\"\n  neutral: \"#F5F5F7\"\n  surface: \"#FFFFFF\"\n  surface-variant: \"#E8E8ED\"\n  accent: \"#0071E3\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#D2D2D7\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3.5rem\n    fontWeight: 600\n    lineHeight: 1.1\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.5rem\n    fontWeight: 600\n    lineHeight: 1.2\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.0625rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 8px\n  md: 12px\n  lg: 18px\n  xl: 28px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 36px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.full}\"\n    padding: \"11px 22px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.xl}\"\n    padding: \"{spacing.xl}\"\n---\n\n## Overview\n\nO padrão Apple sintetiza o humanismo digital contemporâneo: fotografia monumental, tipografia SF Pro calibrada e superfícies táteis com cantos generosos em superelipse.\n\n## Colors\n\n- **Primary (`#1D1D1F`):** O preto Apple característico, menos abrasivo que o #000 puro.\n- **Secondary (`#86868B`):** Cinza médio equilibrado para subtítulos.\n- **Tertiary (`#0071E3`):** Azul Apple oficial para links de compra e CTAs de ação.\n- **Neutral (`#F5F5F7`):** Fundo cinza frio suave que confere distinção física aos produtos.\n- **Surface (`#FFFFFF`):** Superfícies flutuantes e cards de apresentação.\n\n## Typography\n\nCom base no **SF Pro**, equilibrando tracking ótico variável conforme o tamanho da fonte.\n\n## Layout\n\nVasto respiro vertical, colunas centralizadas com largura máxima de 1280px e margens fluidas.\n\n## Elevation & Depth\n\nSubstituição de sombras pesadas por materiais de vidro translúcido com desfoque dinâmico de fundo (`backdrop-filter: blur(20px)`).\n\n## Shapes\n\nCurvatura contínua (squircle / superellipse) em pílulas (`{rounded.full}`) e cards (`28px`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nPílula azul sólida (`#0071E3`) com texto branco e hover sutil.\n\n### Cartão de Produto\nSuperfície branca imaculada com cantos de 28px e imagem centralizada com foco absoluto.\n\n## Do's and Don'ts\n\n### Do's:\n- Garanta espaçamentos amplos e generosos acima e abaixo de cada bloco de produto.\n- Empregue `{rounded.full}` para todos os botões de ação e tags de navegação.\n\n### Don'ts:\n- Não empregue bordas pretas grossas ou cantos pontiagudos.",
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "github",
@@ -707,7 +1157,78 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA"
     },
-    "designMd": "---\nname: GitHub\nversion: alpha\ncolors:\n  primary: \"#1F2328\"\n  secondary: \"#656D76\"\n  tertiary: \"#1F883D\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F8FA\"\n  surface-variant: \"#EAEEF2\"\n  accent: \"#0969DA\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#D0D7DE\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif\"\n  monoFamily: \"ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.5rem\n    fontWeight: 600\n    lineHeight: 1.25\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.75rem\n    fontWeight: 600\n    lineHeight: 1.3\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.875rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 8px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"5px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.md}\"\n    padding: \"{spacing.md}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Primer Design System do GitHub foi projetado para sustentar a maior comunidade de desenvolvedores do planeta, equilibrando legibilidade de código, organização em abas densas e alta acessibilidade.\n\n## Colors\n\n- **Primary (`#1F2328`):** Cinza ardósia escuro para textos de repositório e cabeçalhos.\n- **Secondary (`#656D76`):** Cinza médio neutro para contadores e datas de commits.\n- **Tertiary (`#1F883D`):** Verde clássico GitHub para merge de pull requests e clonagem.\n- **Neutral (`#FFFFFF`):** Canvas claro padrão.\n- **Surface (`#F6F8FA`):** Fundo suave de cabeçalhos de tabelas de arquivos e caixas de comentário.\n- **Accent (`#0969DA`):** Azul Primer para links de navegação.\n\n## Typography\n\nHierarquia compacta baseada em `14px` (`0.875rem`) para body, facilitando leitura contínua de diffs de código.\n\n## Layout\n\nContêineres com limite de 1280px e bordas estruturais de 1px (`#D0D7DE`).\n\n## Elevation & Depth\n\nSombras extremamente leves em menus suspensos (`box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2)`).\n\n## Shapes\n\nCantos contidos de 6px (`{rounded.md}`) para botões e inputs.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo verde `#1F883D`, texto branco, cantos em 6px e borda superior com sutil relevo.\n\n### Card de Repositório\nFundo `#F6F8FA`, contorno fino de 1px e padding de 16px.\n\n## Do's and Don'ts\n\n### Do's:\n- Utilize fontes com monoespaçamento para hashes SHA, nomes de branches e comandos git.\n- Mantenha bordas nítidas de 1px entre blocos de conteúdo.\n\n### Don'ts:\n- Evite cantos arredondados excessivos (> 12px) que quebrem a densidade do Primer."
+    "designMd": "---\nname: GitHub\nversion: alpha\ncolors:\n  primary: \"#1F2328\"\n  secondary: \"#656D76\"\n  tertiary: \"#1F883D\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F8FA\"\n  surface-variant: \"#EAEEF2\"\n  accent: \"#0969DA\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#D0D7DE\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif\"\n  monoFamily: \"ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2.5rem\n    fontWeight: 600\n    lineHeight: 1.25\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 1.75rem\n    fontWeight: 600\n    lineHeight: 1.3\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.875rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 4px\n  md: 6px\n  lg: 8px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"5px 16px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.md}\"\n    padding: \"{spacing.md}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Primer Design System do GitHub foi projetado para sustentar a maior comunidade de desenvolvedores do planeta, equilibrando legibilidade de código, organização em abas densas e alta acessibilidade.\n\n## Colors\n\n- **Primary (`#1F2328`):** Cinza ardósia escuro para textos de repositório e cabeçalhos.\n- **Secondary (`#656D76`):** Cinza médio neutro para contadores e datas de commits.\n- **Tertiary (`#1F883D`):** Verde clássico GitHub para merge de pull requests e clonagem.\n- **Neutral (`#FFFFFF`):** Canvas claro padrão.\n- **Surface (`#F6F8FA`):** Fundo suave de cabeçalhos de tabelas de arquivos e caixas de comentário.\n- **Accent (`#0969DA`):** Azul Primer para links de navegação.\n\n## Typography\n\nHierarquia compacta baseada em `14px` (`0.875rem`) para body, facilitando leitura contínua de diffs de código.\n\n## Layout\n\nContêineres com limite de 1280px e bordas estruturais de 1px (`#D0D7DE`).\n\n## Elevation & Depth\n\nSombras extremamente leves em menus suspensos (`box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2)`).\n\n## Shapes\n\nCantos contidos de 6px (`{rounded.md}`) para botões e inputs.\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo verde `#1F883D`, texto branco, cantos em 6px e borda superior com sutil relevo.\n\n### Card de Repositório\nFundo `#F6F8FA`, contorno fino de 1px e padding de 16px.\n\n## Do's and Don'ts\n\n### Do's:\n- Utilize fontes com monoespaçamento para hashes SHA, nomes de branches e comandos git.\n- Mantenha bordas nítidas de 1px entre blocos de conteúdo.\n\n### Don'ts:\n- Evite cantos arredondados excessivos (> 12px) que quebrem a densidade do Primer.",
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "raycast",
@@ -806,7 +1327,90 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA"
     },
-    "designMd": "---\nname: Raycast\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#959DA6\"\n  tertiary: \"#FF6363\"\n  neutral: \"#0D0D11\"\n  surface: \"#191921\"\n  surface-variant: \"#22222E\"\n  accent: \"#FF6363\"\n  on-primary: \"#0D0D11\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#282833\"\ntypography:\n  fontFamily: \"Inter, -apple-system, BlinkMacSystemFont, sans-serif\"\n  monoFamily: \"'JetBrains Mono', Menlo, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 6px\n  md: 10px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 14px\n  lg: 20px\n  xl: 28px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 18px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Raycast reinventou a produtividade para entusiastas de teclado no desktop. Seu design combina a escuridão espacial de um launcher moderno com o vermelho coral vibrante (`#FF6363`) que guia os olhos com precisão instantânea.\n\n## Colors\n\n- **Primary (`#FFFFFF`):** Branco puro para termos pesquisados e atalhos ativos.\n- **Secondary (`#959DA6`):** Cinza neutro suave para dicas de extensão e atalhos de navegação.\n- **Tertiary (`#FF6363`):** Coral avermelhado assinatura do Raycast para seleção de comandos e botões de ação.\n- **Neutral (`#0D0D11`):** Fundo obsidiana com leve tom arroxeado frio.\n- **Surface (`#191921`):** Janelas do launcher e cards de extensões.\n\n## Typography\n\nUtiliza **Inter** com numerais monospace e visualização rápida de teclas (`⌘ K`, `Enter`).\n\n## Layout\n\nInterface compacta centrada na caixa de diálogo de 750px de largura com foco total em rapidez de interação.\n\n## Elevation & Depth\n\nJanela suspensa com sombra profunda e difusa (`box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4)`) que destaca o launcher sobre qualquer plano de fundo do sistema.\n\n## Shapes\n\nCantos arredondados calibrados em 10px (`{rounded.md}`) e 16px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo coral (`#FF6363`), cantos em 10px, texto branco e contraste estrito.\n\n### Linha de Comando / Item do Launcher\nSuperfície `#191921` que ganha contorno e iluminação suave ao receber foco pelo teclado.\n\n## Do's and Don'ts\n\n### Do's:\n- Indique atalhos de teclado de forma visual em quase todas as ações.\n- Utilize o coral `#FF6363` como gatilho de execução rápida.\n\n### Don'ts:\n- Não use sombras esbranquiçadas ou fundos brancos opacos."
+    "designMd": "---\nname: Raycast\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#959DA6\"\n  tertiary: \"#FF6363\"\n  neutral: \"#0D0D11\"\n  surface: \"#191921\"\n  surface-variant: \"#22222E\"\n  accent: \"#FF6363\"\n  on-primary: \"#0D0D11\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#282833\"\ntypography:\n  fontFamily: \"Inter, -apple-system, BlinkMacSystemFont, sans-serif\"\n  monoFamily: \"'JetBrains Mono', Menlo, monospace\"\n  h1:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 3rem\n    fontWeight: 700\n    lineHeight: 1.15\n  h2:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 2rem\n    fontWeight: 600\n    lineHeight: 1.25\n  body-md:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: 0.9375rem\n    fontWeight: 400\n    lineHeight: 1.5\nrounded:\n  sm: 6px\n  md: 10px\n  lg: 16px\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 14px\n  lg: 20px\n  xl: 28px\ncomponents:\n  button-primary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 18px\"\n    fontSize: \"{typography.body-md.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    padding: \"{spacing.lg}\"\n    border: \"1px solid {colors.border}\"\n---\n\n## Overview\n\nO Raycast reinventou a produtividade para entusiastas de teclado no desktop. Seu design combina a escuridão espacial de um launcher moderno com o vermelho coral vibrante (`#FF6363`) que guia os olhos com precisão instantânea.\n\n## Colors\n\n- **Primary (`#FFFFFF`):** Branco puro para termos pesquisados e atalhos ativos.\n- **Secondary (`#959DA6`):** Cinza neutro suave para dicas de extensão e atalhos de navegação.\n- **Tertiary (`#FF6363`):** Coral avermelhado assinatura do Raycast para seleção de comandos e botões de ação.\n- **Neutral (`#0D0D11`):** Fundo obsidiana com leve tom arroxeado frio.\n- **Surface (`#191921`):** Janelas do launcher e cards de extensões.\n\n## Typography\n\nUtiliza **Inter** com numerais monospace e visualização rápida de teclas (`⌘ K`, `Enter`).\n\n## Layout\n\nInterface compacta centrada na caixa de diálogo de 750px de largura com foco total em rapidez de interação.\n\n## Elevation & Depth\n\nJanela suspensa com sombra profunda e difusa (`box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4)`) que destaca o launcher sobre qualquer plano de fundo do sistema.\n\n## Shapes\n\nCantos arredondados calibrados em 10px (`{rounded.md}`) e 16px (`{rounded.lg}`).\n\n## Components\n\n### Botão Primário (`button-primary`)\nFundo coral (`#FF6363`), cantos em 10px, texto branco e contraste estrito.\n\n### Linha de Comando / Item do Launcher\nSuperfície `#191921` que ganha contorno e iluminação suave ao receber foco pelo teclado.\n\n## Do's and Don'ts\n\n### Do's:\n- Indique atalhos de teclado de forma visual em quase todas as ações.\n- Utilize o coral `#FF6363` como gatilho de execução rápida.\n\n### Don'ts:\n- Não use sombras esbranquiçadas ou fundos brancos opacos.",
+    "dna": {
+      "archetype": "Engineered Calm (Tactile Darkroom)",
+      "visualAtmosphere": "High-precision dark workspace characterized by 1px borders with 8-12% opacity, micro-radiuses, subtle radial glow lights behind key focal points, keyboard shortcut indicators (KBD tags), and monochromatic depth planes.",
+      "spatialRhythm": {
+        "density": "compact",
+        "whitespaceStrategy": "Disciplined mathematical rhythm (8px baseline grid) prioritizing information density and zero visual clutter.",
+        "containerMaxWidth": "1200px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centered High-Impact Typography with Floating App Viewport",
+          "density": "compact",
+          "keyVisualElements": [
+            "1px subtle border app mockup",
+            "Micro-badge status indicator",
+            "Dual CTA with keyboard shortcut"
+          ],
+          "typographyHierarchy": "Display H1 with negative tracking (-0.03em) leading directly to muted secondary subtitle",
+          "designRule": "Never use stock illustration; showcase the actual user interface running inside a dark glass enclosure."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "Asymmetric Bento Grid (3-to-4 Columns)",
+          "density": "compact",
+          "keyVisualElements": [
+            "Glassmorphic dark cards",
+            "Subtle white/10 border on hover",
+            "Interactive state previews"
+          ],
+          "typographyHierarchy": "Card titles in H3 semibold with muted body text and monospace keyboard tag",
+          "designRule": "Each bento tile must highlight an engineering capability rather than marketing superlatives."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Monochromatic Logo Ribbon",
+          "density": "compact",
+          "keyVisualElements": [
+            "SVG logos rendered in 40% opacity grayscale",
+            "No heavy badge backgrounds"
+          ],
+          "typographyHierarchy": "Single muted labelCaps lead text",
+          "designRule": "All logos must normalize to equal optical height and disappear into the dark background."
+        },
+        {
+          "name": "Interactive Demo",
+          "layoutType": "Keyboard-Driven Interactive Sandbox",
+          "density": "compact",
+          "keyVisualElements": [
+            "Command menu mockup (⌘K)",
+            "Interactive list view with keyboard navigation"
+          ],
+          "typographyHierarchy": "Monospaced code labels and compact row items",
+          "designRule": "Allow the user to experience software responsiveness before signing up."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Minimalist Radial Spotlight Deck",
+          "density": "compact",
+          "keyVisualElements": [
+            "Single primary button with inner highlight border",
+            "Subtle gradient mesh beneath card"
+          ],
+          "typographyHierarchy": "H2 display headline followed by instant signup button",
+          "designRule": "Zero distractions; a single high-contrast primary action button."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always use 1px border with rgba(255, 255, 255, 0.08) to separate dark containers.",
+          "Always include keyboard shortcuts (⌘K, Enter) near interactive actions.",
+          "Always maintain strict 8px/16px spatial padding for tactical ergonomics.",
+          "Always provide instant visual feedback on hover using border luminance shifts rather than scale bounce."
+        ],
+        "never": [
+          "Never use bubbly, high-saturation cartoon illustrations or hand-drawn doodles.",
+          "Never use colored drop shadows or diffuse blur > 20px.",
+          "Never use rounded pill buttons (border-radius: 9999px); strictly use 6px-10px squircle radius.",
+          "Never use low-contrast gray text on dark gray without meeting WCAG AA 4.5:1 ratio."
+        ]
+      },
+      "adaptationGuidance": "When adapting this system to client products, frame the client's problem as an engineering workflow. Use dark themes with 1px translucent borders, tight spacing, monospaced metadata, and high-efficiency keyboard-navigable components."
+    }
   },
   {
     "id": "airbnb",
@@ -912,7 +1516,77 @@
       "contrastStatus": "AAA",
       "notes": "Contraste excelente com Rausch Coral #FF385C e texto Babbitt #222222 em fundo níveo."
     },
-    "designMd": "---\nname: Airbnb\nversion: alpha\ncolors:\n  primary: \"#222222\"\n  secondary: \"#717171\"\n  tertiary: \"#FF385C\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F7F7F7\"\n  accent: \"#FF385C\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#DDDDDD\"\ntypography:\n  fontFamily: \"\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif\"\n  headingFamily: \"\"Airbnb Cereal VF\", Circular, -apple-system, sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.75rem\"\n    fontWeight: 700\n    lineHeight: 1.15\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"8px\"\n  md: \"12px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Airbnb Design System Specification\n\n## Overview\nReferência global em hospitalidade e design de produto. Interface calorosa e acolhedora com Airbnb Cereal VF, Rausch Coral icônico e cantos arredondados acolhedores.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#222222`\n- **Secondary Slate**: `#717171`\n- **Brand Accent / Action**: `#FF385C` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F7F7F7`\n\n## Typography Guidelines\n- Main UI Font: `\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif`\n- H1 Display Scale: `2.75rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Airbnb\nversion: alpha\ncolors:\n  primary: \"#222222\"\n  secondary: \"#717171\"\n  tertiary: \"#FF385C\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F7F7F7\"\n  accent: \"#FF385C\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#DDDDDD\"\ntypography:\n  fontFamily: \"\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif\"\n  headingFamily: \"\"Airbnb Cereal VF\", Circular, -apple-system, sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.75rem\"\n    fontWeight: 700\n    lineHeight: 1.15\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"8px\"\n  md: \"12px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Airbnb Design System Specification\n\n## Overview\nReferência global em hospitalidade e design de produto. Interface calorosa e acolhedora com Airbnb Cereal VF, Rausch Coral icônico e cantos arredondados acolhedores.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#222222`\n- **Secondary Slate**: `#717171`\n- **Brand Accent / Action**: `#FF385C` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F7F7F7`\n\n## Typography Guidelines\n- Main UI Font: `\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif`\n- H1 Display Scale: `2.75rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Warm Editorial & Tactile Paper",
+      "visualAtmosphere": "Humanist, welcoming, and hospitable aesthetic defined by warm neutral paper tones (#FAF9F6 / #FFFFFF), generous breathing room, refined editorial serif/sans typography, and rounded organic containers.",
+      "spatialRhythm": {
+        "density": "sprawling",
+        "whitespaceStrategy": "Abundant negative space allowing content and photography to command full emotional attention.",
+        "containerMaxWidth": "1440px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Floating Search & Filter Capsule with Emotional Full-Bleed Imagery",
+          "density": "sprawling",
+          "keyVisualElements": [
+            "Elevated capsule container with soft ambient shadow",
+            "High-res contextual photography"
+          ],
+          "typographyHierarchy": "Warm H1 headline with organic tracking",
+          "designRule": "The user should feel invited and relaxed; avoid aggressive urgency timers."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "Fluid Grid of Visual Story Cards",
+          "density": "sprawling",
+          "keyVisualElements": [
+            "Aspect-ratio 4:3 cards with rounded-2xl corners",
+            "Favorite heart icon micro-interaction"
+          ],
+          "typographyHierarchy": "Bold location/title line with secondary pricing and rating metadata",
+          "designRule": "Prioritize photography and real human stories over technical specs."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Curated Host/Guest Stories with Avatar Avatars",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Star ratings with gold accent",
+            "Authentic quote cards"
+          ],
+          "typographyHierarchy": "Editorial quote with author attribution",
+          "designRule": "Emphasize community trust, hospitality, and real person reviews."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Warm Surface Card with Friendly Invite",
+          "density": "balanced",
+          "keyVisualElements": [
+            "High-contrast primary coral/tertiary button",
+            "Reassurance guarantees"
+          ],
+          "typographyHierarchy": "H2 inviting participation with warm secondary copy",
+          "designRule": "Provide total reassurance on cancellations, guarantees, and pricing clarity."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always prioritize high-quality real-world photography with natural lighting.",
+          "Always use warm neutral off-white backgrounds (#FAF9F6) rather than cold sterile #FFFFFF.",
+          "Always use generous padding (32px-48px) inside containers to let typography breathe.",
+          "Always keep shadows soft and diffuse (blur 24px-32px, opacity 4-8%)."
+        ],
+        "never": [
+          "Never use cold harsh blue gradients or neon cyber accents.",
+          "Never cram content into high-density tables without breathing space.",
+          "Never use aggressive marketing popups or artificial countdown badges.",
+          "Never use sharp 0px square corners on cards."
+        ]
+      },
+      "adaptationGuidance": "When adapting this system to client domains, focus on warmth, hospitality, and user comfort. Use warm neutral canvases, rounded organic containers (16px-24px), soft ambient shadows, and human-centric microcopy."
+    }
   },
   {
     "id": "spotify",
@@ -1011,7 +1685,78 @@
       "contrastStatus": "AAA",
       "notes": "Contraste ultra vibrante do verde Spotify (#1DB954) em fundo carvão #121212."
     },
-    "designMd": "---\nname: Spotify\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#B3B3B3\"\n  tertiary: \"#1DB954\"\n  neutral: \"#121212\"\n  surface: \"#181818\"\n  accent: \"#1ED760\"\n  on-primary: \"#121212\"\n  on-tertiary: \"#000000\"\n  border: \"rgba(255, 255, 255, 0.1)\"\ntypography:\n  fontFamily: \"\"Spotify Circular\", \"Circular Std\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Spotify Circular\", \"Circular Std\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.25rem\"\n    fontWeight: 900\n    lineHeight: 1.1\n    letterSpacing: \"-0.035em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.875rem\"\n    fontWeight: 400\n    lineHeight: 1.45\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 32px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Spotify Design System Specification\n\n## Overview\nIdentidade dark-mode icônica com Spotify Neon Green (#1DB954), tipografia Circular Std geométrica e superfícies carvão de alta fidelidade para imersão sonoro-visual.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#121212`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#B3B3B3`\n- **Brand Accent / Action**: `#1DB954` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#181818`\n\n## Typography Guidelines\n- Main UI Font: `\"Spotify Circular\", \"Circular Std\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.25rem` com peso `900`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Spotify\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#B3B3B3\"\n  tertiary: \"#1DB954\"\n  neutral: \"#121212\"\n  surface: \"#181818\"\n  accent: \"#1ED760\"\n  on-primary: \"#121212\"\n  on-tertiary: \"#000000\"\n  border: \"rgba(255, 255, 255, 0.1)\"\ntypography:\n  fontFamily: \"\"Spotify Circular\", \"Circular Std\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Spotify Circular\", \"Circular Std\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.25rem\"\n    fontWeight: 900\n    lineHeight: 1.1\n    letterSpacing: \"-0.035em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.875rem\"\n    fontWeight: 400\n    lineHeight: 1.45\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 32px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Spotify Design System Specification\n\n## Overview\nIdentidade dark-mode icônica com Spotify Neon Green (#1DB954), tipografia Circular Std geométrica e superfícies carvão de alta fidelidade para imersão sonoro-visual.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#121212`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#B3B3B3`\n- **Brand Accent / Action**: `#1DB954` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#181818`\n\n## Typography Guidelines\n- Main UI Font: `\"Spotify Circular\", \"Circular Std\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.25rem` com peso `900`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Modern Cybernetic Minimalist",
+      "visualAtmosphere": "Immersive dark environment focused on glowing accent points, high contrast typography, and structured modular panels.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "discord",
@@ -1109,7 +1854,78 @@
       "contrastStatus": "AAA",
       "notes": "Blurple sobre fundo dark e botões contrastados."
     },
-    "designMd": "---\nname: Discord\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#949BA4\"\n  tertiary: \"#5865F2\"\n  neutral: \"#1E1F22\"\n  surface: \"#2B2D31\"\n  accent: \"#57F287\"\n  on-primary: \"#1E1F22\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"\"ABC Ginto Nord\", \"gg sans\", \"Noto Sans\", sans-serif\"\n  headingFamily: \"\"ABC Ginto Nord\", \"gg sans\", sans-serif\"\n  monoFamily: \"\"Consolas\", \"Courier New\", monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3rem\"\n    fontWeight: 800\n    lineHeight: 1.1\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Discord Design System Specification\n\n## Overview\nDesign expressivo e jovial focado em comunidades. Destaque para o icônico Discord Blurple (#5865F2), tipografia ABC Ginto Nord e canais em camadas escuras táteis.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#1E1F22`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#949BA4`\n- **Brand Accent / Action**: `#5865F2` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#2B2D31`\n\n## Typography Guidelines\n- Main UI Font: `\"ABC Ginto Nord\", \"gg sans\", \"Noto Sans\", sans-serif`\n- H1 Display Scale: `3rem` com peso `800`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Discord\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#949BA4\"\n  tertiary: \"#5865F2\"\n  neutral: \"#1E1F22\"\n  surface: \"#2B2D31\"\n  accent: \"#57F287\"\n  on-primary: \"#1E1F22\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"\"ABC Ginto Nord\", \"gg sans\", \"Noto Sans\", sans-serif\"\n  headingFamily: \"\"ABC Ginto Nord\", \"gg sans\", sans-serif\"\n  monoFamily: \"\"Consolas\", \"Courier New\", monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3rem\"\n    fontWeight: 800\n    lineHeight: 1.1\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Discord Design System Specification\n\n## Overview\nDesign expressivo e jovial focado em comunidades. Destaque para o icônico Discord Blurple (#5865F2), tipografia ABC Ginto Nord e canais em camadas escuras táteis.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#1E1F22`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#949BA4`\n- **Brand Accent / Action**: `#5865F2` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#2B2D31`\n\n## Typography Guidelines\n- Main UI Font: `\"ABC Ginto Nord\", \"gg sans\", \"Noto Sans\", sans-serif`\n- H1 Display Scale: `3rem` com peso `800`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Modern Cybernetic Minimalist",
+      "visualAtmosphere": "Immersive dark environment focused on glowing accent points, high contrast typography, and structured modular panels.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "figma",
@@ -1206,7 +2022,78 @@
       "contrastStatus": "AAA",
       "notes": "Alto contraste do preto absoluto e roxo característico em canvas branco."
     },
-    "designMd": "---\nname: Figma\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#666666\"\n  tertiary: \"#A259FF\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F5F5F5\"\n  accent: \"#1ABCFE\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E5E5E5\"\ntypography:\n  fontFamily: \"\"Whyte\", \"Inter\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Whyte\", \"Inter\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.5rem\"\n    fontWeight: 700\n    lineHeight: 1.08\n    letterSpacing: \"-0.03em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.25rem\"\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.9375rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"14px\"\n  xl: \"20px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Figma Design System Specification\n\n## Overview\nSistema visual colaborativo centrado em criatividade. Combina tipografia Whyte com uma paleta multi-acento icônica (roxo, azul celeste, verde e coral) em superfícies táteis.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#000000`\n- **Secondary Slate**: `#666666`\n- **Brand Accent / Action**: `#A259FF` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F5F5F5`\n\n## Typography Guidelines\n- Main UI Font: `\"Whyte\", \"Inter\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Figma\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#666666\"\n  tertiary: \"#A259FF\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F5F5F5\"\n  accent: \"#1ABCFE\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E5E5E5\"\ntypography:\n  fontFamily: \"\"Whyte\", \"Inter\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Whyte\", \"Inter\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.5rem\"\n    fontWeight: 700\n    lineHeight: 1.08\n    letterSpacing: \"-0.03em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.25rem\"\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.9375rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"14px\"\n  xl: \"20px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Figma Design System Specification\n\n## Overview\nSistema visual colaborativo centrado em criatividade. Combina tipografia Whyte com uma paleta multi-acento icônica (roxo, azul celeste, verde e coral) em superfícies táteis.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#000000`\n- **Secondary Slate**: `#666666`\n- **Brand Accent / Action**: `#A259FF` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F5F5F5`\n\n## Typography Guidelines\n- Main UI Font: `\"Whyte\", \"Inter\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "notion",
@@ -1303,7 +2190,77 @@
       "contrastStatus": "AAA",
       "notes": "Contraste impecável entre o texto carvão #2F3437 e o canvas neutro."
     },
-    "designMd": "---\nname: Notion\nversion: alpha\ncolors:\n  primary: \"#2F3437\"\n  secondary: \"#787774\"\n  tertiary: \"#2383E2\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F7F6F3\"\n  accent: \"#EA4E43\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E9E9E7\"\ntypography:\n  fontFamily: \"\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Lyon-Text\", Georgia, \"Times New Roman\", serif\"\n  monoFamily: \"\"SFMono-Regular\", Consolas, Menlo, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.5rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.6\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"6px\"\n  lg: \"10px\"\n  xl: \"16px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Notion Design System Specification\n\n## Overview\nEstética artesanal de papel vivo (warm paper #F7F6F3) inspirada em tipografia editorial. Combina a elegância da serifa Lyon com a precisão sans-serif da Inter.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#2F3437`\n- **Secondary Slate**: `#787774`\n- **Brand Accent / Action**: `#2383E2` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F7F6F3`\n\n## Typography Guidelines\n- Main UI Font: `\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `2.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Notion\nversion: alpha\ncolors:\n  primary: \"#2F3437\"\n  secondary: \"#787774\"\n  tertiary: \"#2383E2\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F7F6F3\"\n  accent: \"#EA4E43\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E9E9E7\"\ntypography:\n  fontFamily: \"\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"Lyon-Text\", Georgia, \"Times New Roman\", serif\"\n  monoFamily: \"\"SFMono-Regular\", Consolas, Menlo, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.5rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.6\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"6px\"\n  lg: \"10px\"\n  xl: \"16px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"8px 16px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Notion Design System Specification\n\n## Overview\nEstética artesanal de papel vivo (warm paper #F7F6F3) inspirada em tipografia editorial. Combina a elegância da serifa Lyon com a precisão sans-serif da Inter.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#2F3437`\n- **Secondary Slate**: `#787774`\n- **Brand Accent / Action**: `#2383E2` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F7F6F3`\n\n## Typography Guidelines\n- Main UI Font: `\"Inter\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `2.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Warm Editorial & Tactile Paper",
+      "visualAtmosphere": "Humanist, welcoming, and hospitable aesthetic defined by warm neutral paper tones (#FAF9F6 / #FFFFFF), generous breathing room, refined editorial serif/sans typography, and rounded organic containers.",
+      "spatialRhythm": {
+        "density": "sprawling",
+        "whitespaceStrategy": "Abundant negative space allowing content and photography to command full emotional attention.",
+        "containerMaxWidth": "1440px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Floating Search & Filter Capsule with Emotional Full-Bleed Imagery",
+          "density": "sprawling",
+          "keyVisualElements": [
+            "Elevated capsule container with soft ambient shadow",
+            "High-res contextual photography"
+          ],
+          "typographyHierarchy": "Warm H1 headline with organic tracking",
+          "designRule": "The user should feel invited and relaxed; avoid aggressive urgency timers."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "Fluid Grid of Visual Story Cards",
+          "density": "sprawling",
+          "keyVisualElements": [
+            "Aspect-ratio 4:3 cards with rounded-2xl corners",
+            "Favorite heart icon micro-interaction"
+          ],
+          "typographyHierarchy": "Bold location/title line with secondary pricing and rating metadata",
+          "designRule": "Prioritize photography and real human stories over technical specs."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Curated Host/Guest Stories with Avatar Avatars",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Star ratings with gold accent",
+            "Authentic quote cards"
+          ],
+          "typographyHierarchy": "Editorial quote with author attribution",
+          "designRule": "Emphasize community trust, hospitality, and real person reviews."
+        },
+        {
+          "name": "CTA & Closing",
+          "layoutType": "Warm Surface Card with Friendly Invite",
+          "density": "balanced",
+          "keyVisualElements": [
+            "High-contrast primary coral/tertiary button",
+            "Reassurance guarantees"
+          ],
+          "typographyHierarchy": "H2 inviting participation with warm secondary copy",
+          "designRule": "Provide total reassurance on cancellations, guarantees, and pricing clarity."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always prioritize high-quality real-world photography with natural lighting.",
+          "Always use warm neutral off-white backgrounds (#FAF9F6) rather than cold sterile #FFFFFF.",
+          "Always use generous padding (32px-48px) inside containers to let typography breathe.",
+          "Always keep shadows soft and diffuse (blur 24px-32px, opacity 4-8%)."
+        ],
+        "never": [
+          "Never use cold harsh blue gradients or neon cyber accents.",
+          "Never cram content into high-density tables without breathing space.",
+          "Never use aggressive marketing popups or artificial countdown badges.",
+          "Never use sharp 0px square corners on cards."
+        ]
+      },
+      "adaptationGuidance": "When adapting this system to client domains, focus on warmth, hospitality, and user comfort. Use warm neutral canvases, rounded organic containers (16px-24px), soft ambient shadows, and human-centric microcopy."
+    }
   },
   {
     "id": "netflix",
@@ -1401,7 +2358,78 @@
       "contrastStatus": "AAA",
       "notes": "Branco e vermelho de alto impacto sobre fundo preto absoluto."
     },
-    "designMd": "---\nname: Netflix\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#8C8C8C\"\n  tertiary: \"#E50914\"\n  neutral: \"#000000\"\n  surface: \"#141414\"\n  accent: \"#E50914\"\n  on-primary: \"#000000\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.15)\"\ntypography:\n  fontFamily: \"\"Netflix Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"\"Netflix Sans\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.5rem\"\n    fontWeight: 900\n    lineHeight: 1.1\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.25rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1.125rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"6px\"\n  lg: \"12px\"\n  xl: \"20px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 28px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Netflix Design System Specification\n\n## Overview\nLinguagem visual cinematográfica pura. Canvas breu absoluto (#000000) projetado para destacar pôsteres e mídia em tela cheia com a icônica assinatura Netflix Crimson Red.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#000000`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#8C8C8C`\n- **Brand Accent / Action**: `#E50914` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#141414`\n\n## Typography Guidelines\n- Main UI Font: `\"Netflix Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `3.5rem` com peso `900`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Netflix\nversion: alpha\ncolors:\n  primary: \"#FFFFFF\"\n  secondary: \"#8C8C8C\"\n  tertiary: \"#E50914\"\n  neutral: \"#000000\"\n  surface: \"#141414\"\n  accent: \"#E50914\"\n  on-primary: \"#000000\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"rgba(255, 255, 255, 0.15)\"\ntypography:\n  fontFamily: \"\"Netflix Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"\"Netflix Sans\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.5rem\"\n    fontWeight: 900\n    lineHeight: 1.1\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.25rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1.125rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"6px\"\n  lg: \"12px\"\n  xl: \"20px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 28px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Netflix Design System Specification\n\n## Overview\nLinguagem visual cinematográfica pura. Canvas breu absoluto (#000000) projetado para destacar pôsteres e mídia em tela cheia com a icônica assinatura Netflix Crimson Red.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#000000`\n- **Primary Ink**: `#FFFFFF`\n- **Secondary Slate**: `#8C8C8C`\n- **Brand Accent / Action**: `#E50914` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#141414`\n\n## Typography Guidelines\n- Main UI Font: `\"Netflix Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `3.5rem` com peso `900`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Modern Cybernetic Minimalist",
+      "visualAtmosphere": "Immersive dark environment focused on glowing accent points, high contrast typography, and structured modular panels.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "uber",
@@ -1498,7 +2526,78 @@
       "contrastStatus": "AAA",
       "notes": "Monocromia nítida com 21:1 de contraste no texto primário."
     },
-    "designMd": "---\nname: Uber\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#5E5E5E\"\n  tertiary: \"#276EF1\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F6F6\"\n  accent: \"#000000\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E2E2E2\"\ntypography:\n  fontFamily: \"\"Uber Move\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"\"Uber Move\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.25rem\"\n    fontWeight: 700\n    lineHeight: 1.12\n    letterSpacing: \"-0.025em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Uber Design System Specification\n\n## Overview\nDesign system de escala planetária baseado em clareza funcional radical. Monocromia estrita de alto contraste, tipografia Uber Move e azul cobalto para sinalização de rota.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#000000`\n- **Secondary Slate**: `#5E5E5E`\n- **Brand Accent / Action**: `#276EF1` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F6F6F6`\n\n## Typography Guidelines\n- Main UI Font: `\"Uber Move\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `3.25rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Uber\nversion: alpha\ncolors:\n  primary: \"#000000\"\n  secondary: \"#5E5E5E\"\n  tertiary: \"#276EF1\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F6F6F6\"\n  accent: \"#000000\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E2E2E2\"\ntypography:\n  fontFamily: \"\"Uber Move\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"\"Uber Move\", sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.25rem\"\n    fontWeight: 700\n    lineHeight: 1.12\n    letterSpacing: \"-0.025em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"12px 24px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Uber Design System Specification\n\n## Overview\nDesign system de escala planetária baseado em clareza funcional radical. Monocromia estrita de alto contraste, tipografia Uber Move e azul cobalto para sinalização de rota.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#000000`\n- **Secondary Slate**: `#5E5E5E`\n- **Brand Accent / Action**: `#276EF1` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F6F6F6`\n\n## Typography Guidelines\n- Main UI Font: `\"Uber Move\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `3.25rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "perplexity",
@@ -1595,7 +2694,78 @@
       "contrastStatus": "AAA",
       "notes": "Ciano elétrico sobre ardósia #13181E alcança excepcional contraste e legibilidade."
     },
-    "designMd": "---\nname: Perplexity AI\nversion: alpha\ncolors:\n  primary: \"#F3F4F6\"\n  secondary: \"#94A3B8\"\n  tertiary: \"#20B8CD\"\n  neutral: \"#13181E\"\n  surface: \"#1B2228\"\n  accent: \"#20B8CD\"\n  on-primary: \"#13181E\"\n  on-tertiary: \"#080C10\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"\"FK Grotesk\", \"Inter\", -apple-system, sans-serif\"\n  headingFamily: \"\"FK Grotesk\", sans-serif\"\n  monoFamily: \"\"Fira Code\", monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.75rem\"\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.03em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.875rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.9375rem\"\n    fontWeight: 400\n    lineHeight: 1.6\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"6px\"\n  md: \"12px\"\n  lg: \"18px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Perplexity AI Design System Specification\n\n## Overview\nDesign system de busca conversacional focado em leitura aprofundada de respostas sintéticas. Tipografia FK Grotesk, fundo ardósia escuro e ciano radiante de ação.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#13181E`\n- **Primary Ink**: `#F3F4F6`\n- **Secondary Slate**: `#94A3B8`\n- **Brand Accent / Action**: `#20B8CD` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#1B2228`\n\n## Typography Guidelines\n- Main UI Font: `\"FK Grotesk\", \"Inter\", -apple-system, sans-serif`\n- H1 Display Scale: `2.75rem` com peso `600`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Perplexity AI\nversion: alpha\ncolors:\n  primary: \"#F3F4F6\"\n  secondary: \"#94A3B8\"\n  tertiary: \"#20B8CD\"\n  neutral: \"#13181E\"\n  surface: \"#1B2228\"\n  accent: \"#20B8CD\"\n  on-primary: \"#13181E\"\n  on-tertiary: \"#080C10\"\n  border: \"rgba(255, 255, 255, 0.08)\"\ntypography:\n  fontFamily: \"\"FK Grotesk\", \"Inter\", -apple-system, sans-serif\"\n  headingFamily: \"\"FK Grotesk\", sans-serif\"\n  monoFamily: \"\"Fira Code\", monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.75rem\"\n    fontWeight: 600\n    lineHeight: 1.2\n    letterSpacing: \"-0.03em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.875rem\"\n    fontWeight: 600\n    lineHeight: 1.25\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.9375rem\"\n    fontWeight: 400\n    lineHeight: 1.6\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"6px\"\n  md: \"12px\"\n  lg: \"18px\"\n  xl: \"24px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Perplexity AI Design System Specification\n\n## Overview\nDesign system de busca conversacional focado em leitura aprofundada de respostas sintéticas. Tipografia FK Grotesk, fundo ardósia escuro e ciano radiante de ação.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#13181E`\n- **Primary Ink**: `#F3F4F6`\n- **Secondary Slate**: `#94A3B8`\n- **Brand Accent / Action**: `#20B8CD` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#1B2228`\n\n## Typography Guidelines\n- Main UI Font: `\"FK Grotesk\", \"Inter\", -apple-system, sans-serif`\n- H1 Display Scale: `2.75rem` com peso `600`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Modern Cybernetic Minimalist",
+      "visualAtmosphere": "Immersive dark environment focused on glowing accent points, high contrast typography, and structured modular panels.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "shopify",
@@ -1691,7 +2861,78 @@
       "contrastStatus": "AAA",
       "notes": "Verde Polaris em fundo níveo atende a rigorosos padrões de acessibilidade comercial."
     },
-    "designMd": "---\nname: Shopify Polaris\nversion: alpha\ncolors:\n  primary: \"#202223\"\n  secondary: \"#6D7175\"\n  tertiary: \"#008060\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F1F2F4\"\n  accent: \"#2C6ECB\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E1E3E5\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"-apple-system, BlinkMacSystemFont, sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.5rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.875rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"12px\"\n  xl: \"16px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Shopify Polaris Design System Specification\n\n## Overview\nDesign system de referência para ecossistemas de e-commerce e faturamento. Polaris Emerald (#008060), tipografia legível para finanças e densidade de informação ergonômica.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#202223`\n- **Secondary Slate**: `#6D7175`\n- **Brand Accent / Action**: `#008060` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F1F2F4`\n\n## Typography Guidelines\n- Main UI Font: `-apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `2.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: Shopify Polaris\nversion: alpha\ncolors:\n  primary: \"#202223\"\n  secondary: \"#6D7175\"\n  tertiary: \"#008060\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F1F2F4\"\n  accent: \"#2C6ECB\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E1E3E5\"\ntypography:\n  fontFamily: \"-apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, sans-serif\"\n  headingFamily: \"-apple-system, BlinkMacSystemFont, sans-serif\"\n  monoFamily: \"monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.5rem\"\n    fontWeight: 700\n    lineHeight: 1.2\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"1.75rem\"\n    fontWeight: 600\n    lineHeight: 1.3\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"0.875rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"4px\"\n  sm: \"8px\"\n  md: \"16px\"\n  lg: \"24px\"\n  xl: \"32px\"\n  2xl: \"48px\"\nrounded:\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"12px\"\n  xl: \"16px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"10px 20px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# Shopify Polaris Design System Specification\n\n## Overview\nDesign system de referência para ecossistemas de e-commerce e faturamento. Polaris Emerald (#008060), tipografia legível para finanças e densidade de informação ergonômica.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#202223`\n- **Secondary Slate**: `#6D7175`\n- **Brand Accent / Action**: `#008060` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F1F2F4`\n\n## Typography Guidelines\n- Main UI Font: `-apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, sans-serif`\n- H1 Display Scale: `2.5rem` com peso `700`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "ibm-carbon",
@@ -1789,7 +3030,78 @@
       "contrastStatus": "AAA",
       "notes": "IBM Blue 60 (#0F62FE) com conformidade WCAG total."
     },
-    "designMd": "---\nname: IBM Carbon\nversion: alpha\ncolors:\n  primary: \"#161616\"\n  secondary: \"#525252\"\n  tertiary: \"#0F62FE\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F4F4F4\"\n  accent: \"#0043CE\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E0E0E0\"\ntypography:\n  fontFamily: \"\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"IBM Plex Sans\", sans-serif\"\n  monoFamily: \"\"IBM Plex Mono\", Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.375rem\"\n    fontWeight: 300\n    lineHeight: 1.19\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.625rem\"\n    fontWeight: 400\n    lineHeight: 1.24\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"2px\"\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  2xl: \"32px\"\nrounded:\n  sm: \"0px\"\n  md: \"2px\"\n  lg: \"4px\"\n  xl: \"8px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 64px 14px 16px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# IBM Carbon Design System Specification\n\n## Overview\nSistema visual aberto com padrão de engenharia industrial rigorosa. Baseado na família tipográfica IBM Plex Sans e arquitetura de grid 2px para infraestrutura corporativa.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#161616`\n- **Secondary Slate**: `#525252`\n- **Brand Accent / Action**: `#0F62FE` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F4F4F4`\n\n## Typography Guidelines\n- Main UI Font: `\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.375rem` com peso `300`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n"
+    "designMd": "---\nname: IBM Carbon\nversion: alpha\ncolors:\n  primary: \"#161616\"\n  secondary: \"#525252\"\n  tertiary: \"#0F62FE\"\n  neutral: \"#FFFFFF\"\n  surface: \"#F4F4F4\"\n  accent: \"#0043CE\"\n  on-primary: \"#FFFFFF\"\n  on-tertiary: \"#FFFFFF\"\n  border: \"#E0E0E0\"\ntypography:\n  fontFamily: \"\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, sans-serif\"\n  headingFamily: \"\"IBM Plex Sans\", sans-serif\"\n  monoFamily: \"\"IBM Plex Mono\", Menlo, Consolas, monospace\"\n  h1:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"3.375rem\"\n    fontWeight: 300\n    lineHeight: 1.19\n    letterSpacing: \"-0.02em\"\n  h2:\n    fontFamily: \"{typography.headingFamily}\"\n    fontSize: \"2.625rem\"\n    fontWeight: 400\n    lineHeight: 1.24\n    letterSpacing: \"-0.015em\"\n  bodyMd:\n    fontFamily: \"{typography.fontFamily}\"\n    fontSize: \"1rem\"\n    fontWeight: 400\n    lineHeight: 1.5\nspacing:\n  xs: \"2px\"\n  sm: \"4px\"\n  md: \"8px\"\n  lg: \"16px\"\n  xl: \"24px\"\n  2xl: \"32px\"\nrounded:\n  sm: \"0px\"\n  md: \"2px\"\n  lg: \"4px\"\n  xl: \"8px\"\n  full: \"9999px\"\ncomponents:\n  buttonPrimary:\n    backgroundColor: \"{colors.tertiary}\"\n    textColor: \"{colors.on-tertiary}\"\n    rounded: \"{rounded.md}\"\n    padding: \"14px 64px 14px 16px\"\n    fontSize: \"{typography.bodyMd.fontSize}\"\n  card:\n    backgroundColor: \"{colors.surface}\"\n    rounded: \"{rounded.lg}\"\n    border: \"1px solid {colors.border}\"\n    padding: \"{spacing.lg}\"\n---\n\n# IBM Carbon Design System Specification\n\n## Overview\nSistema visual aberto com padrão de engenharia industrial rigorosa. Baseado na família tipográfica IBM Plex Sans e arquitetura de grid 2px para infraestrutura corporativa.\n\n## Normative Token Hierarchy\n- **Canvas Base**: `#FFFFFF`\n- **Primary Ink**: `#161616`\n- **Secondary Slate**: `#525252`\n- **Brand Accent / Action**: `#0F62FE` (WCAG Contrast AA/AAA compliant)\n- **Surfaces**: `#F4F4F4`\n\n## Typography Guidelines\n- Main UI Font: `\"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, sans-serif`\n- H1 Display Scale: `3.375rem` com peso `300`.\n\n## Invariants:\n1. Preserve typography hierarchy and contrast invariants.\n2. Utilize component tokens without arbitrary ad-hoc styling overrides.\n",
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
+    }
   },
   {
     "id": "slack",
@@ -1887,6 +3199,77 @@
       "isCompliantAA": true,
       "contrastStatus": "AAA",
       "notes": "Medição em tempo real: Primário 21:1, Ação 9.68:1, Botão 9.68:1."
+    },
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
     }
   },
   {
@@ -1985,6 +3368,77 @@
       "isCompliantAA": false,
       "contrastStatus": "AA",
       "notes": "Medição em tempo real: Primário 10.37:1, Ação 1.45:1, Botão 7.13:1."
+    },
+    "dna": {
+      "archetype": "Contemporary Clean Functionalism",
+      "visualAtmosphere": "Bright, trustworthy corporate aesthetic with crisp borders, clear visual hierarchy, and accessible interactive states.",
+      "spatialRhythm": {
+        "density": "balanced",
+        "whitespaceStrategy": "Balanced 24px-32px padding providing visual structure without sparse void.",
+        "containerMaxWidth": "1280px"
+      },
+      "sectionBlueprints": [
+        {
+          "name": "Hero Section",
+          "layoutType": "Centrally Aligned Headline with Dual CTA and Product Mockup",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Elevated product screenshot",
+            "Primary action button with icon",
+            "Customer review snippet"
+          ],
+          "typographyHierarchy": "H1 Display leading to clear 2-sentence subtitle",
+          "designRule": "State the core customer outcome within the first 3 seconds of viewing."
+        },
+        {
+          "name": "Feature Showcase",
+          "layoutType": "3-Column Grid with Icon Headers",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Rounded icon badges",
+            "Surface cards with 1px border",
+            "Feature bullet points"
+          ],
+          "typographyHierarchy": "H3 feature title with descriptive body text",
+          "designRule": "Focus each card on a single concrete problem and its direct resolution."
+        },
+        {
+          "name": "Social Proof",
+          "layoutType": "Customer Logo Ticker and Testimonial Cards",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Customer avatar",
+            "Company logo",
+            "Star rating"
+          ],
+          "typographyHierarchy": "Direct quote with customer name and verified title",
+          "designRule": "Highlight quantifiable results achieved by recognizable brands."
+        },
+        {
+          "name": "CTA Section",
+          "layoutType": "High-Contrast Closing Banner",
+          "density": "balanced",
+          "keyVisualElements": [
+            "Full-width surface card",
+            "Instant access form or single primary button"
+          ],
+          "typographyHierarchy": "H2 closing pitch with risk-reversal subtext (No credit card required)",
+          "designRule": "Remove friction and provide immediate access to the core value."
+        }
+      ],
+      "invariants": {
+        "always": [
+          "Always maintain WCAG AA compliance (contrast ratio >= 4.5:1) for all text.",
+          "Always use consistent border radius across all buttons and input fields.",
+          "Always provide explicit hover and focus states for keyboard accessibility."
+        ],
+        "never": [
+          "Never place low-contrast text over photographic backgrounds without an overlay scrim.",
+          "Never mix discordant border radii on the same visual plane.",
+          "Never hide primary navigation on desktop viewports."
+        ]
+      },
+      "adaptationGuidance": "Apply this foundational system to any client industry by replacing brand accent colors and tailoring section headlines while preserving the structural spacing and component hierarchy."
     }
   }
 ]

@@ -142,6 +142,7 @@ export const ExtractPage: React.FC<ExtractPageProps> = ({
         screenshotUrl: beComp?.screenshotUrl || extractedData?.screenshotUrl || `/previews/extracted-${domain.split('.')[0]}.png`,
         lastUpdated: 'Just now',
         verifiedStandard: true,
+        dna: beComp?.dna || extractedData?.dna || undefined,
         metrics: {
           contrastScore: beComp?.wcagContrast?.contrastStatus ? `${beComp.wcagContrast.contrastStatus} (${beComp.wcagContrast.primaryOnNeutral || '15.8'}:1)` : 'AAA (15.8:1)',
           tokenCount: extractedData?.meta?.detectedColorsCount ? extractedData.meta.detectedColorsCount + 15 : 42,

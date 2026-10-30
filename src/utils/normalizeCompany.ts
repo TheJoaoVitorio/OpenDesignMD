@@ -79,6 +79,7 @@ colors:
 ---`,
     lastUpdated: raw.lastUpdated || (raw.extractedAt ? new Date(raw.extractedAt).toLocaleDateString() : 'Recent'),
     verifiedStandard: raw.verifiedStandard ?? raw.verified ?? true,
+    dna: raw.dna || undefined,
     metrics: raw.metrics || {
       contrastScore: raw.wcagContrast?.contrastStatus
         ? `${raw.wcagContrast.contrastStatus} (${raw.wcagContrast.primaryOnNeutral || '16'}:1)`
