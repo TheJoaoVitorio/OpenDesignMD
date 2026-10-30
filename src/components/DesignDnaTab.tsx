@@ -391,30 +391,93 @@ export const DesignDnaTab: React.FC<DesignDnaTabProps> = ({ company, onShowToast
         </div>
       </div>
 
-      {/* Validation Spotlight for AbacatePay / General Test */}
-      <div className="p-6 rounded-3xl bg-[#1F4647] text-white border-2 border-[#9EEA6C] shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="space-y-1">
-          <div className="flex items-center space-x-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#9EEA6C] animate-ping" />
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#9EEA6C]">
-              Caso de Teste em Produção: NutriFlui
-            </span>
+      {/* Validation Spotlight for Google Antigravity (Orbit Mobile) */}
+      {company.id === 'google-antigravity' && (
+        <div className="p-6 rounded-3xl bg-[#121317] text-white border-2 border-[#FF6B00] shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#FF6B00] animate-ping" />
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#FF6B00]">
+                Caso de Teste em Produção: Orbit Mobile
+              </span>
+            </div>
+            <h4 className="text-base font-bold text-white">
+              Loja de Celulares com Primária Laranja (#FF6B00) e Estética Google Antigravity!
+            </h4>
+            <p className="text-xs text-white/80 max-w-xl leading-relaxed">
+              Transplante completo da calmaria arquitetônica (Engineered Calm), pílulas totais e respiros do Google Antigravity para uma loja premium de smartphones com simulador de Trade-In e benchmarks de hardware.
+            </p>
           </div>
-          <h4 className="text-base font-bold text-white">
-            Landing Page Completa gerada a partir do Design DNA de AbacatePay!
-          </h4>
-          <p className="text-xs text-white/80 max-w-xl leading-relaxed">
-            Testamos o transplante da estética botanical neo-organic e pílulas arredondadas de AbacatePay para uma plataforma de nutrição clínica (NutriFlui).
-          </p>
+          <Link
+            to="/preview/orbit-celulares"
+            className="px-6 py-2.5 rounded-full bg-[#FF6B00] text-white font-bold text-xs hover:bg-[#E05E00] hover:scale-105 active:scale-95 transition-all shadow-md flex items-center space-x-2 whitespace-nowrap flex-shrink-0"
+          >
+            <span>Ver Landing Page Orbit Mobile</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
-        <Link
-          to="/preview/nutriflui"
-          className="px-6 py-2.5 rounded-full bg-[#9EEA6C] text-[#1F4647] font-bold text-xs hover:scale-105 active:scale-95 transition-transform shadow-md flex items-center space-x-2 whitespace-nowrap flex-shrink-0"
-        >
-          <span>Ver Landing Page NutriFlui</span>
-          <ArrowRight className="w-4 h-4" />
-        </Link>
-      </div>
+      )}
+
+      {/* Validation Spotlight for AbacatePay (NutriFlui) */}
+      {company.id === 'abacatepay' && (
+        <div className="p-6 rounded-3xl bg-[#1F4647] text-white border-2 border-[#9EEA6C] shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#9EEA6C] animate-ping" />
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#9EEA6C]">
+                Caso de Teste em Produção: NutriFlui
+              </span>
+            </div>
+            <h4 className="text-base font-bold text-white">
+              Landing Page Completa gerada a partir do Design DNA de AbacatePay!
+            </h4>
+            <p className="text-xs text-white/80 max-w-xl leading-relaxed">
+              Testamos o transplante da estética botanical neo-organic e pílulas arredondadas de AbacatePay para uma plataforma de nutrição clínica (NutriFlui).
+            </p>
+          </div>
+          <Link
+            to="/preview/nutriflui"
+            className="px-6 py-2.5 rounded-full bg-[#9EEA6C] text-[#1F4647] font-bold text-xs hover:scale-105 active:scale-95 transition-transform shadow-md flex items-center space-x-2 whitespace-nowrap flex-shrink-0"
+          >
+            <span>Ver Landing Page NutriFlui</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      )}
+
+      {/* Fallback Spotlight for any other company */}
+      {company.id !== 'google-antigravity' && company.id !== 'abacatepay' && (
+        <div className="p-6 rounded-3xl bg-[#121317] text-white border border-white/10 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#34A853] animate-ping" />
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#34A853]">
+                Protótipos em Produção Disponíveis
+              </span>
+            </div>
+            <h4 className="text-base font-bold text-white">
+              Veja nossos testes de transplante de DNA em funcionamento
+            </h4>
+            <p className="text-xs text-white/80 max-w-xl leading-relaxed">
+              Explore o Orbit Mobile (Google Antigravity com Laranja) ou NutriFlui (AbacatePay com Verde Botânico).
+            </p>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <Link
+              to="/preview/orbit-celulares"
+              className="px-4 py-2 rounded-full bg-[#FF6B00] text-white font-bold text-xs hover:bg-[#E05E00] transition-colors shadow-md"
+            >
+              Orbit Mobile
+            </Link>
+            <Link
+              to="/preview/nutriflui"
+              className="px-4 py-2 rounded-full bg-[#9EEA6C] text-[#1F4647] font-bold text-xs hover:scale-105 transition-transform shadow-md"
+            >
+              NutriFlui
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* 4. Interactive AI Context Adaptation Engine */}
       <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-white via-white to-[#FAF9F6] dark:from-[#16181D] dark:via-[#16181D] dark:to-[#121317] border-2 border-[#1A73E8]/30 shadow-md space-y-6">

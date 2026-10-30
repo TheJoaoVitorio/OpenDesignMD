@@ -7,6 +7,7 @@ import { PlatformDashboard } from './components/PlatformDashboard';
 import { DesignSystemDetailPage } from './pages/DesignSystemDetailPage';
 import { ExtractPage } from './pages/ExtractPage';
 import { NutriFluiLandingPage } from './pages/NutriFluiLandingPage';
+import { OrbitMobileLandingPage } from './pages/OrbitMobileLandingPage';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { mockCompanies } from './data/mockCompanies';
@@ -169,6 +170,16 @@ export function AppContent() {
             element={<NutriFluiLandingPage onShowToast={showToast} />}
           />
 
+          {/* Live Prototype Test: Orbit Mobile generated from Google Antigravity */}
+          <Route
+            path="/preview/orbit-celulares"
+            element={<OrbitMobileLandingPage onShowToast={showToast} />}
+          />
+          <Route
+            path="/preview/orbit-mobile"
+            element={<Navigate to="/preview/orbit-celulares" replace />}
+          />
+
           {/* Protected Catalog Dashboard */}
           <Route
             path="/explore"
@@ -227,8 +238,8 @@ export function AppContent() {
         </div>
       )}
 
-      {/* Footer - Hidden on /login */}
-      {!isLoginPage && (
+      {/* Footer - Hidden on /login and preview pages */}
+      {!isLoginPage && !isPreviewPage && (
         <footer className="border-t border-[#E8EAED] dark:border-[#1E2128] bg-white/40 dark:bg-[#0D0E12]/40 backdrop-blur-md py-10 transition-colors">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center space-x-3">
