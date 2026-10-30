@@ -599,6 +599,12 @@ export class ExtractorService {
       company.dna = aiService.heuristicAnalyzeDna(company);
     }
 
+    // Guarantee that canonical DESIGN.MD ALWAYS includes the exact Section Blueprints and Layout Invariants
+    if (company.dna) {
+      canonicalDesignMd = this.appendDnaToDesignMd(canonicalDesignMd, company.dna);
+      company.designMd = canonicalDesignMd;
+    }
+
     // Automatically register in companiesStore (which saves to data.json)
     companiesStore.addCompany(company);
 
@@ -646,6 +652,45 @@ export class ExtractorService {
       return "Design & Creative";
     }
     return "SaaS & Web Software";
+  }
+
+  private appendDnaToDesignMd(baseMd: string, dna: any): string {
+    const blueprints = Array.isArray(dna.sectionBlueprints)
+      ? dna.sectionBlueprints
+          .map(
+            (sec: any, idx: number) => `### ${idx + 1}. ${sec.name}
+- **Layout Type:** ${sec.layoutType}
+- **Density:** ${sec.density}
+- **Key Visual Elements:** ${Array.isArray(sec.keyVisualElements) ? sec.keyVisualElements.join(", ") : sec.keyVisualElements}
+- **Typography Hierarchy:** ${sec.typographyHierarchy}
+- **Design Rule:** ${sec.designRule}`
+          )
+          .join("\n\n")
+      : "";
+
+    const alwaysRules = Array.isArray(dna.invariants?.always)
+      ? dna.invariants.always.map((r: string) => `- **SEMPRE:** ${r}`).join("\n")
+      : "";
+
+    const neverRules = Array.isArray(dna.invariants?.never)
+      ? dna.invariants.never.map((r: string) => `- **NUNCA:** ${r}`).join("\n")
+      : "";
+
+    return `${baseMd}
+
+## Visual Archetype & Creative Philosophy
+- **Archetype:** ${dna.archetype}
+- **Visual Atmosphere:** ${dna.visualAtmosphere}
+- **Spatial Rhythm:** Density: ${dna.spatialRhythm?.density?.toUpperCase() || "BALANCED"} • ${dna.spatialRhythm?.whitespaceStrategy || ""}
+- **Container Max Width:** ${dna.spatialRhythm?.containerMaxWidth || "1280px"}
+
+## Section Blueprints (Layout Topology)
+${blueprints}
+
+## Design Invariants (Strict Normative Invariants)
+${alwaysRules}
+${neverRules}
+`;
   }
 
   private synthesizeCanonicalDesignMd(params: {

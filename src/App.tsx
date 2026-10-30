@@ -8,6 +8,7 @@ import { DesignSystemDetailPage } from './pages/DesignSystemDetailPage';
 import { ExtractPage } from './pages/ExtractPage';
 import { NutriFluiLandingPage } from './pages/NutriFluiLandingPage';
 import { OrbitMobileLandingPage } from './pages/OrbitMobileLandingPage';
+import { DesignDnaRoulettePage } from './pages/DesignDnaRoulettePage';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { mockCompanies } from './data/mockCompanies';
@@ -178,6 +179,20 @@ export function AppContent() {
           <Route
             path="/preview/orbit-mobile"
             element={<Navigate to="/preview/orbit-celulares" replace />}
+          />
+
+          {/* Interactive Demonstration Studio: Design DNA Roulette */}
+          <Route
+            path="/preview/roleta"
+            element={<DesignDnaRoulettePage companies={companies} onShowToast={showToast} />}
+          />
+          <Route
+            path="/preview/studio"
+            element={<Navigate to="/preview/roleta" replace />}
+          />
+          <Route
+            path="/studio"
+            element={<Navigate to="/preview/roleta" replace />}
           />
 
           {/* Protected Catalog Dashboard */}

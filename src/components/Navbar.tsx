@@ -77,6 +77,20 @@ export const Navbar: React.FC<NavbarProps> = ({
               <Compass className="w-4 h-4" />
               <span>{t.navbar.explore}</span>
             </span>
+          </Link>
+
+          <Link
+            to="/preview/roleta"
+            className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-colors ${
+              isCurrent('/preview/roleta')
+                ? 'bg-[#121317] text-white dark:bg-white dark:text-[#121317] shadow-xs'
+                : 'text-[#5F6368] dark:text-[#9AA0A6] hover:text-[#121317] dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
+            }`}
+          >
+            <span className="flex items-center space-x-1.5">
+              <span>🎲</span>
+              <span>Roleta Studio</span>
+            </span>
           </Link>              
         </nav>
 

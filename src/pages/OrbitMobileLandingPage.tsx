@@ -278,6 +278,13 @@ rounded:
               <span>Inspecionar DESIGN.MD</span>
             </button>
             <Link
+              to="/preview/roleta"
+              className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-mono transition-colors hidden sm:inline-flex items-center space-x-1"
+            >
+              <span>🎲</span>
+              <span>Roleta Studio</span>
+            </Link>
+            <Link
               to="/"
               className="px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors hidden md:inline-flex"
             >
