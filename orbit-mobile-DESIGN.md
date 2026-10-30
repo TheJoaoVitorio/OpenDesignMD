@@ -1,7 +1,7 @@
 ---
 name: Orbit Mobile Design System (Inspired by Google Antigravity)
-version: 1.0.0
-archetype: "Engineered Calm and Aerospace Precision"
+version: 2.0.0
+archetype: "Engineered Calm, Monastic Purity & Gravitational Symmetry"
 sourceDesignSystem: "Google Antigravity (antigravity.google)"
 clientContext:
   business: "Loja de Smartphones e Flagships Premium (Orbit Mobile)"
@@ -16,38 +16,40 @@ colors:
   surfaceDark: "#121317"    # Antigravity Monolithic Void Slate
   surfaceVariant: "#F3F4F6" # Muted Pill Capsule Gray
   border: "#E8EAED"         # 1px Technical Hairline Border
-  borderDark: "#23262F"     # Hairline Border for Dark Cards
   onPrimary: "#FFFFFF"      # Crisp White Text on Orange Buttons
   onSurface: "#121317"      # High-Contrast Pure Ink Typography
+  particlePalette:
+    - "#FF6B00"             # Primary Aerospace Orange
+    - "#FF9E40"             # Soft Amber
+    - "#121317"             # Deep Titanium Ink
+    - "#5F6368"             # Slate Grey
+    - "#E8EAED"             # Subtle Orbit Dust
 typography:
   fontFamily: "Google Sans, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
   monoFamily: "'Google Sans Mono', 'SFMono-Regular', Consolas, monospace"
   h1:
     fontFamily: "Google Sans, Inter, sans-serif"
-    fontSize: 3.75rem
+    fontSize: 4rem
     fontWeight: 500
     lineHeight: 1.08
     letterSpacing: "-0.035em"
+    textAlign: "center"
   h2:
     fontFamily: "Google Sans, Inter, sans-serif"
-    fontSize: 2.25rem
+    fontSize: 2.5rem
     fontWeight: 500
     lineHeight: 1.15
     letterSpacing: "-0.025em"
   h3:
     fontFamily: "Google Sans, Inter, sans-serif"
-    fontSize: 1.5rem
+    fontSize: 1.75rem
     fontWeight: 500
     lineHeight: 1.25
     letterSpacing: "-0.015em"
   bodyMd:
-    fontSize: 0.9375rem
+    fontSize: 1rem
     fontWeight: 400
     lineHeight: 1.6
-  bodySm:
-    fontSize: 0.8125rem
-    fontWeight: 400
-    lineHeight: 1.45
   labelCaps:
     fontSize: 0.75rem
     fontWeight: 600
@@ -60,77 +62,66 @@ rounded:
   xl: 28px
   full: 9999px
 spacing:
-  xs: 4px
-  sm: 8px
-  md: 16px
-  lg: 24px
-  xl: 32px
-  2xl: 48px
-  3xl: 64px
-  4xl: 80px
+  sectionGap: "120px"
+  cardPadding: "32px"
 ---
 
 # Design System: Orbit Mobile (Inspirado em Google Antigravity)
 
-> **Documento Canônico de Transplante de Identidade Visual**
+> **Documento Canônico de Transplante de Identidade Visual - Versão 2.0 (Fidelidade Visual Rigorosa)**
 > 
-> Este sistema de design materializa o transplante da estética **Engineered Calm** do **Google Antigravity** para uma loja de celulares topo de linha (**Orbit Mobile**), adaptando com rigor técnico a cor primária **Laranja (#FF6B00)** solicitada pelo cliente sem violar a harmonia de respiro, sofisticação e geometria pura do design original.
+> Diferente de templates genéricos de SaaS de tela dividida (split-screen), este sistema de design reproduz fielmente a arquitetura visual do **Google Antigravity**: **Simetria Monumental Centralizada**, **Vórtice Gravitacional de Partículas**, **Botão Pílula Central Único**, **Respiro Monástico Vasto** e **Feature Explorer em fileiras alternadas de altíssimo espaçamento**.
 
 ---
 
-## 1. Visual Archetype & Creative Philosophy
+## 1. Visual Archetype: Engineered Calm & Gravitational Symmetry
 
-- **Arquétipo Visual:** *Engineered Calm & Aerospace Precision*
-- **Atmosfera Estética:** Calmaria arquitetônica, amplos respiros em branco quente (`#FAF9F6`), tipografia Google Sans com tracking estritamente negativo (`-0.035em`), geometrias de pílula total (`rounded-full`) e toques cirúrgicos de Laranja Vibrante (`#FF6B00`).
-- **Diferenciação contra o Varejo Tradicional:**
-  - Lojas de celulares tradicionais utilizam poluição cromática (vermelhos estridentes, cronômetros falsos de contagem regressiva, banners de saldão que gritam com o cliente).
-  - A Orbit Mobile trata o smartphone como uma **peça de alta engenharia de silício e titânio**. O hardware respira no espaço negativo com luz limpa, preços transparentes e avaliação matemática de Trade-in.
-
----
-
-## 2. Spatial Rhythm & Information Density
-
-- **Densidade:** `BALANCED` a `SPRAWLING` (80px de padding vertical entre seções).
-- **Largura Máxima do Grid:** `1440px` (com `max-w-7xl` e `max-w-6xl` nos núcleos de leitura).
-- **Tratamento de Superfícies:** Cards em branco puro (`#FFFFFF`) repousando sobre canvas levemente quente (`#FAF9F6`), delimitados por bordas milimétricas de `1px solid #E8EAED` e sombras táteis de baixíssima opacidade (`rgba(0, 0, 0, 0.04)`).
+- **Simetria Monumental Centralizada (Zero Split-Screen no Hero):**
+  - O Hero **NÃO** usa layout de duas colunas (texto na esquerda + card de celular na direita).
+  - O Hero é **100% centralizado**, com o título monumental ocupando o campo visual principal, cercado por um vórtice matemático de micropartículas em órbita gravitacional.
+  - O único elemento de ação sob o título é **um botão pílula central solitário e escultural** (`Explorar Dispositivos ↓`), preservando a serenidade do usuário.
+- **Espaço Negativo Monástico:**
+  - Pelo menos 120px de respiro vertical antes do próximo bloco.
+  - Ausência total de ruído comercial: sem contadores regressivos, sem banners vermelhos de saldão, sem cards poluídos com specs amontoados.
 
 ---
 
-## 3. Section Blueprints (Estrutura de Seções)
+## 2. Spatial Rhythm & Layout Blueprints
 
-### 3.1. Floating Zero-Gravity Hero
-- **Estrutura:** Split assimétrico com headline monumental à esquerda e render 3D do flagship em levitação gravitacional à direita.
-- **Micro-indicadores:** Badge de homologação com fonte mono e ponto de pulso laranja.
-- **Ações:** Botão pílula laranja com sombra suave (`shadow-lg shadow-orange-500/20`) pareado com pílula de contorno para o simulador de Trade-In.
+### 2.1. Top Announcement Bar
+- Faixa sutil no topo com pílula de novidade `+ NOVO`, mensagem de lançamento e link `Read post →` com botão de fechar `✕`.
 
-### 3.2. Flagship Bento Grid (Catálogo de Vanguarda)
-- **Estrutura:** Modular bento grid 3-colunas com hierarquia óptica (card principal em destaque duplo).
-- **Elementos:** Fundo branco puro, chips de especificações em pílula suave (`Chip 3nm`, `Câmera Fusion`, `Titanium Frame`), preço em números limpos sem descontos falsos.
+### 2.2. Lightweight Aerodynamic Navbar
+- Logo à esquerda com símbolo orbital geométrico.
+- Links no centro-esquerda com setas de menu dropdown (`⌵`).
+- Ações à direita: Ícone de foguete `🚀`, botão pílula preto/laranja `Comprar ↓` e seletor de idioma/região `BR ⌵`.
 
-### 3.3. Simulador Instantâneo de Trade-In (Troca Inteligente)
-- **Estrutura:** Calculadora interativa em card elevado. O cliente seleciona marca atual, modelo e estado de conservação.
-- **Feedback:** O valor em reais do crédito é recalculado instantaneamente em um badge laranja de alto contraste, deduzindo do valor do novo aparelho.
+### 2.3. The Antigravity Monumental Hero
+- **Centro Superior:** Marca minimalista centralizada (ícone de anel orbital + "Orbit Mobile").
+- **Título Central (H1):** *Hardware esculpido para a velocidade do pensamento.* (Google Sans, 4rem, -0.035em, text-center).
+- **Botão Central Único:** Botão pílula total (`rounded-full`) em preto ou laranja aeroespacial com setinha para baixo (`↓`).
+- **Background Art:** Vórtice gravitacional de partículas dinâmicas (Canvas/SVG interativo) espiralando suavemente ao redor do centro.
 
-### 3.4. Hardware Benchmark Matrix
-- **Estrutura:** Tabela comparativa milimétrica com métricas reais de processador (Geekbench), inteligência artificial local (TOPS) e autonomia de bateria.
+### 2.4. Feature Explorer Section (Alternating Spacious Rows)
+- Em vez de um bento grid tradicional de 3 caixas, as features são apresentadas no padrão `feature-item` do Google Antigravity:
+  - Fileiras alternadas com 80px a 100px de padding.
+  - Coluna de texto (título H3, descrição clara de 2 frases, link com seta `→`).
+  - Coluna de produto (fotografia/render limpo do hardware em fundo transparente, sem caixas artificiais).
 
-### 3.5. Orbit Care (Garantia e Confiança Engenheirada)
-- **Estrutura:** 3 blocos horizontais de respiro absoluto destacando 2 anos de garantia contratual, logística blindada em 24h e transferência concierge de dados.
-
-### 3.6. Monolithic Dark Closing Deck
-- **Estrutura:** Card monolítico de fechamento em fundo escuro profundo (`#121317`) com raio de curvatura `32px` e brilho de flare laranja suave.
+### 2.5. Programas e Soluções (Cards de Alto Contraste)
+- 2 a 3 blocos refinados: *Para Consumidores (Trade-In)* e *Para Empresas (Frotas)*.
 
 ---
 
-## 4. Invariantes dos Designers (Regras Rígidas)
+## 3. Invariantes dos Designers
 
 ### O que NUNCA fazer:
-1. **NUNCA usar banners vermelhos de liquidação ou badges estilo 'QUEIMA DE ESTOQUE'.**
-2. **NUNCA usar cantos vivos ou pontudos (0px de raio de curvatura).** Todos os botões devem ter `rounded-full` (9999px) e cards devem ter entre `16px` e `28px`.
-3. **NUNCA usar sombras escuras e difusas maiores que 24px.** As sombras devem ser imperceptíveis e táteis.
-4. **NUNCA violar o contraste WCAG AA.** O texto sobre o laranja primário (`#FF6B00`) deve ser estritamente branco puro (`#FFFFFF`), garantindo legibilidade perfeita.
+1. **NUNCA usar split-screen no Hero** (nunca colocar texto na esquerda e card de produto na direita no Hero).
+2. **NUNCA amontoar mais de 1 CTA primário no Hero.** O Antigravity usa apenas uma pílula central.
+3. **NUNCA usar banners promocionais estridentes** ou elementos que causem ansiedade.
+4. **NUNCA usar cantos afiados (0px).**
 
 ### O que SEMPRE fazer:
-1. **SEMPRE aplicar letter-spacing negativo (-0.035em) nos títulos H1.**
-2. **SEMPRE apresentar o hardware com perspectiva limpa e reflexos realistas de luz natural.**
-3. **SEMPRE usar o laranja como acelerador focal cirúrgico** (botões de ação primária, seleções ativas e badges de destaque).
+1. **SEMPRE manter o alinhamento centralizado no Hero** com o vórtice de partículas no canvas de fundo.
+2. **SEMPRE usar o laranja (#FF6B00) com parcimônia cirúrgica** para conduzir o foco visual.
+3. **SEMPRE respeitar a tipografia Google Sans com letter-spacing negativo (-0.035em nos títulos).**
